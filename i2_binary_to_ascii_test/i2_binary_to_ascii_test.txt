@@ -1,0 +1,11 @@
+18 March 2020 05:10:32 PM
+
+I2_BINARY_TO_ASCII:
+  C++ version
+  Given a file of 2 byte integers stored in binary format,
+  create an equivalent ASCII text file.
+
+I2_BINARY_TO_ASCII:
+  Normal end of execution.
+
+18 March 2020 05:10:32 PM

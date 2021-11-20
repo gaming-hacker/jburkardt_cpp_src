@@ -1,0 +1,14 @@
+22 January 2020 08:20:43 AM
+
+ALBUM_BAR:
+  C++ version
+  Create a bar plot of music album sales over time.
+  Create corresponding GNUPLOT input files.
+
+ALBUM_BAR:
+  Plot commands stored in "album_commands.txt".
+
+ALBUM_BAR:
+  Normal end of execution.
+
+22 January 2020 08:20:43 AM

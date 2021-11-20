@@ -1,0 +1,74 @@
+24 March 2020 02:56:23 PM
+
+LEGENDRE_EXACTNESS
+  C++ version
+
+  Compiled on Mar 24 2020 at 14:52:43.
+
+  Investigate the polynomial exactness of a Gauss-Legendre
+  quadrature rule by integrating weighted
+  monomials up to a given degree over the [-1,+1] interval.
+
+  The quadrature file rootname is "leg_o4".
+
+  The requested maximum monomial degree is = 10
+
+LEGENDRE_EXACTNESS: User input:
+  Quadrature rule X file = "leg_o4_x.txt".
+  Quadrature rule W file = "leg_o4_w.txt".
+  Quadrature rule R file = "leg_o4_r.txt".
+  Maximum degree to check = 10
+
+  Spatial dimension = 1
+  Number of points  = 4
+
+  The quadrature rule to be tested is
+  a Gauss-Legendre rule
+  ORDER = 4
+
+  Standard rule:
+    Integral ( -1 <= x <= +1 ) f(x) dx
+    is to be approximated by
+    sum ( 1 <= I <= ORDER ) w(i) * f(x(i)).
+
+  Weights W:
+
+  w[ 0] =       0.3478548451374539
+  w[ 1] =       0.6521451548625459
+  w[ 2] =       0.6521451548625459
+  w[ 3] =       0.3478548451374539
+
+  Abscissas X:
+
+  x[ 0] =      -0.8611363115940526
+  x[ 1] =      -0.3399810435848563
+  x[ 2] =       0.3399810435848563
+  x[ 3] =       0.8611363115940526
+
+  Region R:
+
+  r[ 0] =                       -1
+  r[ 1] =                        1
+
+  A Gauss-Legendre rule would be able to exactly
+  integrate monomials up to and including degree = 7
+
+          Error                      Error           Degree
+         (This rule)                (Trapezoid)
+
+     2.220446049250313e-16     1.110223024625157e-16   0
+                         0     5.551115123125783e-17   1
+                         0        0.2222222222222222   2
+                         0                         0   3
+                         0        0.7078189300411522   4
+                         0                         0   5
+                         0          1.33973479652492   6
+                         0                         0   7
+       0.05224489795918349         2.000914494741656   8
+                         0                         0   9
+         0.141807580174927         2.666790857310595  10
+
+LEGENDRE_EXACTNESS:
+  Normal end of execution.
+
+24 March 2020 02:56:23 PM

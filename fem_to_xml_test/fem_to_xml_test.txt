@@ -1,0 +1,65 @@
+04 March 2020 07:35:50 AM
+
+FEM_TO_XML
+  C++ version:
+  Convert 1D, 2D or 3D mesh data from FEM to DOLFIN XML format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, element node connectivity.
+
+  Create "prefix".xml, a corresponding DOLFIN XML file.
+
+FEM_TO_XML:
+  Please enter the filename prefix.
+
+  Read the header of "battery_nodes.txt".
+
+  Spatial dimension = 2
+  Number of nodes  = 564
+
+  Read the data in "battery_nodes.txt".
+
+  Portion of node coordinate data:
+
+  Row:       1             2       
+  Col
+
+    1:              0             0
+    2:              0           0.8
+    3:              0           1.6
+    4:              0       2.54168
+    5:              0           3.6
+
+  Read the header of "battery_elements.txt".
+
+  Element order = 3
+  Number of elements  = 1024
+
+  Read the data in "battery_elements.txt".
+
+  Initial portion of element data:
+
+  Row:      1       2       3  
+  Col
+
+    1:     61      84      74  
+    2:    466     532     467  
+    3:    458     524     459  
+    4:     41      61      46  
+    5:    455     454     520  
+    6:     42      58      63  
+    7:     42      27      38  
+    8:     38      58      42  
+    9:    465     464     530  
+   10:    444     511     445  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "battery.xml".
+
+FEM_TO_XML:
+  Normal end of execution.
+
+04 March 2020 07:35:50 AM

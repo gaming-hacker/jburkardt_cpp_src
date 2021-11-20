@@ -1,0 +1,22 @@
+P1:    'Hello, world!'
+P2:    'Hello, world!'
+P3:    'Hello, world!'
+P4:    'Hello, world!'
+P6:    'Hello, world!'
+P7:    'Hello, world!'
+12 March 2020 11:15:47 AM
+
+P5:    'Hello, world!'
+P0:  HELLO_MPI - Master process:
+P0:    C++/MPI version
+P0:    An MPI example program.
+
+P0:    The number of processes is 8
+
+P0:    'Hello, world!'
+P0:    Elapsed wall clock time = 1.1362e-05 seconds.
+
+P0:  HELLO_MPI:
+P0:    Normal end of execution.
+
+12 March 2020 11:15:47 AM

@@ -1,0 +1,2 @@
+DREAM.CPP:Monitored_parameter_interchains_Gelman_Rubin_R_statistic
+9  3.54004  3.18765  4.20247  3.47088  2.68046  2.41793  3.29093  2.29764  3.57187  3.20828

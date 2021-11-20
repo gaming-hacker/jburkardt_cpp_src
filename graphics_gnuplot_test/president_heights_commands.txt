@@ -1,0 +1,16 @@
+# president_heights_commands.txt
+#
+# Usage:
+#  gnuplot < president_heights_commands.txt
+#
+set term png
+set output 'president_heights_bar.png
+set xlabel '<--- Index --->'
+set ylabel '<--- Height (inches) --->'
+set title 'Presidential Heights'
+set grid
+set yrange [0:80]
+set boxwidth 0.8
+set style fill solid
+plot 'president_heights_data.txt' using 1 with boxes lc rgb 'blue'
+quit

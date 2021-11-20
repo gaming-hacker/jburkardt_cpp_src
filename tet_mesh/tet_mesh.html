@@ -1,0 +1,304 @@
+<html>
+
+  <head>
+    <title>
+      TET_MESH - Routines for a Tet Mesh
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TET_MESH <br> Routines for a Tet Mesh
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TET_MESH</b>,
+      a C++ code which
+      constructs, describes, or modifies a mesh of tetrahedrons.
+    </p>
+
+    <h3 align = "center">
+      Linear and Quadratic Meshes
+    </h3>
+
+    <p>
+      The simplest tet mesh, which we term an <i>order 4</i>
+      or <i>linear</i> mesh, uses four points to define each tetrahedron.
+      A second type of mesh, known as an <i>order 10</i> or <i>quadratic</i>
+      mesh, uses ten points.
+    </p>
+
+    <p>
+      While an order 4 mesh can naturally be constructed directly from
+      most sets of data points, a mesh of order 10 is not usually
+      constructed directly from the data; at least in the simplest case,
+      one wants the 6 extra nodes to be the midpoints of the sides
+      determined by the 4 vertices.
+    </p>
+
+    <p>
+      Thus, an order 10 tet mesh is typically generated in two steps:
+      <ul>
+        <li>
+          generate an order 4 mesh, in which every tetrahedral vertex
+          comes from a user data point;
+        </li>
+        <li>
+          generate an order 10 mesh from the order 4 mesh, in which
+          the new midside points are not user data points, but rather
+          <i>averages</i> of pairs of tetrahedral vertices.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TET_MESH</b> is available in
+      <a href = "../../c_src/tet_mesh/tet_mesh.html">a C++ version</a> and
+      <a href = "../../cpp_src/tet_mesh/tet_mesh.html">a C++ version</a> and
+      <a href = "../../f_src/tet_mesh/tet_mesh.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/tet_mesh/tet_mesh.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/geometry/geometry.html">
+      GEOMETRY</a>,
+      a C++ library which
+      includes a number of routines for
+      making computations involving tetrahedrons.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/geompack/geompack.html">
+      GEOMPACK</a>,
+      a C++ library which
+      contains a routine
+      <b>DTRIS3</b> that can compute the tet mesh for a set of 3D points,
+      as well as the adjacency information.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/keast/keast.html">
+      KEAST</a>,
+      a C++ library which
+      defines a number of quadrature rules
+      for a tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/ncc_tetrahedron/ncc_tetrahedron.html">
+      NCC_TETRAHEDRON</a>,
+      a C++ library which
+      defines Newton-Cotes closed quadrature
+      rules on a tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/nco_tetrahedron/nco_tetrahedron.html">
+      NCO_TETRAHEDRON</a>,
+      a C++ library which
+      defines Newton-Cotes open quadrature
+      rules on a tetrahedron.
+    </p>
+
+    <p>
+      <a href = "../../datasets/quadrature_rules_tet/quadrature_rules_tet.html">
+      QUADRATURE_RULES_TET</a>,
+      a dataset directory which
+      contains triples of files defining various quadrature
+      rules on tetrahedrons.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_test/tet_mesh_test.html">
+      tet_mesh_test</a>
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_boundary/tet_mesh_boundary.html">
+      TET_MESH_BOUNDARY</a>,
+      a C++ program which
+      returns the nodes and faces of the boundary of a tetrahedral mesh,
+      which themselves form a 3D triangular mesh or "TRI_SURFACE".
+    </p>
+
+    <p>
+      <a href = "../../m_src/tet_mesh_display/tet_mesh_display.html">
+      TET_MESH_DISPLAY</a>,
+      a MATLAB program which
+      can read in the
+      node and tetra files defining a tet mesh and display a wireframe
+      image.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_display_opengl/tet_mesh_display_opengl.html">
+      TET_MESH_DISPLAY_OPENGL</a>,
+      a C++ program which
+      can read in the
+      node and tetra files defining a tet mesh and display a wireframe
+      image.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_l2q/tet_mesh_l2q.html">
+      TET_MESH_L2Q</a>,
+      a C++ program which
+      converts a linear to quadratic
+      tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order4/tet_mesh_order4.html">
+      TET_MESH_ORDER4</a>,
+      a directory which
+      contains a description and
+      examples of a tet mesh using order 4 elements.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order10/tet_mesh_order10.html">
+      TET_MESH_ORDER10</a>,
+      a directory which
+      contains a description and
+      examples of a tet mesh using order 10 elements.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_q2l/tet_mesh_q2l.html">
+      TET_MESH_Q2L</a>,
+      a C++ program which
+      converts a quadratic to linear tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_quad/tet_mesh_quad.html">
+      TET_MESH_QUAD</a>,
+      a C++ program which
+      estimates the integral of a function over a region defined by a tetrahedral mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a C++ program which
+      computes the quality of a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_rcm/tet_mesh_rcm.html">
+      TET_MESH_RCM</a>,
+      a C++ program which
+      takes a tet mesh and
+      relabels the nodes to reduce the bandwidth of the
+      corresponding adjacency matrix.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_refine/tet_mesh_refine.html">
+      TET_MESH_REFINE</a>,
+      a C++ program which
+      can refine a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">
+      TET_MESH_TET_NEIGHBORS</a>,
+      a C++ program which
+      computes the tetrahedral adjacency information.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_volumes/tet_mesh_volumes.html">
+      TET_MESH_VOLUMES</a>,
+      a C++ program which
+      computes the volume of each tetrahedron in a tet mesh;
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Herbert Edelsbrunner,<br>
+          Geometry and Topology for Mesh Generation,<br>
+          Cambridge, 2001,<br>
+          ISBN: 0-521-79309-2,<br>
+          LC: QA377.E36.
+        </li>
+        <li>
+          Barry Joe,<br>
+          GEOMPACK - a software package for the generation of meshes
+          using geometric algorithms,<br>
+          Advances in Engineering Software,<br>
+          Volume 13, Number 5, 1991, pages 325-331.
+        </li>
+        <li>
+          Anwei Liu, Barry Joe,<br>
+          Quality Local Refinement of Tetrahedral Meshes Based
+          on 8-Subtetrahedron Subdivision,<br>
+          Mathematics of Computation,<br>
+          Volume 65, Number 215, July 1996, pages 1183-1200.
+        </li>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, June 2004, pages 329-345.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "tet_mesh.cpp">tet_mesh.cpp</a>, the source code.
+        </li>
+        <li>
+          <a href = "tet_mesh.sh">tet_mesh.sh</a>, compiles the source code.
+        </li>
+        <li>
+          <a href = "tet_mesh.hpp">tet_mesh.hpp</a>, the include file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 25 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

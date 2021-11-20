@@ -1,0 +1,48 @@
+
+10 March 2020 09:04:18 AM
+
+GEN_HERMITE_RULE
+  C++ version
+
+  Compiled on Mar 10 2020 at 09:00:42.
+
+  Compute a generalized Gauss-Hermite rule for approximating
+
+    Integral ( -oo < x < +oo ) |x-a|^ALPHA exp ( - b * ( x - a )^2 ) f(x) dx
+
+  of order ORDER and parameter ALPHA.
+
+  The user specifies ORDER, ALPHA, A, B, and FILENAME.
+
+  ORDER is the number of points.
+
+  ALPHA is the exponent of |x|.
+
+  A is the center point:
+
+  B is a scale factor;
+
+  FILENAME is used to generate 3 files:
+
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+
+  ORDER = 4
+  ALPHA = 1
+  A = 0
+  B = 1
+  FILENAME = "gen_herm_o4_a1.0".
+
+  Creating quadrature files.
+
+  Root file name is     "gen_herm_o4_a1.0".
+
+  Weight file will be   "gen_herm_o4_a1.0_w.txt".
+  Abscissa file will be "gen_herm_o4_a1.0_x.txt".
+  Region file will be   "gen_herm_o4_a1.0_r.txt".
+
+GEN_HERMITE_RULE:
+  Normal end of execution.
+
+10 March 2020 09:04:18 AM

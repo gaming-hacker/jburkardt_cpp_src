@@ -1,0 +1,59 @@
+01 May 2020 11:17:41 AM
+
+TIMER_CLOCK
+  C++ version
+  Demonstrate the use of the CLOCK timer.
+
+  CLOCK is a  C++ library routine
+  (defined in <ctime>)
+
+  It returns the processor time used by the program
+  since the beginning of program execution.
+  Divide this by CLOCKS_PER_SEC to convert to seconds.
+
+  CLOCK is a crude timer, and results less than
+  a tenth of a second are probably not reliable.
+
+  The number of clock ticks per second is 1000000
+
+TEST01
+  Time the RAND function by computing N values.
+  For a given N, repeat the computation 5 times.
+
+  Data vectors will be of minimum size 1
+  Data vectors will be of maximum size 16777216
+
+  CPU times are in seconds.
+
+         N      Rep #1      Rep #2      Rep #2      Rep #4      Rep #5         Min         Ave         Max
+
+         1       2e-06           0       1e-06       1e-06       1e-06           0       1e-06       2e-06
+         2       1e-06       1e-06           0           0       1e-06           0       6e-07       1e-06
+         4       1e-06       1e-06           0           0       1e-06           0       6e-07       1e-06
+         8       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06
+        16       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06
+        32       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06       1e-06
+        64       2e-06       1e-06       2e-06       1e-06       2e-06       1e-06     1.6e-06       2e-06
+       128       2e-06       2e-06       2e-06       2e-06       2e-06       2e-06       2e-06       2e-06
+       256       4e-06       3e-06       3e-06       4e-06       3e-06       3e-06     3.4e-06       4e-06
+       512       6e-06       6e-06       6e-06       6e-06       6e-06       6e-06       6e-06       6e-06
+      1024     1.2e-05     1.2e-05     1.2e-05     1.2e-05     1.2e-05     1.2e-05     1.2e-05     1.2e-05
+      2048     2.1e-05     2.2e-05     2.1e-05     2.1e-05     2.1e-05     2.1e-05    2.12e-05     2.2e-05
+      4096     4.4e-05     4.3e-05     4.3e-05     4.3e-05     4.3e-05     4.3e-05    4.32e-05     4.4e-05
+      8192     8.9e-05     8.5e-05     8.5e-05     8.5e-05     8.5e-05     8.5e-05    8.58e-05     8.9e-05
+     16384     0.00018    0.000171    0.000169    0.000169     0.00017    0.000169   0.0001718     0.00018
+     32768    0.000361    0.000338    0.000347    0.000338     0.00034    0.000338   0.0003448    0.000361
+     65536    0.000772    0.000655    0.000655    0.000661    0.000679    0.000655   0.0006844    0.000772
+    131072    0.001429     0.00126     0.00129    0.001237    0.001193    0.001193   0.0012818    0.001429
+    262144    0.002872     0.00235    0.002427    0.002457    0.002318    0.002318   0.0024848    0.002872
+    524288    0.005359     0.00484     0.00481    0.004642     0.00469    0.004642   0.0048682    0.005359
+   1048576    0.010788    0.009452    0.009502    0.009428    0.009444    0.009428   0.0097228    0.010788
+   2097152    0.021524    0.018884    0.018809    0.018781    0.018805    0.018781   0.0193606    0.021524
+   4194304    0.043753    0.037689    0.037844    0.037719    0.037716    0.037689   0.0389442    0.043753
+   8388608    0.091819    0.075445    0.075338    0.074942    0.075541    0.074942    0.078617    0.091819
+  16777216    0.173408    0.150805    0.150931    0.151578    0.151669    0.150805    0.155678    0.173408
+
+TIMER_CLOCK
+  Normal end of execution.
+
+01 May 2020 11:17:42 AM

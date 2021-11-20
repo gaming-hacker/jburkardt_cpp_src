@@ -1,0 +1,40 @@
+01 May 2020 11:50:53 AM
+
+TIMESTAMP_TEST
+  C++ version
+  Test the TIMESTAMP library.
+
+TEST01
+  TIMESTAMP prints out the current wallclock time,
+  including the year, month, day, hours, minutes,
+  seconds, thousandths of a second, and AM/PM.
+
+  This can be useful in keeping track of the date
+  of execution of a particular program
+  or to give a rough idea of the length of time
+  required to run a program.
+
+01 May 2020 11:50:53 AM
+
+TEST02
+  TIMESTRING returns the current wallclock time,
+  including the year, month, day, hours, minutes,
+  seconds, thousandths of a second, and AM/PM
+  in a string, which the user may print or manipulate.
+
+  TIMESTRING returned the value "01 May 2020 11:50:53 AM"
+
+TEST03
+  TIME_NUMBERS returns the date as a string of integers.
+
+  Year =        2020
+  Month =       5
+  Day =         1
+  Hour =        11
+  Minute =      50
+  Second =      53
+
+TIMESTAMP_TEST
+  Normal end of execution.
+
+01 May 2020 11:50:53 AM

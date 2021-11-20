@@ -1,0 +1,23 @@
+  Process 4 had nothing to do.
+  Process 5 had nothing to do.
+  Process 6 had nothing to do.
+  Process 7 had nothing to do.
+  Process 3 had nothing to do.
+27 March 2020 05:34:35 PM
+
+MPI_MULTITASK:
+  C++ / MPI version
+
+P0_SET_PARAMETERS:
+  Set INPUT1 = 10000000
+      INPUT2 = 100000
+  Process 2 time = 1.62355
+  Process 1 time = 7.01272
+
+  Process 1 returned OUTPUT1 = 615
+  Process 2 returned OUTPUT2 = 9592
+  Process 0 time = 7.01217
+
+MPI_MULTITASK:
+  Normal end of execution.
+27 March 2020 05:34:42 PM

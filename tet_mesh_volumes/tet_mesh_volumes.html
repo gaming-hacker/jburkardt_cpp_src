@@ -1,0 +1,224 @@
+<html>
+
+  <head>
+    <title>
+      TET_MESH_VOLUMES - Compute Tetrahedral Volumes in a Tet Mesh
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TET_MESH_VOLUMES <br> Compute Tetrahedral Volumes in a Tet Mesh
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TET_MESH_VOLUMES</b>,
+      a C++ code which
+      computes the volume of every tetrahedron in a tet mesh.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>tet_mesh_volume</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common file prefix:
+      <ul>
+        <li>
+          <i>prefix</i><b>_nodes.txt</b>,    the node coordinates;
+        </li>
+        <li>
+          <i>prefix</i><b>_elements.txt</b>,    the element definitions.
+        </li>
+        <li>
+          <i>prefix</i><b>_volumes.txt</b>, will contain the element volumes.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      The element definition file will list node indices.  In C++, it may be
+      more natural to use 0-based indices.  This program will accept an element
+      definition file that is 0-based or 1-based, and will convert a 1-based
+      input file so that it becomes 0-based internal to the program.  The detection
+      of 1-based data is determined by the absence of the use of a 0 index, and
+      the use of an index equal to the number of nodes.  This is an implicit
+      and fallible, but reasonable, way to handle this problem.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TET_MESH_VOLUMES</b> is available in
+      <a href = "../../cpp_src/tet_mesh_volumes/tet_mesh_volumes.html">a C++ version</a> and
+      <a href = "../../f_src/tet_mesh_volumes/tet_mesh_volumes.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/tet_mesh_volumes/tet_mesh_volumes.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh/tet_mesh.html">
+      TET_MESH</a>,
+      a C++ library which
+      carries out various operations on tetrahedral meshes.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_boundary/tet_mesh_boundary.html">
+      TET_MESH_BOUNDARY</a>,
+      a C++ program which
+      returns the nodes and faces of the boundary of a tetrahedral mesh,
+      which themselves form a 3D triangular mesh or "TRI_SURFACE".
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_display_opengl/tet_mesh_display_opengl.html">
+      TET_MESH_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads a 3D tet mesh and displays the nodes and edges using OpenGL.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_l2q/tet_mesh_l2q.html">
+      TET_MESH_L2Q</a>,
+      a C++ program which
+      reads information about a 4-node (linear) tet mesh and
+      creates data defining a corresponding 10-node (quadratic)
+      tet mesh;
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order4/tet_mesh_order4.html">
+      TET_MESH_ORDER4</a>,
+      a data directory which
+      contains a description of a linear tet mesh of a
+      set of 3D points, using a pair of files to list the node coordinates
+      and the 4 nodes that make up each tetrahedron;
+    </p>
+
+    <p>
+      <a href = "../../datasets/tet_mesh_order4/tet_mesh_order4.html">
+      TET_MESH_ORDER4</a>,
+      a dataset directory which
+      contains examples of order 4 tetrahedral meshes.
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_order10/tet_mesh_order10.html">
+      TET_MESH_ORDER10</a>,
+      a data directory which
+      contains a description of a quadratic tet mesh
+      of a set of 3D points, using a pair of files to list the node
+      coordinates and the 10 nodes that make up each tetrahedron;
+    </p>
+
+    <p>
+      <a href = "../../datasets/tet_mesh_order10/tet_mesh_order10.html">
+      TET_MESH_ORDER10</a>,
+      a dataset directory which
+      contains examples of order 10 tetrahedral meshes.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_q2l/tet_mesh_q2l.html">
+      TET_MESH_Q2L</a>,
+      a C++ program which
+      reads information about a 10-node (quadratic) tet mesh and
+      creates data defining a corresponding 4-node (linear)
+      tet mesh;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a C++ program which
+      computes quality measures of a tetrahedral mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_rcm/tet_mesh_rcm.html">
+      TET_MESH_RCM</a>,
+      a C++ program which
+      computes the reverse Cuthill-McKee reordering for the nodes
+      of a tet mesh that uses 4-node or 10-node tetrahedrons;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_refine/tet_mesh_refine.html">
+      TET_MESH_REFINE</a>,
+      a C++ program which
+      refines a tet mesh;
+    </p>
+
+    <p>
+      <a href = "../../data/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">
+      TET_MESH_TET_NEIGHBORS</a>,
+      a data directory which
+      contains examples of TET_MESH_TET_NEIGHBOR files,
+      description of a format for tetrahedron
+      adjacency information in a tetrahedral mesh of 3D points;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">
+      TET_MESH_TET_NEIGHBORS</a>,
+      a C++ program which
+      reads information about a tet mesh and writes out a list of the
+      tetrahedrons that are adjacent to a given tetrahedron;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_volumes_test/tet_mesh_volumes_test.html">
+      tet_mesh_volumes_test</a>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "tet_mesh_volumes.cpp">tet_mesh_volumes.cpp</a>, the source code.
+        </li>
+        <li>
+          <a href = "tet_mesh_volumes.sh">tet_mesh_volumes.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 29 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

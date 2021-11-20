@@ -1,0 +1,295 @@
+06 May 2020 02:15:39 PM
+
+TRIANGULATION_PLOT
+  C++ version:
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  ELEMENT_NUM element in a triangulation of order
+  ELEMENT_ORDER = 3, 4, or 6 .
+
+  Make an EPS plot of the triangulated data.
+
+  Compiled on May  6 2020 at 14:15:28.
+
+  Read the header of "elbow3_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 319
+
+  Read the data in "elbow3_nodes.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:       1             2       
+  Col
+
+    1              1             0
+    2              0             1
+    3            0.4             0
+    4              0           0.4
+    5             -0       0.44282
+
+ Read the header of "elbow3_elements.txt".
+
+  Element order ELEMENT_ORDER = 3
+  Number of elements ELEMENT_NUM  = 568
+
+  Read the data in "elbow3_elements.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1      17      18       2  
+    2       6       5       4  
+    3     287     301     302  
+    4     257     258     239  
+    5     274     258     257  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created the EPS file "elbow3.eps".
+
+TRIANGULATION_PLOT:
+  Normal end of execution.
+
+06 May 2020 02:15:39 PM
+06 May 2020 02:15:39 PM
+
+TRIANGULATION_PLOT
+  C++ version:
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  ELEMENT_NUM element in a triangulation of order
+  ELEMENT_ORDER = 3, 4, or 6 .
+
+  Make an EPS plot of the triangulated data.
+
+  Compiled on May  6 2020 at 14:15:28.
+
+  Read the header of "ell3_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 21
+
+  Read the data in "ell3_nodes.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:       1             2       
+  Col
+
+    1              0             0
+    2              1             0
+    3              2             0
+    4              3             0
+    5              4             0
+
+ Read the header of "ell3_elements.txt".
+
+  Element order ELEMENT_ORDER = 3
+  Number of elements ELEMENT_NUM  = 24
+
+  Read the data in "ell3_elements.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1       1       2       6  
+    2       7       6       2  
+    3       2       3       7  
+    4       8       7       3  
+    5       3       4       8  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created the EPS file "ell3.eps".
+
+TRIANGULATION_PLOT:
+  Normal end of execution.
+
+06 May 2020 02:15:39 PM
+06 May 2020 02:15:39 PM
+
+TRIANGULATION_PLOT
+  C++ version:
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  ELEMENT_NUM element in a triangulation of order
+  ELEMENT_ORDER = 3, 4, or 6 .
+
+  Make an EPS plot of the triangulated data.
+
+  Compiled on May  6 2020 at 14:15:28.
+
+  Read the header of "ell6_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 21
+
+  Read the data in "ell6_nodes.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:       1             2       
+  Col
+
+    1              0             0
+    2              1             0
+    3              2             0
+    4              3             0
+    5              4             0
+
+ Read the header of "ell6_elements.txt".
+
+  Element order ELEMENT_ORDER = 6
+  Number of elements ELEMENT_NUM  = 6
+
+  Read the data in "ell6_elements.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:      1       2       3       4       5  
+  Col
+
+    1       1       3      11       2       7  
+    2      13      11       3      12       7  
+    3       3       5      13       4       9  
+    4      15      13       5      14       9  
+    5      11      13      19      12      17  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created the EPS file "ell6.eps".
+
+TRIANGULATION_PLOT:
+  Normal end of execution.
+
+06 May 2020 02:15:39 PM
+06 May 2020 02:15:39 PM
+
+TRIANGULATION_PLOT
+  C++ version:
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  ELEMENT_NUM element in a triangulation of order
+  ELEMENT_ORDER = 3, 4, or 6 .
+
+  Make an EPS plot of the triangulated data.
+
+  Compiled on May  6 2020 at 14:15:28.
+
+  Read the header of "hex_holes3_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 141
+
+  Read the data in "hex_holes3_nodes.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:       1             2       
+  Col
+
+    1              0             0
+    2         0.1111             0
+    3         0.2222             0
+    4         0.3333             0
+    5         0.4444             0
+
+ Read the header of "hex_holes3_elements.txt".
+
+  Element order ELEMENT_ORDER = 3
+  Number of elements ELEMENT_NUM  = 236
+
+  Read the data in "hex_holes3_elements.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1      46      45      81  
+    2       1       2     102  
+    3     110      62     111  
+    4      81      45      82  
+    5     120     138      85  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created the EPS file "hex_holes3.eps".
+
+TRIANGULATION_PLOT:
+  Normal end of execution.
+
+06 May 2020 02:15:39 PM
+06 May 2020 02:15:39 PM
+
+TRIANGULATION_PLOT
+  C++ version:
+  Read a node dataset of NODE_NUM points in 2 dimensions.
+  Read an associated triangulation dataset of 
+  ELEMENT_NUM element in a triangulation of order
+  ELEMENT_ORDER = 3, 4, or 6 .
+
+  Make an EPS plot of the triangulated data.
+
+  Compiled on May  6 2020 at 14:15:28.
+
+  Read the header of "lake3_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 1552
+
+  Read the data in "lake3_nodes.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:       1             2       
+  Col
+
+    1         316.43       404.476
+    2        291.049       400.709
+    3        265.165       409.779
+    4        241.468       402.403
+    5        216.551       396.521
+
+ Read the header of "lake3_elements.txt".
+
+  Element order ELEMENT_ORDER = 3
+  Number of elements ELEMENT_NUM  = 2820
+
+  Read the data in "lake3_elements.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1     160     143     159  
+    2     177     159     176  
+    3     160     159     177  
+    4     176     212     194  
+    5     194     212     213  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created the EPS file "lake3.eps".
+
+TRIANGULATION_PLOT:
+  Normal end of execution.
+
+06 May 2020 02:15:39 PM

@@ -1,0 +1,798 @@
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_cap.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_cap.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1       -13.1607             0             0
+    2        13.1607             0             0
+    3              0       22.7951             0
+    4              0       7.59836          0.01
+
+  CIRCUM_RADIUS = 11547
+  CIRCUM_CENTER:                0         7.59836          -11547
+
+  CENTROID:                0         7.59836          0.0025
+
+  DIHEDRAL_ANGLES (radians)
+
+         0      0.00131607
+         1      0.00131607
+         2         3.13931
+         3      0.00131607
+         4         3.13931
+         5         3.13931
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0       0.0754054
+         1       0.0754054
+         2         179.869
+         3       0.0754054
+         4         179.869
+         5         179.869
+
+  EDGE AB:         26.3215             0             0
+  EDGE AC:         13.1607       22.7951             0
+  EDGE AD:         13.1607       7.59836          0.01
+  EDGE BC:        -13.1607       22.7951             0
+  EDGE BD:        -13.1607       7.59836          0.01
+  EDGE CD:               0      -15.1967          0.01
+
+  EDGE_LENGTHS
+
+         0         26.3215
+         1         26.3215
+         2         15.1967
+         3         26.3215
+         4         15.1967
+         5         15.1967
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1         1.0472        1.0472        1.0472
+    2       0.523599      0.523599       2.09439
+    3       0.523599      0.523599       2.09439
+    4       0.523599      0.523599       2.09439
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1             60            60            60
+    2             30            30           120
+    3             30            30           120
+    4             30            30           120
+
+  FACE_AREAS
+
+         0             300
+         1             100
+         2             100
+         3             100
+
+  IN_RADIUS = 0.005
+  IN_CENTER:                0         7.59836           0.005
+
+  QUALITY1 = 1.29904e-06
+
+  QUALITY2 = 0.000930604
+
+  QUALITY3 = 0.00900703
+
+  QUALITY4 = 0.000647842
+
+  SOLID_ANGLES (steradians)
+
+         0     0.000352641
+         1     0.000352641
+         2     0.000352641
+         3         6.27635
+
+  VOLUME = 1
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_equilateral.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_equilateral.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1              1             1             1
+    2             -1            -1             1
+    3             -1             1            -1
+    4              1            -1            -1
+
+  CIRCUM_RADIUS = 1.73205
+  CIRCUM_CENTER:                0               0               0
+
+  CENTROID:                0               0               0
+
+  DIHEDRAL_ANGLES (radians)
+
+         0         1.23096
+         1         1.23096
+         2         1.23096
+         3         1.23096
+         4         1.23096
+         5         1.23096
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0         70.5288
+         1         70.5288
+         2         70.5288
+         3         70.5288
+         4         70.5288
+         5         70.5288
+
+  EDGE AB:              -2            -2             0
+  EDGE AC:              -2             0            -2
+  EDGE AD:               0            -2            -2
+  EDGE BC:               0             2            -2
+  EDGE BD:               2             0            -2
+  EDGE CD:               2            -2             0
+
+  EDGE_LENGTHS
+
+         0         2.82843
+         1         2.82843
+         2         2.82843
+         3         2.82843
+         4         2.82843
+         5         2.82843
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1         1.0472        1.0472        1.0472
+    2         1.0472        1.0472        1.0472
+    3         1.0472        1.0472        1.0472
+    4         1.0472        1.0472        1.0472
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1             60            60            60
+    2             60            60            60
+    3             60            60            60
+    4             60            60            60
+
+  FACE_AREAS
+
+         0          3.4641
+         1          3.4641
+         2          3.4641
+         3          3.4641
+
+  IN_RADIUS = 0.57735
+  IN_CENTER:                0               0               0
+
+  QUALITY1 = 1
+
+  QUALITY2 = 1
+
+  QUALITY3 = 1
+
+  QUALITY4 = 1
+
+  SOLID_ANGLES (steradians)
+
+         0        0.551286
+         1        0.551286
+         2        0.551286
+         3        0.551286
+
+  VOLUME = 2.66667
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_needle.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_needle.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1              0             0             0
+    2            0.1             0             0
+    3              0           0.1             0
+    4              0             0           600
+
+  CIRCUM_RADIUS = 300
+  CIRCUM_CENTER:             0.05            0.05             300
+
+  CENTROID:            0.025           0.025             150
+
+  DIHEDRAL_ANGLES (radians)
+
+         0          1.5708
+         1          1.5708
+         2          1.5708
+         3         1.57068
+         4        0.785398
+         5        0.785398
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0              90
+         1              90
+         2              90
+         3         89.9932
+         4              45
+         5              45
+
+  EDGE AB:             0.1             0             0
+  EDGE AC:               0           0.1             0
+  EDGE AD:               0             0           600
+  EDGE BC:            -0.1           0.1             0
+  EDGE BD:            -0.1             0           600
+  EDGE CD:               0          -0.1           600
+
+  EDGE_LENGTHS
+
+         0             0.1
+         1             0.1
+         2             600
+         3        0.141421
+         4             600
+         5             600
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1         1.5708      0.785398      0.785398
+    2         1.5708       1.57063   0.000166667
+    3         1.5708       1.57063   0.000166667
+    4        1.57068       1.57068   0.000235702
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1             90            45            45
+    2             90       89.9905     0.0095493
+    3             90       89.9905     0.0095493
+    4        89.9932       89.9932     0.0135047
+
+  FACE_AREAS
+
+         0           0.005
+         1              30
+         2              30
+         3         42.4264
+
+  IN_RADIUS = 0.0292879
+  IN_CENTER:        0.0292879       0.0292879       0.0292879
+
+  QUALITY1 = 0.000292879
+
+  QUALITY2 = 0.000239135
+
+  QUALITY3 = 2.3112e-05
+
+  QUALITY4 = 2.55155e-08
+
+  SOLID_ANGLES (steradians)
+
+         0          1.5708
+         1         0.78528
+         2         0.78528
+         3     1.38889e-08
+
+  VOLUME = 1
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_right.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_right.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1              0             0             0
+    2              1             0             0
+    3              0             2             0
+    4              0             0             3
+
+  CIRCUM_RADIUS = 1.87083
+  CIRCUM_CENTER:              0.5               1             1.5
+
+  CENTROID:             0.25             0.5            0.75
+
+  DIHEDRAL_ANGLES (radians)
+
+         0          1.5708
+         1          1.5708
+         2          1.5708
+         3         1.28104
+         4         1.12789
+         5          0.5411
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0              90
+         1              90
+         2              90
+         3         73.3985
+         4         64.6231
+         5         31.0027
+
+  EDGE AB:               1             0             0
+  EDGE AC:               0             2             0
+  EDGE AD:               0             0             3
+  EDGE BC:              -1             2             0
+  EDGE BD:              -1             0             3
+  EDGE CD:               0            -2             3
+
+  EDGE_LENGTHS
+
+         0               1
+         1               2
+         2               3
+         3         2.23607
+         4         3.16228
+         5         3.60555
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1         1.5708       1.10715      0.463648
+    2         1.5708       1.24905      0.321751
+    3         1.5708      0.982794      0.588003
+    4         1.4289       1.05165      0.661043
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1             90       63.4349       26.5651
+    2             90       71.5651       18.4349
+    3             90       56.3099       33.6901
+    4        81.8699       60.2551        37.875
+
+  FACE_AREAS
+
+         0               1
+         1             1.5
+         2               3
+         3             3.5
+
+  IN_RADIUS = 0.333333
+  IN_CENTER:         0.333333        0.333333        0.333333
+
+  QUALITY1 = 0.534522
+
+  QUALITY2 = 0.452911
+
+  QUALITY3 = 0.59431
+
+  QUALITY4 = 0.180311
+
+  SOLID_ANGLES (steradians)
+
+         0          1.5708
+         1        0.838134
+         2        0.251348
+         3       0.0981885
+
+  VOLUME = 1
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_sliver.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_sliver.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1            -15             0             0
+    2             15             0             0
+    3              0            10          0.01
+    4              0           -10          0.01
+
+  CIRCUM_RADIUS = 6250.01
+  CIRCUM_CENTER:                0               0           -6250
+
+  CENTROID:                0               0           0.005
+
+  DIHEDRAL_ANGLES (radians)
+
+         0         3.13959
+         1      0.00120185
+         2      0.00120185
+         3      0.00120185
+         4      0.00120185
+         5         3.14026
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0         179.885
+         1       0.0688609
+         2       0.0688609
+         3       0.0688609
+         4       0.0688609
+         5         179.924
+
+  EDGE AB:              30             0             0
+  EDGE AC:              15            10          0.01
+  EDGE AD:              15           -10          0.01
+  EDGE BC:             -15            10          0.01
+  EDGE BD:             -15           -10          0.01
+  EDGE CD:               0           -20             0
+
+  EDGE_LENGTHS
+
+         0              30
+         1         18.0278
+         2         18.0278
+         3         18.0278
+         4         18.0278
+         5              20
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1       0.588003      0.588003       1.96559
+    2       0.588003      0.588003       1.96559
+    3        1.17601      0.982794      0.982794
+    4        1.17601      0.982794      0.982794
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1        33.6901       33.6901        112.62
+    2        33.6901       33.6901        112.62
+    3        67.3801       56.3099       56.3099
+    4        67.3801       56.3099       56.3099
+
+  FACE_AREAS
+
+         0             150
+         1             150
+         2             150
+         3             150
+
+  IN_RADIUS = 0.005
+  IN_CENTER:                0               0           0.005
+
+  QUALITY1 = 2.39999e-06
+
+  QUALITY2 = 0.000816496
+
+  QUALITY3 = 0.00960039
+
+  QUALITY4 = 0.000741646
+
+  SOLID_ANGLES (steradians)
+
+         0     0.000403701
+         1     0.000403701
+         2      0.00107037
+         3      0.00107037
+
+  VOLUME = 1
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_spindle.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_spindle.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1           -100             0             0
+    2            100             0             0
+    3              0             1         0.015
+    4              0            -1         0.015
+
+  CIRCUM_RADIUS = 333300
+  CIRCUM_CENTER:                0               0         -333300
+
+  CENTROID:                0               0          0.0075
+
+  DIHEDRAL_ANGLES (radians)
+
+         0         3.11159
+         1       0.0149996
+         2       0.0149996
+         3       0.0149996
+         4       0.0149996
+         5         3.14129
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0         178.281
+         1        0.859415
+         2        0.859415
+         3        0.859415
+         4        0.859415
+         5         179.983
+
+  EDGE AB:             200             0             0
+  EDGE AC:             100             1         0.015
+  EDGE AD:             100            -1         0.015
+  EDGE BC:            -100             1         0.015
+  EDGE BD:            -100            -1         0.015
+  EDGE CD:               0            -2             0
+
+  EDGE_LENGTHS
+
+         0             200
+         1         100.005
+         2         100.005
+         3         100.005
+         4         100.005
+         5               2
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1      0.0100008     0.0100008       3.12159
+    2      0.0100008     0.0100008       3.12159
+    3      0.0199993        1.5608        1.5608
+    4      0.0199993        1.5608        1.5608
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1       0.573003      0.573003       178.854
+    2       0.573003      0.573003       178.854
+    3        1.14588       89.4271       89.4271
+    4        1.14588       89.4271       89.4271
+
+  FACE_AREAS
+
+         0         100.011
+         1         100.011
+         2             100
+         3             100
+
+  IN_RADIUS = 0.00749958
+  IN_CENTER:                0               0      0.00750042
+
+  QUALITY1 = 6.7503e-08
+
+  QUALITY2 = 0.000183701
+
+  QUALITY3 = 0.000311981
+
+  QUALITY4 = 2.75561e-06
+
+  SOLID_ANGLES (steradians)
+
+         0     1.49996e-06
+         1     1.49996e-06
+         2       0.0296993
+         3       0.0296993
+
+  VOLUME = 1
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM
+
+30 April 2020 07:27:53 PM
+
+  Read the header of "tet_wedge.txt".
+
+  Spatial dimension DIM_NUM = 3
+  Number of points NODE_NUM = 4
+
+TETRAHEDRON_PROPERTIES:
+  C++ version:
+  Determine properties of a tetrahedron.
+
+  Read the data in "tet_wedge.txt".
+
+  Node coordinates:
+
+  Row:       1             2             3       
+  Col
+
+    1              0             0             0
+    2            200         -0.05             0
+    3            200          0.05             0
+    4              0             0           0.3
+
+  CIRCUM_RADIUS = 100
+  CIRCUM_CENTER:              100               0            0.15
+
+  CENTROID:              100               0           0.075
+
+  DIHEDRAL_ANGLES (radians)
+
+         0          1.5708
+         1          1.5708
+         2          0.0005
+         3          0.0015
+         4          1.5708
+         5          1.5708
+
+  DIHEDRAL_ANGLES (degrees)
+
+         0              90
+         1              90
+         2       0.0286479
+         3       0.0859436
+         4              90
+         5              90
+
+  EDGE AB:             200         -0.05             0
+  EDGE AC:             200          0.05             0
+  EDGE AD:               0             0           0.3
+  EDGE BC:               0           0.1             0
+  EDGE BD:            -200          0.05           0.3
+  EDGE CD:            -200         -0.05           0.3
+
+  EDGE_LENGTHS
+
+         0             200
+         1             200
+         2             0.3
+         3             0.1
+         4             200
+         5             200
+
+  FACE_ANGLES (radians)
+
+  Row:       1             2             3       
+  Col
+
+    1         0.0005       1.57055       1.57055
+    2         1.5708        0.0015        1.5693
+    3         1.5708        0.0015        1.5693
+    4        1.57055       1.57055   0.000499999
+
+  FACE_ANGLES (degrees)
+
+  Row:       1             2             3       
+  Col
+
+    1      0.0286479       89.9857       89.9857
+    2             90     0.0859436       89.9141
+    3             90     0.0859436       89.9141
+    4        89.9857       89.9857     0.0286479
+
+  FACE_AREAS
+
+         0              10
+         1              30
+         2              30
+         3              10
+
+  IN_RADIUS = 0.0375
+  IN_CENTER:              150               0          0.0375
+
+  QUALITY1 = 0.001125
+
+  QUALITY2 = 0.000918557
+
+  QUALITY3 = 0.000156006
+
+  QUALITY4 = 0.000917181
+
+  SOLID_ANGLES (steradians)
+
+         0          0.0005
+         1      0.00149962
+         2      0.00149962
+         3      0.00049925
+
+  VOLUME = 1
+
+TETRAHEDRON_PROPERTIES:
+  Normal end of execution.
+
+30 April 2020 07:27:53 PM

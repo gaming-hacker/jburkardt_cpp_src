@@ -1,0 +1,24 @@
+01 April 2020 04:12:46 PM
+
+PRODUCT_RULE
+  C++ version
+
+  Compiled on Apr  1 2020 at 16:12:16.
+
+  Create a multidimensional product rule
+  as a product of distinct 1D integration rules.
+
+  Number of points in 1D rule = 3
+
+  Number of points in 1D rule = 2
+
+  Creating product quadrature rule X file = "ccgl_d2_o3x2_x.txt".
+
+  Creating product quadrature rule W file = "ccgl_d2_o3x2_w.txt".
+
+  Creating product quadrature rule R file = "ccgl_d2_o3x2_r.txt".
+
+PRODUCT_RULE:
+  Normal end of execution.
+
+01 April 2020 04:12:46 PM

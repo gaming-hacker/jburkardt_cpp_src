@@ -1,0 +1,57 @@
+==10566== Memcheck, a memory error detector
+==10566== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10566== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==10566== Command: ./test01
+==10566== 
+==10566== Invalid write of size 4
+==10566==    at 0x108AB2: f(int) (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==    by 0x10893E: main (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==  Address 0x5b7ece8 is 0 bytes after a block of size 40 alloc'd
+==10566==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10566==    by 0x10899A: f(int) (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==    by 0x10893E: main (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566== 
+==10566== Invalid read of size 4
+==10566==    at 0x108AFD: f(int) (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==    by 0x10893E: main (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==  Address 0x5b7ece8 is 0 bytes after a block of size 40 alloc'd
+==10566==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10566==    by 0x10899A: f(int) (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==    by 0x10893E: main (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566== 
+==10566== Mismatched free() / delete / delete []
+==10566==    at 0x4C3173B: operator delete[](void*) (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10566==    by 0x108B33: f(int) (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==    by 0x10893E: main (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==  Address 0x5b7ecc0 is 0 bytes inside a block of size 40 alloc'd
+==10566==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==10566==    by 0x10899A: f(int) (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566==    by 0x10893E: main (in /home/burkardt/public_html/cpp_src/valgrind_test/test01)
+==10566== 
+
+TEST01
+  C++ version.
+  A sample code for analysis by VALGRIND.
+  0  1
+  1  1
+  2  2
+  3  3
+  4  5
+  5  8
+  6  13
+  7  21
+  8  34
+  9  55
+  10  89
+
+TEST01
+  Normal end of execution.
+==10566== 
+==10566== HEAP SUMMARY:
+==10566==     in use at exit: 0 bytes in 0 blocks
+==10566==   total heap usage: 3 allocs, 3 frees, 76,840 bytes allocated
+==10566== 
+==10566== All heap blocks were freed -- no leaks are possible
+==10566== 
+==10566== For counts of detected and suppressed errors, rerun with: -v
+==10566== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 0 from 0)

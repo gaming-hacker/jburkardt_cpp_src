@@ -1,0 +1,20 @@
+22 August 2018 10:14:57 PM
+
+MD
+  C++ version
+  A molecular dynamics program.
+
+  Enter ND, the spatial dimension (2 or 3).
+
+  Enter NP, the number of points (500, for instance).
+
+  Enter ND, the number of time steps (500 or 1000, for instance).
+
+  ND, the spatial dimension, is 3
+  NP, the number of particles in the simulation is 1000
+  STEP_NUM, the number of time steps, is 400
+  DT, the size of each time step, is 0.0001
+
+  Initializing positions, velocities, and accelerations.
+
+  Computing initial forces and energies.

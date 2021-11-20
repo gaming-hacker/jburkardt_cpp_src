@@ -1,0 +1,136 @@
+
+SCHEDULE_OPENMP
+  C++/OpenMP version
+  Count the primes from 1 to N.
+  This is an unbalanced work load, particular for two threads.
+  Demonstrate default, static and dynamic scheduling.
+
+  Number of processors available = 8
+  Number of threads =              1
+
+                           Default        Static       Dynamic
+         N     Pi(N)          Time          Time          Time
+
+         1         0    1.5215e-05     3.398e-06     3.374e-06
+         2         1     2.967e-06     2.522e-06     2.859e-06
+         4         2     2.671e-06     2.662e-06     2.865e-06
+         8         4     2.907e-06     2.787e-06      3.07e-06
+        16         6     3.626e-06      3.24e-06     3.768e-06
+        32        11     5.458e-06     4.955e-06     5.649e-06
+        64        18    1.0695e-05     9.466e-06    1.1011e-05
+       128        31    2.8353e-05    2.3712e-05    2.8405e-05
+       256        54     9.915e-05    7.3108e-05    8.7303e-05
+       512        97   0.000311382   0.000249316   0.000326877
+      1024       172   0.000749728   0.000293587   0.000349115
+      2048       309    0.00128169    0.00100284    0.00124958
+      4096       564    0.00463754    0.00358377    0.00416047
+      8192      1028     0.0143384     0.0105404     0.0125912
+     16384      1900     0.0482353     0.0379693      0.048536
+     32768      3512      0.189521      0.148969      0.182091
+     65536      6542      0.687417      0.539844      0.668207
+    131072     12251       2.58334       1.99911        2.4378
+
+SCHEDULE_OPENMP
+  Normal end of execution.
+
+SCHEDULE_OPENMP
+  C++/OpenMP version
+  Count the primes from 1 to N.
+  This is an unbalanced work load, particular for two threads.
+  Demonstrate default, static and dynamic scheduling.
+
+  Number of processors available = 8
+  Number of threads =              2
+
+                           Default        Static       Dynamic
+         N     Pi(N)          Time          Time          Time
+
+         1         0    7.0501e-05     1.778e-06     1.649e-06
+         2         1     1.468e-06     1.334e-06     1.394e-06
+         4         2     1.372e-06     1.328e-06     1.381e-06
+         8         4     1.405e-06     1.459e-06     1.393e-06
+        16         6     1.509e-06      1.58e-06     1.252e-06
+        32        11     1.798e-06     2.132e-06     1.616e-06
+        64        18     2.234e-06     3.076e-06     3.028e-06
+       128        31     5.627e-06     5.104e-06     5.555e-06
+       256        54    1.7402e-05    1.0657e-05     1.284e-05
+       512        97   0.000141692    5.1325e-05    4.6013e-05
+      1024       172   0.000208615   0.000118326   0.000143574
+      2048       309   0.000780255   0.000470091    0.00051352
+      4096       564    0.00284369     0.0015529    0.00202023
+      8192      1028     0.0104496     0.0056784    0.00722667
+     16384      1900     0.0380569     0.0206963     0.0253273
+     32768      3512      0.134398     0.0751493      0.091739
+     65536      6542      0.500883      0.282166      0.342514
+    131072     12251       1.88493       1.06212        1.2873
+
+SCHEDULE_OPENMP
+  Normal end of execution.
+
+SCHEDULE_OPENMP
+  C++/OpenMP version
+  Count the primes from 1 to N.
+  This is an unbalanced work load, particular for two threads.
+  Demonstrate default, static and dynamic scheduling.
+
+  Number of processors available = 8
+  Number of threads =              4
+
+                           Default        Static       Dynamic
+         N     Pi(N)          Time          Time          Time
+
+         1         0   0.000106251      2.06e-06     1.977e-06
+         2         1     1.771e-06     1.521e-06     2.077e-06
+         4         2    1.5773e-05     1.571e-06     1.861e-06
+         8         4     1.705e-06     1.629e-06     1.926e-06
+        16         6     1.787e-06     1.826e-06      1.74e-06
+        32        11     1.834e-06     2.311e-06     2.244e-06
+        64        18     1.983e-06     3.652e-06     3.731e-06
+       128        31     3.906e-06     5.823e-06     6.652e-06
+       256        54    1.0068e-05     1.107e-05    1.3335e-05
+       512        97    3.7726e-05    2.8167e-05    3.3714e-05
+      1024       172   0.000125127    7.6864e-05    9.3759e-05
+      2048       309   0.000461608   0.000236084   0.000291543
+      4096       564    0.00168185   0.000863589    0.00106387
+      8192      1028     0.0063009    0.00296052    0.00361548
+     16384      1900     0.0230765     0.0110483     0.0131678
+     32768      3512     0.0810716     0.0400146     0.0484287
+     65536      6542      0.301053      0.149423      0.181386
+    131072     12251       1.13289      0.562281      0.678273
+
+SCHEDULE_OPENMP
+  Normal end of execution.
+
+SCHEDULE_OPENMP
+  C++/OpenMP version
+  Count the primes from 1 to N.
+  This is an unbalanced work load, particular for two threads.
+  Demonstrate default, static and dynamic scheduling.
+
+  Number of processors available = 8
+  Number of threads =              8
+
+                           Default        Static       Dynamic
+         N     Pi(N)          Time          Time          Time
+
+         1         0    0.00687971     2.325e-06       2.4e-06
+         2         1     2.297e-06     1.872e-06     2.314e-06
+         4         2     2.177e-06     1.944e-06     2.136e-06
+         8         4     2.077e-06     2.069e-06     1.584e-06
+        16         6     2.143e-06     2.233e-06     1.737e-06
+        32        11     2.277e-06     2.737e-06     2.317e-06
+        64        18     2.171e-06     3.834e-06      4.23e-06
+       128        31     4.152e-06     7.193e-06     7.617e-06
+       256        54     9.246e-06    1.2594e-05    1.7352e-05
+       512        97    2.7373e-05     3.553e-05    3.6855e-05
+      1024       172    9.4168e-05    7.3378e-05     9.451e-05
+      2048       309    0.00031808   0.000205702    0.00027949
+      4096       564    0.00133694    0.00100059   0.000979798
+      8192      1028    0.00444526    0.00287363     0.0032655
+     16384      1900     0.0175839    0.00878927     0.0117687
+     32768      3512     0.0552598     0.0325623     0.0428801
+     65536      6542      0.197422      0.120391      0.160171
+    131072     12251      0.741471      0.449365      0.601454
+
+SCHEDULE_OPENMP
+  Normal end of execution.

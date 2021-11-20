@@ -1,0 +1,14 @@
+# motion_commands.txt
+#
+# Usage:
+#  gnuplot < motion_commands.txt
+#
+set term png
+set output 'motion.png'
+set style data lines
+set xlabel 'Iteration'
+set ylabel 'Motion'
+set title 'Log(Motion) over Iterations'
+set grid
+plot 'motion_data.txt' using 1:2 lw 2
+quit

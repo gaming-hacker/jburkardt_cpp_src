@@ -1,0 +1,180 @@
+18 February 2020 07:50:50 PM
+
+wathen_test
+  C++ version
+  Test wathen.
+
+TEST01
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_GE.
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Maximum solution error is 2.55351e-15
+
+TEST02
+  Assemble, factor and solve a Wathen system
+  using WATHEN_GB.
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Lower bandwidth ML = 16
+  Upper bandwidth MU = 16
+  Maximum solution error is 2.55351e-15
+
+TEST05
+  For various problem sizes and storage schemes,
+  measure the storage used for the Wathen system.
+
+                                   Predicted  Observed
+                              GE        Band      Band      Band    Sparse
+    NX  Elements   Nodes   storage     width     width     storage   storage
+
+     1         1       8        64        15        15       176        64
+     2         4      21       441        21        21       651       221
+     4        16      65      4225        33        33      3185       817
+     8        64     225     50625        57        57     19125      3137
+    16       256     833    693889       105       105    130781     12289
+    32      1024    3201  10246401       201       201    963501     48641
+
+TEST06
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  using the WATHEN_GE function.
+
+    NX  Elements   Nodes   Storage    Assembly      Factor      Error
+
+     1         1       8        64       3e-06       3e-06  1.58207e-15
+     2         4      21       441       3e-06     1.3e-05  3.06005e-15
+     4        16      65      4225     2.7e-05    0.000111  2.55351e-15
+     8        64     225     50625    0.000273    0.001699  1.9984e-15
+    16       256     833    693889    0.003383    0.033206  1.40221e-13
+    32      1024    3201  10246401    0.039807    0.787538  1.19349e-14
+
+TEST07
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  using the WATHEN_GB function.
+
+    NX  Elements   Nodes   Storage    Assembly      Factor      Error
+
+     1         1       8       176       2e-06       2e-06  1.58207e-15
+     2         4      21       651       4e-06       9e-06  3.06005e-15
+     4        16      65      3185     1.3e-05     4.5e-05  2.55351e-15
+     8        64     225     19125     6.4e-05    0.000355  1.9984e-15
+    16       256     833    130781     0.00044    0.003755  1.40221e-13
+    32      1024    3201    963501    0.004623    0.052339  1.19349e-14
+
+TEST08
+  For various problem sizes,
+  time the assembly and factorization of a Wathen system
+  WATHEN_GE/WATHEN_GB
+
+                   NX  Elements   Nodes   Storage      Assembly      Factor      Error
+
+  WATHEN_GE           1         1       8        64       2e-06       3e-06  1.58207e-15
+  WATHEN_GB           1         1       8       176       1e-06       2e-06  1.58207e-15
+
+  WATHEN_GE           2         4      21       441       2e-06       9e-06  3.06005e-15
+  WATHEN_GB           2         4      21       651       3e-06       8e-06  3.06005e-15
+
+  WATHEN_GE           4        16      65      4225     1.4e-05       8e-05  2.55351e-15
+  WATHEN_GB           4        16      65      3185     1.2e-05     4.2e-05  2.55351e-15
+
+  WATHEN_GE           8        64     225     50625    0.000142    0.001257  1.9984e-15
+  WATHEN_GB           8        64     225     19125     6.1e-05    0.000336  1.9984e-15
+
+  WATHEN_GE          16       256     833    693889    0.001952    0.030957  1.40221e-13
+  WATHEN_GB          16       256     833    130781    0.000573    0.003864  1.40221e-13
+
+  WATHEN_GE          32      1024    3201  10246401    0.040408    0.863559  1.19349e-14
+  WATHEN_GB          32      1024    3201    963501    0.003347    0.049777  1.19349e-14
+
+TEST10
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_GE and CG_GE.
+
+  Elements in X direction NX = 1
+  Elements in Y direction NY = 1
+  Number of elements = 1
+  Number of nodes N = 8
+  Maximum solution error is 1.04083e-15
+
+TEST11
+  Assemble, factor and solve a Wathen system
+  defined by WATHEN_ST and CG_ST.
+
+  Elements in X direction NX = 1
+  Elements in Y direction NY = 1
+  Number of elements = 1
+  Number of nodes N = 8
+  Number of nonzeros NZ_NUM = 64
+  Maximum solution error is 9.99201e-16
+
+TEST115
+  Assemble, factor and solve a Wathen system
+  using WATHEN_GB and CG_GB.
+
+  Elements in X direction NX = 4
+  Elements in Y direction NY = 4
+  Number of elements = 16
+  Number of nodes N = 65
+  Lower bandwidth ML = 16
+  Upper bandwidth MU = 16
+  Maximum solution error is 0.00122056
+
+wathen_xy_test
+  wathen_xy returns the (X,Y) coordinates of nodes in the
+  Wathen finite element system.
+
+   k   i   j         x          y
+
+   0   0   0         0         0
+   1   1   0  0.166667         0
+   2   2   0  0.333333         0
+   3   3   0       0.5         0
+   4   4   0  0.666667         0
+   5   5   0  0.833333         0
+   6   6   0         1         0
+   7   0   1         0  0.166667
+   8   1   1  0.333333  0.166667
+   9   2   1  0.666667  0.166667
+  10   3   1         1  0.166667
+  11   0   2         0  0.333333
+  12   1   2  0.166667  0.333333
+  13   2   2  0.333333  0.333333
+  14   3   2       0.5  0.333333
+  15   4   2  0.666667  0.333333
+  16   5   2  0.833333  0.333333
+  17   6   2         1  0.333333
+  18   0   3         0       0.5
+  19   1   3  0.333333       0.5
+  20   2   3  0.666667       0.5
+  21   3   3         1       0.5
+  22   0   4         0  0.666667
+  23   1   4  0.166667  0.666667
+  24   2   4  0.333333  0.666667
+  25   3   4       0.5  0.666667
+  26   4   4  0.666667  0.666667
+  27   5   4  0.833333  0.666667
+  28   6   4         1  0.666667
+  29   0   5         0  0.833333
+  30   1   5  0.333333  0.833333
+  31   2   5  0.666667  0.833333
+  32   3   5         1  0.833333
+  33   0   6         0         1
+  34   1   6  0.166667         1
+  35   2   6  0.333333         1
+  36   3   6       0.5         1
+  37   4   6  0.666667         1
+  38   5   6  0.833333         1
+  39   6   6         1         1
+
+wathen_test
+  Normal end of execution.
+
+18 February 2020 07:50:52 PM

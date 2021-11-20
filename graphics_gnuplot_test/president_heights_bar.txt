@@ -1,0 +1,14 @@
+22 January 2020 08:20:45 AM
+
+PRESIDENT_HEIGHTS_BAR:
+  C++ version
+  Create a bar plot of presidential heights.
+  Create corresponding GNUPLOT input files.
+
+PRESIDENT_HEIGHTS_BAR:
+  Plot commands stored in "president_heights_commands.txt".
+
+PRESIDENT_HEIGHTS_BAR:
+  Normal end of execution.
+
+22 January 2020 08:20:45 AM

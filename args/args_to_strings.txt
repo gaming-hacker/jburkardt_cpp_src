@@ -1,0 +1,21 @@
+19 August 2018 10:28:39 AM
+
+ARGS_TO_STRINGS:
+  C++ version
+  Read each commandline argument and store it as a string.
+
+  Number of commandline arguments is 4.
+
+  Character Arg[0] = "/home/jburkardt/bincpp/args_to_strings"
+  String    Arg[0] = "/home/jburkardt/bincpp/args_to_strings"
+  Character Arg[1] = "bob"
+  String    Arg[1] = "bob"
+  Character Arg[2] = "ted"
+  String    Arg[2] = "ted"
+  Character Arg[3] = "fred"
+  String    Arg[3] = "fred"
+
+ARGS_TO_STRINGS:
+  Normal end of execution.
+
+19 August 2018 10:28:39 AM

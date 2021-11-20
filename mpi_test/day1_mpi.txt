@@ -1,0 +1,30 @@
+
+P:2 - MPI has no work for me!
+P:1 sent 200 integers to process 3.
+
+P:3 received integer values from process 1.
+P:3 - Number of integers received is 200.
+P:3 First 3 values = 0  1  4
+06 September 2018 03:23:57 PM
+
+DAY1:
+P:3 Input integer 25 becomes 0.471698.
+P:3 Input integer 36 becomes 0.679245.
+P:3 Input integer 49 becomes 0.924528.
+  C++ version
+  An MPI example program.
+
+  Compiled on Sep  6 2018 at 15:23:56
+
+P:1 received real values from process 3.
+P:1 Number of real values received is 6.
+P:3 sent 6 reals to process 1.
+P:1 First 3 values = 0.471698  0.679245  0.924528
+  The number of processes available is 4
+
+P:0 - MPI has no work for me!
+
+DAY1:
+  Normal end of execution.
+
+06 September 2018 03:23:57 PM

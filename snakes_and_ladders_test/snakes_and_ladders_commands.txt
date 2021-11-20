@@ -1,0 +1,14 @@
+# snakes_and_ladders_commands.txt
+#
+# Usage:
+#  gnuplot < snakes_and_ladders_commands.txt
+#
+unset key
+set term png
+set output 'snakes_and_ladders.png'
+set size ratio -1
+set xlabel '<--- J --->'
+set ylabel '<--- I --->'
+set title '496 nonzeros for "snakes_and_ladders"'
+set timestamp
+plot [y=0:100] [x=100:0] 'snakes_and_ladders_data.txt' with points pt 5

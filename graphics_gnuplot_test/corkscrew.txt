@@ -1,0 +1,14 @@
+27 April 2018 09:53:42 PM
+
+CORKSCREW:
+  C++ version
+  Define (X,Y,Z) data on a 3D curve.
+  Create corresponding GNUPLOT input files.
+
+  CORKSCREW data stored in 'corkscrew_data.txt'.
+  CORKSCREW plot commands stored in 'corkscrew_commands.txt'.
+
+CORKSCREW:
+  Normal end of execution.
+
+27 April 2018 09:53:42 PM

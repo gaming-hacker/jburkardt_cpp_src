@@ -1,0 +1,80 @@
+04 August 2020 02:13:58 PM
+
+MULTITASK_OPENMP:
+  C++/OpenMP version
+  Demonstrate how OpenMP can "multitask" by using the
+  SECTIONS directive to carry out several tasks in parallel.
+
+  Number of primes computed was 20000
+  Last prime was 224737
+  Number of sines computed was 20000
+  Last sine computed was 12731.8
+
+  Elapsed time = 10.6091
+  Task 1 time = 5.09837
+  Task 2 time = 5.5107
+
+MULTITASK_OPENMP:
+  Normal end of execution.
+
+04 August 2020 02:14:08 PM
+04 August 2020 02:14:08 PM
+
+MULTITASK_OPENMP:
+  C++/OpenMP version
+  Demonstrate how OpenMP can "multitask" by using the
+  SECTIONS directive to carry out several tasks in parallel.
+
+  Number of primes computed was 20000
+  Last prime was 224737
+  Number of sines computed was 20000
+  Last sine computed was 12731.8
+
+  Elapsed time = 5.69322
+  Task 1 time = 5.33462
+  Task 2 time = 5.69315
+
+MULTITASK_OPENMP:
+  Normal end of execution.
+
+04 August 2020 02:14:14 PM
+04 August 2020 02:14:14 PM
+
+MULTITASK_OPENMP:
+  C++/OpenMP version
+  Demonstrate how OpenMP can "multitask" by using the
+  SECTIONS directive to carry out several tasks in parallel.
+
+  Number of primes computed was 20000
+  Last prime was 224737
+  Number of sines computed was 20000
+  Last sine computed was 12731.8
+
+  Elapsed time = 5.70129
+  Task 1 time = 5.32826
+  Task 2 time = 5.70108
+
+MULTITASK_OPENMP:
+  Normal end of execution.
+
+04 August 2020 02:14:20 PM
+04 August 2020 02:14:20 PM
+
+MULTITASK_OPENMP:
+  C++/OpenMP version
+  Demonstrate how OpenMP can "multitask" by using the
+  SECTIONS directive to carry out several tasks in parallel.
+
+  Number of primes computed was 20000
+  Last prime was 224737
+  Number of sines computed was 20000
+  Last sine computed was 12731.8
+
+  Elapsed time = 5.7643
+  Task 1 time = 5.41449
+  Task 2 time = 5.76175
+
+MULTITASK_OPENMP:
+  Normal end of execution.
+
+04 August 2020 02:14:25 PM

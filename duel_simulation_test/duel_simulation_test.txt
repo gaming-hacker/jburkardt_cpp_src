@@ -1,0 +1,9 @@
+
+DUEL_SIMULATION:
+  C++ version
+Enter number of duels to run: Enter player A's accuracy between 0.0 and 1.0: Enter player B's accuracy between 0.0 and 1.0: 
+  Player A wins with probability 0.66
+  Player B wins with probability 0.34
+
+DUEL_SIMULATION:
+  Normal end of execution.

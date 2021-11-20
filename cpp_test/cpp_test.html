@@ -1,0 +1,472 @@
+<html>
+
+  <head>
+    <title>
+      cpp_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      cpp_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>cpp_test</b>,
+      C++ programs which
+      illustrate some of the features of the language.
+    </p>
+
+    <p>
+      Depending on your computer, you may invoke the <b>C++</b> compiler
+      by a command like <b>c++</b>, <b>CC</b>, <b>cxx</b>, 
+      <b>g++</b> (the Gnu compiler),
+      <b>icc</b> (the Intel compiler), 
+      <b>pcCC</b> (the Portland Group compiler),
+      or <b>xlc++</b> (the IBM compiler).
+    </p>
+
+    <p>
+      Depending on your compiler, your C++ files may need to have the
+      extension ".C", ".cc", ".cxx", ".cpp" or even ".c++".  In particular,
+      Microsoft Visual C++ does not "know" the difference between upper
+      and lower case in file extensions.  If you call your file
+      "fred.C", it will think your file is a C file, not a C++ file.
+      For Microsoft Visual C++, always use the file name extension ".cpp"!
+    </p>
+
+    <p>
+      It is customary for include files to have the extension ".H", but I have 
+      also seen ".h", ".hxx" and ".hpp" extensions used.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>cpp_test</b> is available in
+      <a href = "../../c_src/c_test/c_test.html">a C version</a> and
+      <a href = "../../cpp_src/cpp_test/cpp_test.html">a C++ version</a> and
+      <a href = "../../f_src/f90_test/f90_test.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/matlab_test/matlab_test.html">a MATLAB version</a> and
+      <a href = "../../py_src/py_test/py_test.html">a Python version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/cpp_arrays/cpp_arrays.html">
+      CPP_ARRAYS</a>,
+      C++ programs which
+      illustrate the use of vectors, matrices and tensors.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/cpp_intrinsics/cpp_intrinsics.html">
+      CPP_INTRINSICS</a>,
+      a C++ program which
+      illustrates the use of intrinsic functions.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/cpp_random/cpp_random.html">
+      CPP_RANDOM</a>,
+      C++ programs which
+      illustrate the use of the random number generator routines.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/makefiles/makefiles.html">
+      MAKEFILES</a>,
+      C++ programs which
+      illustrate the use of MAKEFILES for maintaining a software project;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/mixed/mixed.html">
+      MIXED</a>,
+      C++ programs which
+      call a function written in another programming language.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/mpi/mpi.html">
+      MPI</a>,
+      C++ programs which
+      illustrate the use of the MPI application program interface
+      for carrying out parallel computations in a distributed memory environment.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/openmp/openmp.html">
+      OPENMP</a>,
+      C++ programs which
+      illustrate the use of the OpenMP application program interface
+      for carrying out parallel computations in a shared memory environment.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Paul Deitel, Harvey Deitel,<br>
+          C++: How to Program,<br>
+          Seventh Edition,<br>
+          Prentice Hall, 2011,<br>
+          ISBN: 978-013-216541-9,<br>
+          LC: QA76.73.C153.D45.
+        </li>
+        <li>
+          Steve Oaulline,<br>
+          Practical C++ Programming,<br>
+          Second Edition,<br>
+          O'Reilly, 2003,<br>
+          ISBN: 1-56592-139-9,<br>
+          LC: QA76.73.C15.O84.
+        </li>
+        <li>
+          Bjarne Stroustrup,<br>
+          The C++ Programming Language,<br>
+          Addison-Wesley, 2000,<br>
+          ISBN: 0-201-70073-5,<br>
+          LC: QA76.73.C153.S77.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "cpp_test.sh">cpp_test.sh</a>,
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ARRAY_APPEND</b> demonstrates how one new value can be appended
+      to an existing array.
+      <ul>
+        <li>
+          <a href = "array_append.cpp">array_append.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "array_append.sh">array_append.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "array_append.txt">array_append.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>ARRAY_RETURN</b> demonstrates how a function can call another 
+      function which creates and returns several arrays in its argument
+      list.  To do this requires some tricky use of pointers.
+      <ul>
+        <li>
+          <a href = "array_return.cpp">array_return.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "array_return.sh">array_return.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "array_return.txt">array_return.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>BIG_INTS_REAL</b> shows what can go wrong when you try to move
+      large integer values into and out of real variables.
+      <ul>
+        <li>
+          <a href = "big_ints_real.cpp">big_ints_real.cpp</a>, the source code;
+        </li>
+        <li>
+          <a href = "big_ints_real.sh">big_ints_real.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "big_ints_real.txt">big_ints_real.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>CHARACTER_ARG</b> demonstrates how a C++ function can return character
+      information through its argument.
+      <ul>
+        <li>
+          <a href = "character_arg.cpp">character_arg.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "character_arg.sh">character_arg.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "character_arg.txt">character_arg.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>COMPLEX_VALUES</b> demonstrates the use of the ANSI COMPLEX
+      class for complex arithmetic.  (At the moment, I am having
+      a terrible time just trying to use the assignment operator!)
+      <ul>
+        <li>
+          <a href = "complex_values.cpp">complex_values.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "complex_values.sh">complex_values.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "complex_values.txt">complex_values.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>DYNAMIC_ARRAY_2D</b> shows how to create a 2D array dynamically,
+      so that addresses like "a[2][5]" are legal.
+      <ul>
+        <li>
+          <a href = "dynamic_array_2d.cpp">dynamic_array_2d.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "dynamic_array_2d.sh">dynamic_array_2d.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "dynamic_array_2d.txt">dynamic_array_2d.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>FUNCTION_POINTER</b> shows how a variable can be created which can
+      point to a function; the target of the pointer can be changed so that
+      a different function is indicated.
+      <ul>
+        <li>
+          <a href = "function_pointer.cpp">function_pointer.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "function_pointer.sh">function_pointer.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "function_pointer.txt">function_pointer.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>FUNCTION_POINTER_ARRAY</b> shows how a variable can be created which can
+      be an array of pointers to function.
+      <ul>
+        <li>
+          <a href = "function_pointer_array.cpp">function_pointer_array.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "function_pointer_array.sh">function_pointer_array.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "function_pointer_array.txt">function_pointer_array.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>FUNCTION_POINTER_ARRAY_NEW</b> shows how a variable can be created which can
+      be a DYNAMICALLY ALLOCATED array of pointers to function.  In other words,
+      this is one way to create an array of function pointers whose dimension
+      is not specified in advance.  Then the array can be sized with the NEW
+      command and freed with the DELETE command.
+      <ul>
+        <li>
+          <a href = "function_pointer_array_new.cpp">function_pointer_array_new.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "function_pointer_array_new.sh">function_pointer_array_new.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "function_pointer_array_new.txt">function_pointer_array_new.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>HELLO</b> is just a "Hello, world!" program.
+      <ul>
+        <li>
+          <a href = "hello.cpp">hello.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "hello.sh">hello.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "hello.txt">hello.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>LIMITS</b> prints out some information about the range and accuracy
+      of various numeric types.
+      <ul>
+        <li>
+          <a href = "limits.cpp">limits.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "limits.sh">limits.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "limits.txt">limits.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>NOT_ALLOCATED_ARRAYS</b> shows that you should initialize your
+      array pointers to NULL, and reset them to NULL after you delete
+      your arrays.  Otherwise, an unallocated or delete array is liable
+      to have a deceptive nonnull value!
+      <ul>
+        <li>
+          <a href = "not_allocated_arrays.cpp">not_allocated_arrays.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "not_allocated_arrays.sh">not_allocated_arrays.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "not_allocated_arrays.txt">not_allocated_arrays.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>POISSON</b> solves the Poisson equation on a 2D grid.
+      This program uses dynamically allocated doubly dimensioned arrays.
+      <ul>
+        <li>
+          <a href = "poisson.cpp">poisson.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "poisson.sh">poisson.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "poisson.txt">
+          poisson.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>PRECISION_OUTPUT</b> shows how the manipulator function setprecision()
+      changes the precision for all subsequent floating point output operations,
+      and how the precision() function can be better used, to record the initial
+      precision, change it, or reset it to the default value.
+      <ul>
+        <li>
+          <a href = "precision_output.cpp">precision_output.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "precision_output.sh">precision_output.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "precision_output.txt">precision_output.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SIZES</b> prints out the sizes of various datatypes.
+      <ul>
+        <li>
+          <a href = "sizes.cpp">sizes.cpp</a>,
+          the source code;
+        </li>
+        <li>
+          <a href = "sizes.sh">sizes.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "sizes.txt">sizes.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 05 February 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

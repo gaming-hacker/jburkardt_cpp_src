@@ -1,0 +1,18 @@
+02 March 2014 07:45:04 PM
+
+EX07:
+  C++ version:
+  Demonstrate the creation of 3D bar and pie graphs.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 02.03.2014  Time    : 19:45:04  Pageformat: USAP  <<
+ <<  Vectors : 5578        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex07.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX07:
+  Normal end of execution.
+
+02 March 2014 07:45:04 PM

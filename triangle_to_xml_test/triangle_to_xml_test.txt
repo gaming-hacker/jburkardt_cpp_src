@@ -1,0 +1,23 @@
+04 May 2020 07:54:46 PM
+
+TRIANGLE_TO_XML:
+  C++ version
+  Read a pair of NODE and ELE files created by TRIANGLE.
+  Write a corresponding XML mesh file.
+
+  Read:
+  * TRIANGLE node file "ell.node"
+  * TRIANGLE element file "ell.ele".
+  Create:
+  * XML file "ell.xml".
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Created XML file "ell.xml".
+
+TRIANGLE_TO_XML:
+  Normal end of execution.
+
+04 May 2020 07:54:46 PM

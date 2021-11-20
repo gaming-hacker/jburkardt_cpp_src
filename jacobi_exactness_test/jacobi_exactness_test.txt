@@ -1,0 +1,68 @@
+20 March 2020 05:29:43 PM
+
+JACOBI_EXACTNESS
+  C++ version
+
+  Compiled on Mar 20 2020 at 17:23:37.
+
+  Investigate the polynomial exactness of a Gauss-Jacobi
+  quadrature rule by integrating weighted
+  monomials up to a given degree over the [-1,+1] interval.
+
+  The quadrature file rootname is "jac_o2_a0.5_b1.5".
+
+  The requested maximum monomial degree is = 5
+
+JACOBI_EXACTNESS: User input:
+  Quadrature rule X file = "jac_o2_a0.5_b1.5_x.txt".
+  Quadrature rule W file = "jac_o2_a0.5_b1.5_w.txt".
+  Quadrature rule R file = "jac_o2_a0.5_b1.5_r.txt".
+  Maximum degree to check = 5
+  Exponent of (1-x), ALPHA = 0.5
+  Exponent of (1+x), BETA  = 1.5
+
+  Spatial dimension = 1
+  Number of points  = 2
+
+  The quadrature rule to be tested is
+  a Gauss-Jacobi rule
+  ORDER = 2
+  ALPHA = 0.5
+  BETA  = 1.5
+
+  Standard rule:
+    Integral ( -1 <= x <= +1 ) (1-x)^alpha (1+x)^beta f(x) dx
+    is to be approximated by
+    sum ( 1 <= I <= ORDER ) w(i) * f(x(i)).
+
+  Weights W:
+
+  w[ 0] =       0.6369718619318372
+  w[ 1] =       0.9338244648627008
+
+  Abscissas X:
+
+  x[ 0] =      -0.2742918851774317
+  x[ 1] =       0.6076252185107651
+
+  Region R:
+
+  r[ 0] =                       -1
+  r[ 1] =                        1
+
+  A Gauss-Jacobi rule would be able to exactly
+  integrate monomials up to and including degree = 3
+
+          Error          Degree
+
+     2.280104311644735e-13   0
+     2.281517891503163e-13   1
+     2.280104311644735e-13   2
+     2.274449992211023e-13   3
+         0.333333333333485   4
+        0.3777777777779197   5
+
+JACOBI_EXACTNESS:
+  Normal end of execution.
+
+20 March 2020 05:29:43 PM

@@ -1,0 +1,15 @@
+27 March 2020 11:44:18 AM
+
+MGS_TEST:
+  C++ version
+  Test the MGS library.
+
+   5  20     1.30349e-12
+   3  15     2.92343e-13
+  13   2     6.68875e-14
+  16  11     1.50107e-12
+
+MGS_TEST:
+  Normal end of execution.
+
+27 March 2020 11:44:18 AM

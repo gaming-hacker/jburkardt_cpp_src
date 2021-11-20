@@ -1,0 +1,19 @@
+23 January 2020 10:21:11 AM
+
+EX12:
+  C++ version:
+  Demonstrate a shaded contour plot.
+ <<<< Warning 2: Incorrect parameter in axspos!   ( 2670)
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:21:11  Pageformat: USAL  <<
+ <<  Vectors : 2001        Warnings: 1         Fileformat:  PNG  <<
+ <<  Metafile: ex12.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX12:
+  Normal end of execution.
+
+23 January 2020 10:21:11 AM

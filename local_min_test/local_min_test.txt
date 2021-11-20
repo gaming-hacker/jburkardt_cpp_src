@@ -1,0 +1,67 @@
+12 June 2021 04:35:18 PM
+
+local_min_test():
+  C++ version
+  local_min() seeks a local minimizer of a function F(X)
+  in an interval [A,B].
+
+  g_01(x) = ( x - 2 ) * ( x - 2 ) + 1
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+               0               2         3.14159
+               5               1         2.30323
+  Number of calls to F = 6
+
+  g_02(x) = x * x + exp ( - x )
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+               0        0.351734               1
+               1        0.827184         1.36788
+  Number of calls to F = 9
+
+  g_03(x) = x^4 + 2x^2 + x + 3
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+              -2       -0.236733               2
+              25         2.87849              29
+  Number of calls to F = 12
+
+  g_04(x) = exp ( x ) + 1 / ( 100 x )
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+          0.0001       0.0953446               1
+             101         1.20492         2.72828
+  Number of calls to F = 14
+
+  g_05(x) = exp ( x ) - 2x + 1/(100x) - 1/(1000000x^2)
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+          0.0002        0.703205               2
+         25.9998        0.628026         3.39406
+  Number of calls to F = 10
+
+  g_06(x) = -x*sin(10*pi*x)-1.0
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+             1.8         1.85055             1.9
+              -1        -2.85027              -1
+  Number of calls to F = 9
+
+  g_07(x) = max(-2(x-1),8(x-1)) + 25*(x-1)^2
+
+           A                 X             B
+         F(A)              F(X)          F(B)
+            -1.2               1             2.7
+           125.4     4.19753e-08           85.85
+  Number of calls to F = 37
+
+local_min_test():
+  Normal end of execution.
+
+12 June 2021 04:35:18 PM

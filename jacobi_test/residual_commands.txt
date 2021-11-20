@@ -1,0 +1,14 @@
+# residual_commands.txt
+#
+# Usage:
+#  gnuplot < residual_commands.txt
+#
+set term png
+set output 'residual.png'
+set style data lines
+set xlabel 'Iteration'
+set ylabel 'Residual'
+set title 'Log(Residual) over Iterations'
+set grid
+plot 'residual_data.txt' using 1:2 lw 2
+quit

@@ -1,0 +1,20 @@
+02 March 2014 07:45:42 PM
+
+QUICKPLOT_COLOR:
+  C++ version
+  Demonstrate the DISLIN "quickplot" command QPLCLR
+  to make a color plot of a matrix of data.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 02.03.2014  Time    : 19:45:42  Pageformat: USAL  <<
+ <<  Vectors : 2393        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: quickplot_color.png                               <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ <<<< Warning   3: Incorrect level in disfin!   (   0)
+
+QUICKPLOT_CLR:
+  Normal end of execution.
+
+02 March 2014 07:45:42 PM

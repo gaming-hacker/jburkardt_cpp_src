@@ -1,0 +1,87 @@
+
+06 May 2020 08:50:51 AM
+
+TRIANGULATION_CORNER
+  C++ version:
+
+  Read a node file of NODE_NUM point coordinates in 2 dimensions.
+  Read an associated triangle file of
+  TRIANGLE_NUM triangles, listing 3 or 6 node indices.
+
+  Any triangle which has exactly two sides on the boundary
+  is a corner triangle.
+
+  If there are any corner triangles this program tries to
+  eliminate them.
+
+  The "repaired" triangle file is written out.
+
+  Compiled on May  6 2020 at 08:26:03.
+
+  Read the header of "p11_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 101
+
+  Read the data in "p11_nodes.txt".
+
+  First 5 nodes:
+
+  Row:       1             2       
+  Col
+
+    1              0             0
+    2              1             0
+    3              1           0.5
+    4            0.5           0.5
+    5            0.5             1
+
+  Read the header of "p11_elements.txt".
+
+  Triangle order TRIANGLE_ORDER     = 3
+  Number of triangles TRIANGLE_NUM  = 157
+
+  Read the data in "p11_elements.txt".
+
+  First 5 triangles:
+
+  Row:      1       2       3  
+  Col
+
+    1      18      17       6  
+    2      29      18      17  
+    3      29      16      28  
+    4      29      16      17  
+    5       4      71      60  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Number of boundary sides     Number of triangles
+
+                   0                 118
+                   1                  35
+                   2                   4
+                   3                   0
+
+TRIANGULATION_CORNER:
+  Reoriented 82 triangles.
+
+  Adjusting triangle 1 using triangle 2
+  Adjusting triangle 10 using triangle 54
+  Adjusting triangle 18 using triangle 19
+  Adjusting triangle 92 using triangle 47
+
+TRIANGULATION_CORNER:
+  New triangle file with repaired corners written to
+  "p11_corner_triangles.txt".
+
+TRIANGULATION_CORNER:
+  New node coordinate file with adjusted midside nodes
+  written to "p11_corner_nodes.txt".
+
+TRIANGULATION_CORNER:
+  Normal end of execution.
+
+06 May 2020 08:50:51 AM

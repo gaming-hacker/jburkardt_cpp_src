@@ -1,0 +1,78 @@
+22 March 2020 07:31:54 PM
+
+LAGUERRE_EXACTNESS
+  C++ version
+
+  Compiled on Mar 22 2020 at 19:28:43.
+
+  Investigate the polynomial exactness of a Gauss-Laguerre
+  quadrature rule by integrating exponentially weighted
+  monomials up to a given degree over the [0,+oo) interval.
+
+  The rule may be defined on another interval, [A,+oo)
+  in which case it is adjusted to the [0,+oo) interval.
+
+  The quadrature file rootname is "lag_o04".
+
+  The requested maximum monomial degree is = 10
+
+LAGUERRE_EXACTNESS: User input:
+  Quadrature rule X file = "lag_o04_x.txt".
+  Quadrature rule W file = "lag_o04_w.txt".
+  Quadrature rule R file = "lag_o04_r.txt".
+  Maximum degree to check = 10
+  OPTION = 0, integrate exp(-x)*f(x)
+
+  Spatial dimension = 1
+  Number of points  = 4
+
+  The quadrature rule to be tested is
+  a Gauss-Laguerre rule
+  ORDER = 4
+  with A = 0
+
+  Standard rule:
+    Integral ( A <= x < +oo ) exp(-x) f(x) dx
+    is to be approximated by
+    sum ( 1 <= I <= ORDER ) w(i) * f(x(i)).
+
+  Weights W:
+
+  w[ 0] =       0.6031541043416337
+  w[ 1] =       0.3574186924377999
+  w[ 2] =      0.03888790851500538
+  w[ 3] =    0.0005392947055613278
+
+  Abscissas X:
+
+  x[ 0] =       0.3225476896193923
+  x[ 1] =        1.745761101158346
+  x[ 2] =        4.536620296921128
+  x[ 3] =        9.395070912301136
+
+  Region R:
+
+  r[ 0] =                        0
+  r[ 1] =                    1e+30
+
+  A Gauss-Laguerre rule would be able to exactly
+  integrate monomials up to and including degree = 7
+
+          Error          Degree
+
+     2.220446049250313e-16   0
+     2.220446049250313e-16   1
+                         0   2
+     1.480297366166875e-16   3
+     1.480297366166875e-16   4
+     7.105427357601002e-16   5
+     1.263187085795734e-15   6
+     2.165463575649829e-15   7
+        0.0142857142857114   8
+       0.06507936507936186   9
+        0.1641269841269807  10
+
+LAGUERRE_EXACTNESS:
+  Normal end of execution.
+
+22 March 2020 07:31:54 PM

@@ -1,0 +1,13 @@
+09 May 2021 06:43:08 PM
+
+constants_test():
+  C++ version
+  Test constants(), with the interface:
+    [g,c,h] = constants()
+
+    constants ( 6.67384e-11, 2.99792e+08, 6.62607e-34 )
+
+constants_test():
+  Normal end of execution.
+
+09 May 2021 06:43:08 PM

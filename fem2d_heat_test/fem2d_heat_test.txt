@@ -1,0 +1,75 @@
+05 March 2020 07:48:09 AM
+
+FEM2D_HEAT
+  C++ version:
+
+  Compiled on Mar  5 2020 at 07:37:48.
+
+  Solution of the time dependent heat equation
+  on an arbitrary triangulated region D in 2 dimensions.
+
+  Ut - Uxx - Uyy + K(x,y,t) * U = F(x,y,t) in D
+                              U = G(x,y,t) on the boundary.
+                              U = H(x,y,t) at initial time.
+
+  The finite element method is used with
+  6 node quadratic triangular elements ("T6").
+
+  The time derivative is approximated using the
+  backward Euler method.
+
+  Node file is "square_nodes.txt".
+  Element file is "square_elements.txt".
+  Number of nodes =          81
+
+  First 10 nodes
+
+  Row:       0             1       
+  Col
+
+    0:             0             0
+    1:         0.125             0
+    2:          0.25             0
+    3:         0.375             0
+    4:           0.5             0
+    5:         0.625             0
+    6:          0.75             0
+    7:         0.875             0
+    8:             1             0
+    9:             0         0.125
+
+  Element order =            6
+  Number of elements =       32
+
+  First 10 elements
+
+  Row:      1       2       3       4       5       6  
+  Col
+
+    1       1      19       3      10      11       2  
+    2      21       3      19      12      11      20  
+    3       3      21       5      12      13       4  
+    4      23       5      21      14      13      22  
+    5       5      23       7      14      15       6  
+    6      25       7      23      16      15      24  
+    7       7      25       9      16      17       8  
+    8      27       9      25      18      17      26  
+    9      19      37      21      28      29      20  
+   10      39      21      37      30      29      38  
+
+
+  Quadrature order =          7
+
+  The matrix half bandwidth is 18
+  The matrix bandwidth is      37
+  The storage bandwidth is     55
+
+  Initial time = 0
+  Final time =   0.5
+  Step size =    0.05
+  Number of steps = 10
+
+FEM2D_HEAT:
+  Normal end of execution.
+
+05 March 2020 07:48:09 AM

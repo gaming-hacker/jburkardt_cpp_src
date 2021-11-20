@@ -1,0 +1,44 @@
+17 February 2020 09:03:28 AM
+
+CHEBYSHEV1_RULE
+  C++ version
+
+  Compiled on Feb 17 2020 at 08:59:59.
+
+  Compute a Gauss-Chebyshev type 1 rule for approximating
+
+    Integral ( A <= x <= B ) f(x) / sqrt ( ( x - A ) * ( B - x ) ) dx
+
+  of order ORDER.
+
+  The user specifies ORDER, A, B and FILENAME.
+
+  Order is the number of points.
+
+  A is the left endpoint.
+
+  B is the right endpoint.
+
+  FILENAME is used to generate 3 files:
+
+    filename_w.txt - the weight file
+    filename_x.txt - the abscissa file.
+    filename_r.txt - the region file.
+
+  ORDER = 5
+  A = -1
+  B = 1
+  FILENAME = "cheby1_o5".
+
+  Creating quadrature files.
+
+  Root file name is     "cheby1_o5".
+
+  Weight file will be   "cheby1_o5_w.txt".
+  Abscissa file will be "cheby1_o5_x.txt".
+  Region file will be   "cheby1_o5_r.txt".
+
+CHEBYSHEV1_RULE:
+  Normal end of execution.
+
+17 February 2020 09:03:28 AM

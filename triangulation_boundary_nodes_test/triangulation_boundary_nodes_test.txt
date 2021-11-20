@@ -1,0 +1,204 @@
+
+05 May 2020 07:02:17 PM
+
+TRIANGULATION_BOUNDARY_NODES
+  C++ version:
+  Identify triangulation nodes that lie on the boundary.
+
+* Read a node dataset of NODE_NUM points in 2 dimensions;
+
+* Read an associated triangulation dataset of 
+  triangles using 3 or 6 nodes;
+
+* Determine which nodes are on the boundary;
+
+* Write a file which is 1 for each boundary node.
+
+  Compiled on May  5 2020 at 19:01:57.
+
+  Read the header of "elbow_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 319
+
+  Read the data in "elbow_nodes.txt".
+
+  Portion of coordinate data from file:
+
+  Row:       1             2       
+  Col
+
+    1              1             0
+    2              0             1
+    3            0.4             0
+    4              0           0.4
+    5             -0       0.44282
+
+ Read the header of "elbow_elements.txt".
+
+  Triangle order TRIANGLE_ORDER = 3
+  Number of triangles TRIANGLE_NUM  = 568
+
+  Read the data in "elbow_elements.txt".
+
+  Portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1      17      18       2  
+    2       6       5       4  
+    3     287     301     302  
+    4     257     258     239  
+    5     274     258     257  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Number of boundary nodes is 66
+
+  Boundary nodes:
+
+     New     Old
+   Index   Index         X and Y Coordinates
+
+         0         0               1               0
+         1         1               0               1
+         2         2             0.4               0
+         3         3               0             0.4
+         4         4              -0         0.44282
+         5         6              -0        0.488823
+         6         7              -0        0.538095
+         7         8              -0        0.582249
+         8         9              -0        0.632065
+         9        10              -0        0.676178
+        10        11              -0        0.726139
+        11        12              -0        0.770205
+        12        13              -0        0.821068
+        13        14              -0        0.865798
+        14        15               0        0.912502
+        15        16              -0        0.956362
+        16        17        0.045648        0.998958
+        17        18        0.049475        0.396928
+        18        31        0.093881        0.995583
+        19        32        0.101668        0.386864
+        20        46        0.149356         0.37107
+        21        59          0.1459        0.989299
+        22        60         0.19174         0.35105
+        23        74        0.195528        0.980698
+        24        75        0.279682        0.285968
+        25        76        0.238208        0.321336
+        26        90         0.24737        0.968921
+        27       105         0.34891        0.937156
+        28       106        0.301768        0.953381
+        29       107        0.345677        0.201265
+        30       108        0.317491         0.24331
+        31       123        0.399481        0.916741
+        32       125        0.396959        0.049229
+        33       126        0.386703        0.102277
+        34       128        0.368319        0.156017
+        35       145        0.444227              -0
+        36       165        0.453028        0.891496
+        37       166        0.492385              -0
+        38       185         0.54708         0.83708
+        39       186        0.503985        0.863712
+        40       187        0.544055              -0
+        41       206        0.596809              -0
+        42       223        0.635247        0.772309
+        43       224        0.593562        0.804788
+        44       225        0.649756              -0
+        45       242        0.672557        0.740045
+        46       243        0.702475              -0
+        47       258        0.749998         0.66144
+        48       259        0.713381        0.700776
+        49       260        0.754665              -0
+        50       274        0.783927        0.620853
+        51       275        0.806171              -0
+        52       288        0.819385        0.573244
+        53       289        0.856797              -0
+        54       300         0.87973        0.475473
+        55       301        0.851084        0.525029
+        56       302        0.906555              -0
+        57       309        0.947571        0.319544
+        58       310        0.929284        0.369367
+        59       311        0.905695         0.42393
+        60       312        0.956319              -0
+        61       313        0.998688        0.051209
+        62       315        0.993899        0.110296
+        63       316        0.986534        0.163557
+        64       317        0.977185        0.212391
+        65       318        0.963461        0.267849
+
+  Created the file "elbow_boundary_nodes.txt"
+
+TRIANGULATION_BOUNDARY_NODES:
+  Normal end of execution.
+
+05 May 2020 07:02:17 PM
+
+05 May 2020 07:02:17 PM
+
+TRIANGULATION_BOUNDARY_NODES
+  C++ version:
+  Identify triangulation nodes that lie on the boundary.
+
+* Read a node dataset of NODE_NUM points in 2 dimensions;
+
+* Read an associated triangulation dataset of 
+  triangles using 3 or 6 nodes;
+
+* Determine which nodes are on the boundary;
+
+* Write a file which is 1 for each boundary node.
+
+  Compiled on May  5 2020 at 19:01:57.
+
+  Read the header of "lake_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 621
+
+  Read the data in "lake_nodes.txt".
+
+  Portion of coordinate data from file:
+
+  Row:       1             2       
+  Col
+
+    1         316.43       404.476
+    2        291.049       400.709
+    3        265.165       409.779
+    4        241.468       402.403
+    5        216.551       396.521
+
+ Read the header of "lake_elements.txt".
+
+  Triangle order TRIANGLE_ORDER = 3
+  Number of triangles TRIANGLE_NUM  = 973
+
+  Read the data in "lake_elements.txt".
+
+  Portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1     619     618      39  
+    2     620     619      39  
+    3     125     126       7  
+    4     125     132     126  
+    5     143     135     150  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Number of boundary nodes is 269
+
+  Created the file "lake_boundary_nodes.txt"
+
+TRIANGULATION_BOUNDARY_NODES:
+  Normal end of execution.
+
+05 May 2020 07:02:17 PM

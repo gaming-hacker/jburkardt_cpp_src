@@ -1,0 +1,18 @@
+13 April 2020 04:05:53 PM
+
+snakes_and_ladders_test
+  C++ version
+  Test snakes_and_ladders.
+
+TEST01
+  SNAKES sets up the snakes and ladders matrix.
+  SPY_GE generates a sparsity plot for a matrix stored
+  in general (GE) format.
+
+  Created sparsity data file 'snakes_and_ladders_data.txt'
+  Created graphics command file 'snakes_and_ladders_commands.txt'
+
+snakes_and_ladders_test
+  Normal end of execution.
+
+13 April 2020 04:05:53 PM

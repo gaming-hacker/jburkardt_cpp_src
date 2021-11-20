@@ -1,0 +1,20 @@
+02 March 2014 07:45:38 PM
+
+QUICKPLOT_BAR:
+  C++ version
+  Demonstrate the DISLIN "quickplot" command QPLBAR
+  to plot a bar chart.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 02.03.2014  Time    : 19:45:38  Pageformat: USAL  <<
+ <<  Vectors : 2806        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: quickplot_bar.png                                 <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ <<<< Warning   3: Incorrect level in disfin!   (   0)
+
+QUICKPLOT_BAR:
+  Normal end of execution.
+
+02 March 2014 07:45:38 PM

@@ -1,0 +1,453 @@
+<html>
+
+  <head>
+    <title>
+      triangulation_corner_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      triangulation_corner_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>triangulation_corner_test</b>,
+      a C++ code which
+      calls triangulation_corner(), which
+      tries to correct situations in which a triangulation includes
+      corner triangles, that is, triangles which have two sides on boundary.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_corner/triangulation_corner.html">
+      triangulation_corner</a>,
+      a C++ code which
+      patches triangulations so that no triangle has two sides on the boundary.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_corner_test.sh">triangulation_corner_test.sh</a>, 
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "triangulation_corner_test.txt">triangulation_corner_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P03</b> is the square with a hole.  The initial mesh has 1 corner triangle.
+      <ul>
+        <li>
+          <a href = "p03_nodes.txt">p03_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p03_elements.txt">p03_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p03.png">p03.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p02_corner_elements.txt">p02_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p02_corner.png">p02_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P05</b> is the horn.  The initial mesh has 4 corner triangles.
+      <ul>
+        <li>
+          <a href = "p05_nodes.txt">p05_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p05_elements.txt">p05_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p05.png">p05.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p05_corner_elements.txt">p05_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p05_corner.png">p05_corner.png</a>
+          a PNG image of the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P08</b> is the holey pie slice.  The initial mesh has 2 corner triangles.
+      <ul>
+        <li>
+          <a href = "p08_nodes.txt">p08_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p08_elements.txt">p08_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p08.png">p08.png</a>,
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p08_corner_elements.txt">p08_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p08_corner.png">p08_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P09</b> is Jeff Borggaard's square with two hexagonal holes.
+       The initial mesh has 3 corner triangles.
+      <ul>
+        <li>
+          <a href = "p09_nodes.txt">p09_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p09_elements.txt">p09_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p09.png">p09.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p09_corner_elements.txt">p09_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p09_corner.png">p09_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P10</b> is the unit square.  The initial mesh has 4 corner triangles.
+      <ul>
+        <li>
+          <a href = "p10_nodes.txt">p10_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p10_elements.txt">p10_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p10.png">p10.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p10_corner_elements.txt">p10_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p10_corner.png">p10_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P11</b> is the L-shaped region.  The initial mesh has 4 corner triangles.
+      <ul>
+        <li>
+          <a href = "p11_nodes.txt">p11_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p11_elements.txt">p11_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p11.png">p11.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p11_corner_elements.txt">p11_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p11_corner.png">p11_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>Q11</b> is the L-shaped region, but with quadratric (6 node) triangles.
+      The initial mesh has 4 corner triangles.  Because we are using quadratic
+      triangles, when we merge two triangles and swap the diagonal, the midside
+      node on the common diagonal will no longer lie on a line, midway between the
+      two vertices.  <b>TRIANGULATION_CORNER</b> assumes this is undesirable,
+      and recomputes the coordinates of such midside nodes, and outputs
+      a modified node coordinate file as well as the new triangle file.
+      <ul>
+        <li>
+          <a href = "q11_nodes.txt">q11_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "q11_elements.txt">q11_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "q11.png">q11.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "q11_corner_nodes.txt">q11_nodes.corner.txt</a>
+          the node coordinate file after corner triangles have been repaired,
+          which, for quadratric triangles, requires adjusting some midside nodes.
+        </li>
+        <li>
+          <a href = "q11_corner_elements.txt">q11_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "q11_corner.png">q11_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P12</b> is the John Shadid's H-shaped region.  The initial mesh has 7 corner triangles.
+      <ul>
+        <li>
+          <a href = "p12_nodes.txt">p12_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p12_elements.txt">p12_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p12.png">p12.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p12_corner_elements.txt">p12_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p12_corner.png">p12_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P13</b> is the Sandia fork.  The initial mesh has 6 corner triangles.
+      <ul>
+        <li>
+          <a href = "p13_nodes.txt">p13_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p13_elements.txt">p13_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p13.png">p13.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p13_corner_elements.txt">p13_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p13_corner.png">p13_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P14</b> is Marcus Garvie's Lake Alpha, with Beta Island.
+      The initial mesh has 5 corner triangles.  (Must be small!)
+      <ul>
+        <li>
+          <a href = "p14_nodes.txt">p14_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p14_elements.txt">p14_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p14.png">p14.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p14_corner_elements.txt">p14_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p14_corner.png">p14_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P15</b> is Sangbum Kim's forward step region.  The initial mesh has 6 corner triangles.
+      <ul>
+        <li>
+          <a href = "p15_nodes.txt">p15_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p15_elements.txt">p15_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p15.png">p15.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p15_corner_elements.txt">p15_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p15_corner.png">p15_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P16</b> is Kevin Pond's elbow, a quarter of a circular annulus.
+      The initial mesh has 1 corner triangle.
+      <ul>
+        <li>
+          <a href = "p16_nodes.txt">p16_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p16_elements.txt">p16_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p16.png">p16.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p16_corner_elements.txt">p16_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p16_corner.png">p16_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P17</b> is the rectangular channel with a Reuleaux triangle obstacle.
+      The initial mesh has 4 corner triangles.
+      <ul>
+        <li>
+          <a href = "p17_nodes.txt">p17_nodes.txt</a>
+          the mesh nodes of the problem.
+        </li>
+        <li>
+          <a href = "p17_elements.txt">p17_elements.txt</a>
+          the mesh triangles of the problem.
+        </li>
+        <li>
+          <a href = "p17.png">p17.png</a>
+          a PNG image of
+          the initial mesh.
+        </li>
+        <li>
+          <a href = "p17_corner_elements.txt">p17_corner_elements.txt</a>
+          the triangle file after corner triangles have been repaired.
+        </li>
+        <li>
+          <a href = "p17_corner.png">p17_corner.png</a>
+          a PNG image of
+          the repaired mesh.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

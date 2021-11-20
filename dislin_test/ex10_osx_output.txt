@@ -1,0 +1,18 @@
+02 March 2014 07:45:16 PM
+
+EX10:
+  C++ version:
+  Demonstrate the use of color 3D graphics.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 02.03.2014  Time    : 19:45:17  Pageformat: USAP  <<
+ <<  Vectors : 5729        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex10.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX10:
+  Normal end of execution.
+
+02 March 2014 07:45:17 PM

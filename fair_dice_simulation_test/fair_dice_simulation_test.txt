@@ -1,0 +1,14 @@
+26 February 2020 01:36:22 PM
+
+FAIR_DICE_SIMULATION:
+  C++ version
+  Simulate N throws of a pair of fair dice.
+
+  Enter N, the number of times the dice are thrown: 
+  Created the graphics data file "fair_dice_data.txt".
+  Created the graphics command file "fair_dice_commands.txt".
+
+FAIR_DICE_SIMULATION:
+  Normal end of execution.
+
+26 February 2020 01:36:22 PM

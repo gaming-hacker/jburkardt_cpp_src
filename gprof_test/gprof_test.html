@@ -1,0 +1,131 @@
+<html>
+
+  <head>
+    <title>
+      gprof_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      gprof_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>gprof_test</b>,
+      C++ programs which
+      demonstrate the use of the GPROF performance monitoring tool.
+    </p>
+
+    <p>
+      In order to use GPROF with a C++ program, the user program
+      must be compiled and linked with the <b>-pg</b> switch.  For example,
+      either
+      <pre><b>
+        g++ -pg myprog.C
+      </b></pre>
+      or, in a two step process,
+      <pre><b>
+        g++ -c -pg myprog.C
+        g++ -pg myprog.o
+      </b></pre>
+      When the resulting executable program is run, <b>GPROF</b>
+      will silently monitor the program, and produce a report
+      file called <b>gmon.out</b>.  This report file is not user-readable.
+      To see the information contained in the report, you have to
+      run <b>gprof</b> and tell it the name of the executable program
+      you just ran.  A typical procedure, then, would be to issue the
+      commands
+      <pre>
+        <i>myprog</i>            <i>(to run your program called "myprog")</i>
+        <b>gprof</b> <i>myprog</i>      <i>(to have GPROF make the report)</i>
+      </pre>
+    </p>
+
+    <p>
+      <b>GPROF</b> can only report on code which has been compiled
+      with the appropriate options.  If your program calls routines
+      from a precompiled library (which probably was NOT compiled
+      with the -pg option!) then your report information will not
+      include information about the time spent in those routines.
+      <b>GPROF</b>'s report will charge all such time to the higher level
+      routine that called the library routine.  If most of your
+      execution time occurs in various library routines, then this
+      fact may greatly reduce the value of <b>GPROF</b>'s information.
+    </p>
+
+    <p>
+      For more information on how to use <b>GPROF</b>, type
+      <pre><b>
+        man gprof
+      </b></pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>gprof_test</b> examples are available in
+      <a href = "../../c_src/gprof_test/gprof_test.html">a C version</a> and
+      <a href = "../../cpp_src/gprof_test/gprof_test.html">a C++ version</a> and
+      <a href = "../../f_src/gprof_test/gprof_test.html">a FORTRAN90 version</a>.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "gprof_test.sh">gprof_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "gprof_test.txt">gprof_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>LINPACK_BENCH</b> is the LINPACK benchmark code, which
+      solves a linear system.
+      This program was compiled, run, and analyzed with <b>GPROF</b>.
+      <ul>
+        <li>
+          <a href = "linpack_bench.cpp">linpack_bench.cpp</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "linpack_bench.txt">linpack_bench.txt</a>,
+          the output from the LINPACK_BENCHMARK executable.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 18 January 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

@@ -1,0 +1,18 @@
+28 July 2020 09:41:00 AM
+
+GEYSER_BAR:
+  C++ version
+  Use DISLIN routines to make a bar chart.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 28.07.2020  Time    : 09:41:00  Pageformat: USAL  <<
+ <<  Vectors : 1131        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: geyser_bar.png                                    <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+GEYSER_BAR:
+  Normal end of execution.
+
+28 July 2020 09:41:00 AM

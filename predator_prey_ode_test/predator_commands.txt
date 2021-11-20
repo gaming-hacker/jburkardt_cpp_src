@@ -1,0 +1,14 @@
+# predator_commands.txt
+#
+# Usage:
+#  gnuplot < predator_commands.txt
+#
+set term png
+set output 'predator_prey_midpoint.png'
+set xlabel '<-- PREDATOR -->'
+set ylabel '<-- PREY -->'
+set title 'Predator prey: midpoint'
+set grid
+set style data lines
+plot 'predator_data.txt' using 2:3 with lines lw 3
+quit

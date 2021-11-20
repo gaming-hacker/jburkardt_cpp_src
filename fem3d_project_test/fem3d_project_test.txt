@@ -1,0 +1,36 @@
+06 March 2020 08:28:29 AM
+
+FEM3D_PROJECT
+  C++ version.
+
+  Read files defining a sampling of a function of 3 arguments.
+  Read files defining a finite element mesh.
+  Project the sample data onto the mesh, and
+  write a file of FEM coefficient values.
+
+  Sample node spatial dimension is 3
+  Sample node number is            729
+
+  Sample element order is  4
+  Sample element number is 3072
+
+  Converting 1-based sample element array to 0 base.
+
+  The sample value dimension is    4
+  The sample value number is        729
+
+  The element neighbor array has been computed.
+
+  The FEM node dimension is        3
+  The FEM node number is           125
+  The FEM element order is         4
+  The FEM element number is        384
+
+  Converting 1-based FEM element array to 0 base.
+
+  FEM value data written to "r4x4x4_t4_values.txt"
+
+FEM3D_PROJECT
+  Normal end of execution.
+
+06 March 2020 08:28:29 AM

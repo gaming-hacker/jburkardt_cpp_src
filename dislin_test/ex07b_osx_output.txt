@@ -1,0 +1,18 @@
+02 March 2014 07:45:07 PM
+
+EX07B:
+  C++ version:
+  Demonstrate of 3D bar graphs.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 02.03.2014  Time    : 19:45:07  Pageformat: USAP  <<
+ <<  Vectors : 2480        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: ex07b.png                                         <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX07B:
+  Normal end of execution.
+
+02 March 2014 07:45:07 PM

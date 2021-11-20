@@ -1,0 +1,15 @@
+
+Index of "../catalog/catalog.cpp":
+
+  catalog() prints lines from a file that identify individual functions.
+  get_file_type() determines the type of a file from its extension.
+  handle_c() searches a single C file for lines beginning with '  Purpose:'.
+  handle_cc() searches a single C++ file for lines beginning with '//  Purpose:'.
+  handle_f77() searches a single FORTRAN77 file for lines beginning with 'cc'.
+  handle_f90() searches a single FORTRAN file for lines beginning with '!!'.
+  handle_m() searches a single MATLAB file for lines beginning with '%%'.
+  handle_py() searches a single Python file for lines beginning with '##'.
+  handle_r() searches a single R file for lines beginning with '##'.
+  s_begin() reports whether string 1 begins with string 2.
+  s_last_ch() points to the last occurrence of a character in a string.
+  timestamp() prints the current YMDHMS date as a time stamp.

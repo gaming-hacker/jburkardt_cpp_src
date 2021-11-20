@@ -1,0 +1,31 @@
+
+  Process 1 says 'Hello, world!'
+
+  Process 2 says 'Hello, world!'
+
+  Process 2: MPI has nothing for me to do!
+
+  Process 3 says 'Hello, world!'
+
+  Process 3: MPI has nothing for me to do!
+06 September 2018 03:25:28 PM
+
+TYPE - Master process:
+  C++ version
+  An MPI example program that uses an MPI datatype.
+
+  Compiled on Sep  6 2018 at 15:25:27.
+
+  The number of processes is 4
+
+  Process 0 says 'Hello, world!'
+  Process 0 sent an item of type POINT_TYPE, with value 1  2  4
+
+  Process 1 received an item of type POINT_TYPE, with value 1  2  4
+  Process 1 sent a modified item of type POINT_TYPE, with value 400  20  1
+  Process 0 received a modified item of type POINT_TYPE, with value 400  20  1
+
+TYPE - Master process:
+  Normal end of execution.
+
+06 September 2018 03:25:28 PM

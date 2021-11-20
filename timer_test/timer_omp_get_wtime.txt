@@ -1,0 +1,43 @@
+01 May 2020 11:17:43 AM
+
+TIMER_OMP_GET_WTIME
+  C++ version
+
+  Demonstrate the use of the OMP_GET_WTIME timer.
+
+  omp_get_wtime ( ) is an OpenMP library function.
+
+  It returns the elapsed wall clock time in seconds.
+
+  The number of processors available:
+  OMP_GET_NUM_PROCS () = 8
+
+  OMP_SET_NUM_THREADS requests 8 threads.
+
+TEST01
+  Time the C RAND routine by computing N values.
+  For a given N, repeat the computation 5 times.
+
+  Data vectors will be of minimum size 1024
+  Data vectors will be of maximum size 1048576
+
+  Wall clock times are in seconds.
+
+         N       Rep #1       Rep #2       Rep #2       Rep #4       Rep #5
+
+      1024   1.1703e-05   1.1284e-05   1.1408e-05   1.1303e-05   1.1258e-05
+      2048   2.2484e-05   2.2441e-05   2.2439e-05   2.2454e-05   2.2453e-05
+      4096    4.634e-05   4.4897e-05   4.4889e-05   4.5652e-05   4.4882e-05
+      8192   9.4301e-05   9.1113e-05   9.1053e-05   8.9813e-05   8.9743e-05
+     16384  0.000191145  0.000179229  0.000179225   0.00018864  0.000173322
+     32768   0.00036849   0.00036194  0.000358686  0.000363318  0.000366442
+     65536  0.000784104  0.000685822  0.000671407  0.000706198  0.000662997
+    131072   0.00152733   0.00129983   0.00135012   0.00127444   0.00128649
+    262144    0.0029668   0.00258095   0.00252223   0.00259778   0.00254897
+    524288   0.00554346    0.0048513    0.0049055   0.00490357   0.00481074
+   1048576    0.0109279   0.00969424   0.00957774   0.00979952    0.0096255
+
+TIMER_CLOCK
+  Normal end of execution.
+
+01 May 2020 11:17:43 AM

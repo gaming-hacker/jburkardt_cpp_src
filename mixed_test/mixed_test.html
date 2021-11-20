@@ -1,0 +1,169 @@
+<html>
+
+  <head>
+    <title>
+      mixed_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      mixed_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>mixed_test</b>,
+      C++ codes which
+      illustrate some issues in doing mixed language programming.
+    </p>
+
+    <h3 align = "center">
+      The world of bilingual programming
+    </h3>
+
+    <p>
+      Because higher level languages end up as machine code, there is
+      some reason to assume that you can write parts of a program in
+      two different languages; what is <b>not</b> standard is the
+      protocol for dealing with the differences in languages.
+    </p>
+
+    <p>
+      C++ supports (on purpose!) a scheme in which the names chosen
+      by a user for various functions are automatically <i>mangled</i>,
+      because it is assumed likely that the same name could be used
+      in different namespaces, so C++ avoids ambiguity by constructing
+      unique internal names when compiling.  Unfortunately, this makes
+      it very difficult for programs written in other languages to
+      interact with a C++ program.  One feature that can help
+      is the use of the statement
+      <pre>
+        external "C" { (list of function declarations) }
+      </pre>
+      in a C++ program in which name mangling is to be deactivated.
+      The list of function declarations can be either the names of
+      C routines to be called from this C++ routine, OR the names
+      of internal C++ routines that are to be called by an external
+      C routine.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>mixed_test</b> is available in
+      <a href = "../../c_src/mixed_test/mixed_test.html">a C version</a> and
+      <a href = "../../cpp_src/mixed_test/mixed_test.html">a C++ version</a> and
+      <a href = "../../f_src/mixed_test/mixed_test.html">a FORTRAN90 version</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_c/c++_calls_c.html">
+      C++_CALLS_C</a>,
+      C++ programs which
+      call a C function.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_f77/c++_calls_f77.html">
+      C++_CALLS_F77</a>,
+      C++ programs which
+      illustrate how a C++ main program can call a FORTRAN77 subroutine.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_f90/c++_calls_f90.html">
+      C++_CALLS_F90</a>,
+      C++ programs which
+      illustrate how a C++ main program can call a FORTRAN90 subroutine.
+    </p>
+
+    <p>
+      <a href = "../../f77_src/f77_calls_c++/f77_calls_c++.html">
+      F77_CALLS_C++</a>,
+      FORTRAN77 programs which
+      illustrate how a FORTRAN77 program can call a C++ function.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90_calls_c++/f90_calls_c++.html">
+      F90_CALLS_C++</a>,
+      FORTRAN90 examples which
+      illustrates how a FORTRAN90 program can call a C++ function.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "../../pdf/keinert.pdf">
+          Fritz Keinert,<br>
+          Calling FORTRAN Subroutines from Fortran, C and C++</a>,<br>
+          Mathematics Department,<br>
+          Iowa State University.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "mixed_test.sh">mixed_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "mixed_test.txt">mixed_test.txt</a>, 
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>EX1</b> uses a C++ main program, and several C functions.
+      <ul>
+        <li>
+          <a href = "ex1_main.cpp">ex1_main.cpp</a>, the C++
+          main program;
+        </li>
+        <li>
+          <a href = "ex1_sub.c">ex1_sub.c</a>, C functions;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 26 March 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

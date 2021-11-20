@@ -1,0 +1,199 @@
+<html>
+
+  <head>
+    <title>
+      SPHERE_XYZ_DISPLAY_OPENGL - Display Unit Sphere and 3D Points Using OpenGL
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      SPHERE_XYZ_DISPLAY_OPENGL<br> Display Unit Sphere and 3D Points Using OpenGL
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SPHERE_XYZ_DISPLAY_OPENGL</b>,
+      a C++ code which
+      reads the name of a data file
+      containing a list of 3D point coordinates, reads the data,
+      and displays a unit sphere and the points using <b>OPENGL</b>.
+    </p>
+
+    <p>
+      It can be difficult to visualize a set of points that lie on the unit
+      sphere.  You can't see the curving surface, and you can see points
+      that should not be visible, because they are on the other side of
+      the sphere.  By starting the display with a unit sphere, and then
+      adding the 3D points you want to see, both of these problems are
+      resolved.  The addition of the sphere gives important visual cues
+      as to how to "read" the data.
+    </p>
+
+    <p>
+      The program displays the data, and slowly rotates it.  Clicking the
+      mouse stops the rotation; another click starts it again, with rotation
+      around a different axis.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>sphere_xyz_display_opengl</b> <i>data.txt</i>
+      </blockquote>
+      where
+      <ul>
+        <li>
+          <i>data.txt</i> is a file containing a list of the XYZ coordinates
+          of the points to plot.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>SPHERE_XYZ_DISPLAY_OPENGL</b> is available in
+      <a href = "../../cpp_src/sphere_xyz_display_opengl/sphere_xyz_display_opengl.html">a C++ version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/fern_opengl/fern_opengl.html">
+      FERN_OPENGL</a>,
+      a C++ program which
+      uses OpenGL to display the Barnsley fractal fern.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/opengl_test/opengl_test.html">
+      opengl_test</a>,
+      C++ codes which
+      illustrate the use of the OpenGL graphics library;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/screenshot_opengl/screenshot_opengl.html">
+      SCREENSHOT_OPENGL</a>,
+      a C++ program which
+      shows how a program using the OpenGL graphics library can save a
+      screenshot of the graphics being displayed.
+    </p>
+
+    <p>
+      <a href = "../../m_src/sphere_xyz_display/sphere_xyz_display.html">
+      SPHERE_XYZ_DISPLAY</a>,
+      a MATLAB program which
+      reads XYZ information defining points in 3D,
+      and displays a unit sphere and the points in the MATLAB graphics window.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Edward Angel,<br>
+          Interactive Computer Graphics,
+          a Top-Down Approach with OpenGL,<br>
+          Addison-Wesley, 2000,<br>
+          ISBN: 0-201-38597-X,<br>
+          LC: T385.A514.
+        </li>
+        <li>
+          Renate Kempf, Chris Frazier, editors,<br>
+          OpenGL Reference Manual,<br>
+          Fourth Edition,<br>
+          Addison-Wesley, 2004,<br>
+          ISBN: 032117383X,<br>
+          LC: T385.O642
+        </li>
+        <li>
+          Mason Woo, Jackie Neider, Tom Davis,<br>
+          OpenGL Programming Guide,<br>
+          Addison-Wesley, 1997,<br>
+          ISBN: 0-201-46138-2,<br>
+          LC: T385.N435
+        </li>
+        <li>
+          Richard Wright, Michael Sweet,<br>
+          OpenGL Superbible,<br>
+          Third Edition,<br>
+          Sams, 2004,<br>
+          ISBN: 0672326019,<br>
+          LC: T385.W73
+        </li>
+        <li>
+          <a href = "http://www.opengl.org/">
+                     http://www.opengl.org/ </a> <br>
+          The official OpenGL site.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "sphere_xyz_display_opengl.cpp">
+          sphere_xyz_display_opengl.cpp</a>, the source code.
+        </li>
+        <li>
+          <a href = "sphere_xyz_display_opengl.sh">
+          sphere_xyz_display_opengl.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "uniform_on_sphere01_triangle.xyz">
+          uniform_on_sphere01_triangle.xyz</a>, points selected uniformly at
+          random from a spherical triangle.
+        </li>
+        <li>
+          <a href = "uniform_on_sphere01_triangle.png">uniform_on_sphere01_triangle.png</a>,
+          a PNG image of the screen generated by Open GL.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 17 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

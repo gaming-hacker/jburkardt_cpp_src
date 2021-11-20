@@ -1,0 +1,23 @@
+07 April 2021 09:25:19 AM
+
+midpoint_fixed_test:
+  C++ version
+  Test midpoint_fixed() on several ODE's.
+
+predator_prey_midpoint_fixed_test
+  A pair of ordinary differential equations for a population
+  of predators and prey are solved using midpoint_fixed().
+
+  predator_prey_midpoint_fixed_test: data stored in 'predator_prey_midpoint_fixed_data.txt'.
+  predator_prey_midpoint_fixed_test: plot commands stored in 'predator_prey_midpoint_fixed_commands.txt'.
+
+stiff_midpoint_fixed_test
+  Solve stiff ODE using midpoint_fixed().
+
+  plot2: data stored in 'stiff_midpoint_fixed_data1.txt' and 'stiff_midpoint_fixed_data2.txt'
+  plot2: plot commands stored in 'stiff_midpoint_fixed_commands.txt'.
+
+midpoint_fixed_test:
+  Normal end of execution.
+
+07 April 2021 09:25:19 AM

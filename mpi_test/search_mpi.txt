@@ -1,0 +1,36 @@
+06 September 2018 03:25:19 PM
+
+SEARCH - Master process:
+  C++ version
+  An example MPI program to search an array.
+
+  Compiled on Sep  6 2018 at 15:25:18.
+
+  The number of processes is 4
+
+Process 0 is active.
+
+SEARCH - Master process:
+  The number of data items per process is 134
+  The total number of data items is       536.
+
+Process 1 is active.
+
+Process 3 is active.
+  The target value is 5.
+
+Process 2 is active.
+P1  26  5
+P1  119  5
+P2  151  5
+P3  268  5
+P2  184  5
+P3  269  5
+P3  341  5
+P3  386  5
+P3  387  5
+
+SEARCH - Master process:
+  Normal end of execution.
+
+06 September 2018 03:25:19 PM

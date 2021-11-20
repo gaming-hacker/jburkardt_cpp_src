@@ -1,0 +1,246 @@
+<html>
+
+  <head>
+    <title>
+      catalog
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055" >
+
+    <h1 align = "center">
+      catalog
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>catalog</b>,
+      a C++ code which 
+      reads a C, C++, FORTRAN77, FORTRAN90, MATLAB, Python, or R code 
+      and prints every line that begins with a special index tag.  
+      If the code has been marked up expecting this convention, 
+      a handy table of contents will be created.
+    </p>
+
+    <p>
+      catalog() only works if each routine has been marked in the 
+      appropriate way.
+    </p>
+
+    <p>
+      For a C code, the necessary marker is '  Purpose:'.  <b>CATALOG</b>
+      will print the line that comes two lines later, and assumes
+      that the first 4 characters of that line are blank.
+      <pre>
+        void doodah ( int a, int b, int *c )
+        
+        /**********************************************************
+        
+          Purpose:
+        
+            DOODAH computes the mangletude of A hepcatted to B.
+        
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+
+    <p>
+      For a C++ code, the necessary marker is '//  Purpose:'.  <b>CATALOG</b>
+      will print the line that comes two lines later, and assumes
+      that the first 6 characters of that line are to be ignored.
+      <pre>
+        void doodah ( int a, int b, int *c )
+        
+        //*********************************************************
+        //
+        //  Purpose:
+        //
+        //    DOODAH computes the mangletude of A hepcatted to B.
+        //
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+ 
+    <p>
+      For a FORTRAN77 code, the necessary marker is 'cc'.  <b>CATALOG</b>
+      will print the remainder of any such line.  This marker must
+      begin in column 1, and INDEX assumes that the third character
+      is a blank, and ignores it.  I use the marker as follows:
+      <pre>
+              subroutine doodah ( a, b, c )
+        
+        c**********************************************************
+        c
+        cc DOODAH computes the mangletude of A hepcatted to B.
+        c
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+
+    <p>
+      For a FORTRAN90 code, the necessary marker is '!!'.  <b>CATALOG</b>
+      will print the remainder of any such line.  This marker must
+      begin in column 1, and INDEX assumes that the third character
+      is a blank, and ignores it.  I use the marker as follows:
+      <pre>
+        subroutine doodah ( a, b, c )
+        
+        !**********************************************************
+        !
+        !! DOODAH computes the mangletude of A hepcatted to B.
+        !
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+
+    <p>
+      For a MATLAB code, the necessary marker is '%%'.  <b>CATALOG</b>
+      will print the remainder of any such line.  This marker must
+      begin in column 1, and INDEX assumes that the third character
+      is a blank, and ignores it.  I use the marker as follows:
+      <pre>
+        function [ x, y ] = doodah ( a, b, c )
+        
+        %**********************************************************
+        %
+        %% DOODAH computes the mangletude of A hepcatted to B.
+        %
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+
+    <p>
+      For a Python code, the necessary marker is '##'.  <b>CATALOG</b>
+      will print the remainder of any such line.  This marker must
+      begin in column 1, and INDEX assumes that the third character
+      is a blank, and ignores it.  I use the marker as follows:
+      <pre>
+        fdef = doodah ( a, b, c ):
+        
+        #**********************************************************
+        #
+        ## DOODAH computes the mangletude of A hepcatted to B.
+        #
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+
+    <p>
+      For an R code, the necessary marker is '##'.  <b>CATALOG</b>
+      will print the remainder of any such line.  This marker must
+      begin in column 1, and INDEX assumes that the third character
+      is a blank, and ignores it.  I use the marker as follows:
+      <pre>
+        doodah <- function ( a, b, c )
+        
+        #**********************************************************
+        #
+        ## DOODAH computes the mangletude of A hepcatted to B.
+        #
+        ...(further text of the routine follows)
+      </pre>
+    </p>
+
+    <p>
+      In each of the above cases, catalog() will extract and print the line
+      <blockquote>
+         DOODAH computes the mangletude of A hepcatted to B.
+      </blockquote>
+    </p>
+
+    <p>
+      Sample output of the program looks like this:
+      <pre>
+
+        The file is of FORTRAN type.
+
+        Index of column.f90:
+
+        COLUMN extracts a given column from a file.
+        CHRCTI reads an integer from a string.
+        CHRDB1 removes blanks from a string, left justifying the remainder.
+        DIGTEN returns the integer value of a base 10 digit.
+        WRDFND finds the word of a given index in a string.
+        WRDNEXRD "reads" words from a string, one at a time.
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>catalog</b> is available in
+      <a href = "../../cpp_src/catalog/catalog.html">a C++ version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/catalog_test/catalog_test.html">
+      catalog_test</a>
+    </p>
+
+    <p>
+      <a href = "../../c_src/f77split/f77split.html">
+      f77split</a>,
+      a C code which
+      reads a FORTRAN77 file and creates individual files for every
+      blockdata, function, module, program, or subroutine in the file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/f90split/f90split.html">
+      f90split</a>,
+      a FORTRAN90 code which
+      reads a FORTRAN file and creates individual files for every
+      blockdata, function, module, program, subroutine in the file.
+    </p>
+
+    <p>
+      <a href = "../../f_src/fsplit/fsplit.html">
+      fsplit</a>,
+      reads a FORTRAN file and creates individual files for every
+      function, program, or subroutine in the file,
+      by Van Snyder.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "catalog.cpp">catalog.cpp</a>, the source code;
+        </li>
+        <li>
+          <a href = "catalog.sh">catalog.sh</a>, compiles the source code;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 27 March 2021.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

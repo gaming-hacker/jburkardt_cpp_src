@@ -1,0 +1,20 @@
+09 May 2021 06:43:07 PM
+
+abc_test():
+  C++ version
+  Test abc(), with the interface:
+  abc(a_in,b_in,c_in,a_out,b_out,c_out)
+
+    abc ( NULL, NULL, NULL, a_out = 1, b_out = 2, c_out = 3 )
+
+    abc ( a_in = 1, b_in = 19, c_in = 3, NULL, NULL, NULL )
+
+    abc ( NULL, NULL, NULL( a_out = 1, b_out = 19, c_out = 3 )
+
+    abc( a_in = 50, b_in = 60, c_in = 70, a_out = 50, b_out = 60, c_out = 70 )
+    abc ( NULL, NULL, NULL, a_out = 50, b_out = 60, c_out = 70 )
+
+abc_test():
+  Normal end of execution.
+
+09 May 2021 06:43:07 PM

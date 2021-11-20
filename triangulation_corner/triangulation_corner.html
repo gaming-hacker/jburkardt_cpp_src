@@ -1,0 +1,293 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_CORNER - Handle triangulation corners.
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_CORNER <br> Handle triangulation corners.
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_CORNER</b>,
+      a C++ code which
+      tries to correct situations in which a triangulation includes
+      corner triangles, that is, triangles which have two sides on boundary.
+    </p>
+
+    <p>
+      Especially in finite element settings, such a triangle is considered
+      undesirable.  Especially in the case when a linear (order 3) finite
+      element is involved, the function approximation in the interior of
+      the triangle will be entirely determined by boundary data.  If, for
+      instance, the solution is constrained to be zero on the boundary,
+      then the finite element function will be zero throughout the interior
+      of the corner triangle.
+    </p>
+
+    <p>
+      Presumably, the triangle has a neighbor triangle on the one non-boundary
+      side.  It is generally possible and reasonable to replace these two triangles
+      but another two which fill the same quadrilateral, but which are separated
+      by the other diagonal of the quadrilateral.
+    </p>
+
+    <p>
+      The initial situation at the corner is suggest by the following diagram:
+      <pre>
+          |/  |/
+          A---C--
+          |\  |\
+          | \ |
+          |  \|
+          B---D--
+      </pre>
+    <p>
+
+    <p>
+      By rearranging the corner triangle and its neighbor, we have the more
+      satisfactory triangulation:
+      <pre>
+          |/  |/
+          A---C--
+          |  /|\
+          | / |
+          |/  |
+          B---D--
+      </pre>
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_corner</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common filename prefix:
+      <ul>
+        <li>
+          <i>prefix</i>_nodes.txt contains the node coordinates,
+        </li>
+        <li>
+          <i>prefix</i>_elements.txt contains the element definitions.
+        </li>
+        <li>
+          <i>prefix</i>_corner_nodes.txt will contain the revised node coordinates,
+        </li>
+        <li>
+          <i>prefix</i>_corner_elements.txt
+          will contain the revised element definitions.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_CORNER</b> is available in
+      <a href = "../../cpp_src/triangulation_corner/triangulation_corner.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation_corner/triangulation_corner.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_corner/triangulation_corner.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/triangle/triangle.html">
+      TRIANGLE</a>,
+      a C program which
+      computes a triangulation of a geometric region.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation/triangulation.html">
+      TRIANGULATION</a>,
+      a C++ library which
+      performs various operations on order 3 ("linear") or order 6 ("quadratic") triangulations.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_boundary_nodes/triangulation_boundary_nodes.html">
+      TRIANGULATION_BOUNDARY_NODES</a>,
+      a C++ program which
+      reads data defining a triangulation, determines which nodes
+      lie on the boundary, and writes their coordinates to a file.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_corner_test/triangulation_corner_test.html">
+      triangulation_corner_test</a>
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_delaunay_discrepancy/triangulation_delaunay_discrepancy.html">
+      TRIANGULATION_DELAUNAY_DISCREPANCY</a>,
+      a C++ program which
+      measures the amount by which a triangulation fails the local Delaunay test;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_display_opengl/triangulation_display_opengl.html">
+      TRIANGULATION_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads files defining a triangulation and displays an image using Open GL.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_histogram/triangulation_histogram.html">
+      TRIANGULATION_HISTOGRAM</a>,
+      a C++ program which
+      computes histograms of data over a triangulation.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_l2q/triangulation_l2q.html">
+      TRIANGULATION_L2Q</a>,
+      a C++ program which
+      reads information about a 3-node (linear) triangulation and creates data
+      defining a corresponding 6-node (quadratic) triangulation;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_mask/triangulation_mask.html">
+      TRIANGULATION_MASK</a>,
+      a C++ program which
+      reads a triangulation and calls
+      a user-supplied routine to consider each triangle for deletion;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_node_to_element/triangulation_node_to_element.html">
+      TRIANGULATION_NODE_TO_ELEMENT</a>,
+      a C++ program which 
+      reads files describing a set of nodes, their triangulation, and the
+      value of one or more quantities at each node, and outputs a file
+      that averages the quantities for each element.  This operation 
+      in effect creates an "order1" finite element model of the data.
+    </p>
+
+    <p>
+      <a href = "../../data/triangulation_order3/triangulation_order3.html">
+      TRIANGULATION_ORDER3</a>,
+      a data directory which
+      contains examples of TRIANGULATION_ORDER3 files,
+      description of a linear triangulation
+      of a set of 2D points, using a pair of files to list the node
+      coordinates and the 3 nodes that make up each triangle;
+    </p>
+
+    <p>
+      <a href = "../../data/triangulation_order6/triangulation_order6.html">
+      TRIANGULATION_ORDER6</a>,
+      a data directory which
+      contains examples of TRIANGULATION_ORDER6 files,
+      a description of a quadratic triangulation
+      of a set of 2D points, using a pair of files to list the node
+      coordinates and the 6 nodes that make up each triangle.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_orient/triangulation_orient.html">
+      TRIANGULATION_ORIENT</a>,
+      a C++ program which
+      ensures that the triangles in
+      an order 3 or order 6 triangulation have positive orientation;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_plot/triangulation_plot.html">
+      TRIANGULATION_PLOT</a>,
+      a C++ program which
+      makes a PostScript image of a triangulation of points.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_quad/triangulation_quad.html">
+      TRIANGULATION_QUAD</a>,
+      a C++ program which
+      estimates the integral of a function over a triangulated region.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_refine/triangulation_refine.html">
+      TRIANGULATION_REFINE</a>,
+      a C++ program which
+      can refine a triangulation.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_triangle_neighbors/triangulation_triangle_neighbors.html">
+      TRIANGULATION_TRIANGLE_NEIGHBORS</a>,
+      a C++ program which
+      reads data defining a triangulation, determines the neighboring
+      triangles of each triangle, and writes that information to a file.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_corner.cpp">triangulation_corner.cpp</a>, the source code.
+        </li>
+        <li>
+          <a href = "triangulation_corner.sh">triangulation_corner.sh</a>, 
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

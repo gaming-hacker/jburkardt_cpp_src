@@ -1,0 +1,37 @@
+
+23 March 2020 10:39:53 AM
+
+LAGUERRE_RULE
+  C++ version
+
+  Compute a Gauss-Laguerre rule for approximating
+    Integral ( a <= x < +oo ) exp(-b*(x-a)) f(x) dx
+  of order ORDER.
+
+  The user specifies ORDER, A, B, and FILENAME.
+
+  ORDER is the number of points used.
+  A is the left endpoint (typically 0).
+  B is the scale factor (typically 1).
+  FILENAME is used to generate 3 files:
+  * filename_w.txt - the weight file
+  * filename_x.txt - the abscissa file.
+  * filename_r.txt - the region file.
+
+  ORDER = 4
+  A = 0
+  B = 1
+  FILENAME = "0".
+
+  Creating quadrature files.
+
+  Root file name is     "0".
+
+  Weight file will be   "0_w.txt".
+  Abscissa file will be "0_x.txt".
+  Region file will be   "0_r.txt".
+
+LAGUERRE_RULE:
+  Normal end of execution.
+
+23 March 2020 10:39:53 AM

@@ -1,0 +1,201 @@
+
+04 August 2020 02:19:04 PM
+
+SATISFY_OPENMP
+  C++ / OpenMP version
+  We have a logical function of N logical arguments.
+  We do an exhaustive search of all 2^N possibilities,
+  seeking those inputs that make the function TRUE.
+
+  Number of processors available = 8
+  Number of threads =              1
+
+  The number of logical variables is N = 23
+  The number of input vectors to check is 8388608
+
+   # Processor       Index    ---------Input Values------------------------
+
+  Processor 0 iterates from 0 <= I < 8388608
+
+   1         0     3656933 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 0 0 1 0 1
+   2         0     3656941 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 0 1 1 0 1
+   3         0     3656957 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   4         0     3661029 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 0 1 0 1
+   5         0     3661037 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 1
+   6         0     3661053 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   7         0     3665125 0 1 1 0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 0 0 1 0 1
+   8         0     5754104 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 0 0 0
+   9         0     5754109 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+  10         0     5758200 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 0 0 0
+  11         0     5758205 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+  12         0     7851229 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 1
+  13         0     7851261 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+  14         0     7855325 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 0 1 1 1 0 1
+  15         0     7855357 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+
+  Number of solutions found was 15
+  Elapsed wall clock time (seconds) 0.516552
+
+SATISFY_OPENMP
+  Normal end of execution.
+
+04 August 2020 02:19:05 PM
+
+04 August 2020 02:19:05 PM
+
+SATISFY_OPENMP
+  C++ / OpenMP version
+  We have a logical function of N logical arguments.
+  We do an exhaustive search of all 2^N possibilities,
+  seeking those inputs that make the function TRUE.
+
+  Number of processors available = 8
+  Number of threads =              2
+
+  The number of logical variables is N = 23
+  The number of input vectors to check is 8388608
+
+   # Processor       Index    ---------Input Values------------------------
+
+  Processor 0 iterates from 0 <= I < 4194304
+
+
+  Processor 1 iterates from 4194304 <= I < 8388608
+
+   1         1     5754104 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 0 0 0
+   2         1     5754109 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   3         1     5758200 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 0 0 0
+   4         1     5758205 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   1         0     3656933 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 0 0 1 0 1
+   2         0     3656941 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 0 1 1 0 1
+   3         0     3656957 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   4         0     3661029 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 0 1 0 1
+   5         0     3661037 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 1
+   6         0     3661053 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   7         0     3665125 0 1 1 0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 0 0 1 0 1
+   5         1     7851229 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 1
+   6         1     7851261 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   7         1     7855325 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 0 1 1 1 0 1
+   8         1     7855357 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+
+  Number of solutions found was 15
+  Elapsed wall clock time (seconds) 0.271793
+
+SATISFY_OPENMP
+  Normal end of execution.
+
+04 August 2020 02:19:05 PM
+
+04 August 2020 02:19:05 PM
+
+SATISFY_OPENMP
+  C++ / OpenMP version
+  We have a logical function of N logical arguments.
+  We do an exhaustive search of all 2^N possibilities,
+  seeking those inputs that make the function TRUE.
+
+  Number of processors available = 8
+  Number of threads =              4
+
+  The number of logical variables is N = 23
+  The number of input vectors to check is 8388608
+
+   # Processor       Index    ---------Input Values------------------------
+
+  Processor 0 iterates from 
+
+  Processor 
+3  Processor   Processor 0 iterates from  <= I < 22097152
+1 iterates from  iterates from 2097152 <= I < 4194304
+
+6291456
+4194304 <= I < 8388608
+
+ <= I < 6291456
+
+   1         3     7851229 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 1
+   2         3     7851261 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   3         3     7855325 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 0 1 1 1 0 1
+   4         3     7855357 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   1         1     3656933 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 0 0 1 0 1
+   2         1     3656941 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 0 1 1 0 1
+   3         1     3656957 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   1         2     5754104 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 0 0 0
+   2         2     5754109 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   4         1     3661029 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 0 1 0 1
+   5         1     3661037 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 1
+   6         1     3661053 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   3         2     5758200 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 0 0 0
+   4         2     5758205 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   7         1     3665125 0 1 1 0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 0 0 1 0 1
+
+  Number of solutions found was 15
+  Elapsed wall clock time (seconds) 0.142851
+
+SATISFY_OPENMP
+  Normal end of execution.
+
+04 August 2020 02:19:05 PM
+
+04 August 2020 02:19:05 PM
+
+SATISFY_OPENMP
+  C++ / OpenMP version
+  We have a logical function of N logical arguments.
+  We do an exhaustive search of all 2^N possibilities,
+  seeking those inputs that make the function TRUE.
+
+  Number of processors available = 8
+  Number of threads =              8
+
+  The number of logical variables is N = 23
+  The number of input vectors to check is 8388608
+
+   # Processor       Index    ---------Input Values------------------------
+
+
+  Processor 
+  Processor 0
+
+6  Processor 7 iterates from 7340032 iterates from  <= I < 6291456 <= I < 8388608
+7340032
+ iterates from   Processor 
+05
+
+
+  Processor 1 iterates from 
+  Processor   Processor  iterates from 10485762 <= I < 2097152
+4 <= I < 
+ iterates from 1048576
+
+  Processor 4194304 <= I < 5242880
+
+3 iterates from 3145728 <= I < 4194304
+5242880 <= I < 6291456
+
+
+ iterates from 2097152 <= I < 3145728
+
+   1         5     5754104 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 0 0 0
+   2         5     5754109 1 0 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   1         7     7851229 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 0 1 1 1 0 1
+   2         7     7851261 1 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   3         5     5758200 1 0 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1    1         3     3656933 01 1 1  1 1 0 00 0
+ 1 1 1 1 1   40         5     5758205  0 1 11  0 1 00  01  11  1 1 11  1 0 0 01  0 1
+1 1 1 0 0 1 1 1    21         3     3656941 0 1 1 0 1 1 1 1 1    0  0 1   1  0 0   1  1 1 01  1 01
+ 1 1 0 1
+   3         3     3656957 0 1 1 0 1 1 1 1 1 0 0 1 1 0 0 1 1 1 1 1 1 0 1
+   3         7     7855325 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 0 1 1 1 0 1
+   4         7     7855357 1 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   4         3     3661029 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 0 1 0 1
+   5         3     3661037 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 0 1 1 0 1
+   6         3     3661053 0 1 1 0 1 1 1 1 1 0 1 1 1 0 0 1 1 1 1 1 1 0 1
+   7         3     3665125 0 1 1 0 1 1 1 1 1 1 0 1 1 0 0 1 1 1 0 0 1 0 1
+
+  Number of solutions found was 15
+  Elapsed wall clock time (seconds) 0.126819
+
+SATISFY_OPENMP
+  Normal end of execution.
+
+04 August 2020 02:19:05 PM

@@ -1,0 +1,118 @@
+14 February 2020 11:32:10 AM
+
+CCVT_BOX:
+
+  Compiled on Feb 14 2020 at 11:30:02.
+
+  Generate a constrained CVT dataset.
+
+  Default NDIM = 2
+
+  N is the number of points to generate.
+  (Try '100' if you have no preference.)
+  (Any value less than 1 terminates execution.)
+  User input N = 100
+
+  NPP is the number of sample points used to
+  check the boundary.
+  (Try '1000' if you have no preference.)
+  (Any value less than 1 terminates execution.)
+  User input NPP = 1000
+  Default SEED = 123456789
+  Default INIT = "RAND".
+
+  IT_MAX is the maximum number of iterations.
+
+  An iteration carries out the following steps:
+  * the Voronoi region associated with each
+    generator is estimated by sampling;
+  * the centroid of each Voronoi region is estimated.
+  * the generator is replaced by the centroid.
+
+  If enough sampling points are used,
+  and enough iterations are taken, this process
+  will converge.
+
+  (Try '50' if you have no preference.)
+  (A negative value terminates execution).
+
+  Enter IT_MAX:
+  User input IT_MAX = 50
+  Default IT_FIXED = 1
+  Default SAMPLE = "RAND".
+
+  SAMPLE_NUM is the number of sample points.
+
+  The Voronoi regions will be explored by generating
+  SAMPLE_NUM points.  For each sample point, the
+  nearest generator is found.  Using more points
+  gives a better estimate of these regions.
+
+  SAMPLE_NUM should be much larger than N, the
+  number of generators.
+
+  (Try '10000' if you have no preference.)
+  (A zero or negative value terminates execution.)
+
+  User input SAMPLE_NUM = 100000
+  Default BATCH = 1000
+
+                            Energy         Energy after
+  Iteration     Seed        of CVT         projection
+
+       0     123456789      0.00362684      0.00459774
+       1     123656789      0.00228447      0.00311252
+       2     123856789      0.00207072      0.00274476
+       3     124056789      0.00198763      0.00253266
+       4     124256789      0.00193709      0.00239475
+       5     124456789      0.00190197      0.00232356
+       6     124656789      0.00188309      0.00226885
+       7     124856789      0.00186786      0.00222315
+       8     125056789      0.00187381      0.00224556
+       9     125256789      0.00186471       0.0021994
+      10     125456789      0.00185586      0.00216609
+      11     125656789      0.00185407       0.0021571
+      12     125856789      0.00184802      0.00216152
+      13     126056789      0.00184452      0.00220376
+      14     126256789      0.00182832      0.00216219
+      15     126456789      0.00182334      0.00214651
+      16     126656789      0.00182275      0.00213858
+      17     126856789      0.00182179      0.00212028
+      18     127056789      0.00182065      0.00210388
+      19     127256789      0.00181334      0.00209325
+      20     127456789      0.00181134      0.00208897
+      21     127656789      0.00181642      0.00208289
+      22     127856789      0.00180746      0.00207591
+      23     128056789      0.00180276      0.00207282
+      24     128256789      0.00181019      0.00210287
+      25     128456789      0.00181531      0.00209289
+      26     128656789      0.00180672      0.00208032
+      27     128856789      0.00181277      0.00207085
+      28     129056789      0.00181857      0.00207083
+      29     129256789      0.00180532       0.0020773
+      30     129456789      0.00181178      0.00206312
+      31     129656789      0.00180661      0.00206352
+      32     129856789      0.00180606      0.00206169
+      33     130056789      0.00181432      0.00208645
+      34     130256789      0.00181669      0.00208338
+      35     130456789      0.00181802      0.00206999
+      36     130656789      0.00181393      0.00207673
+      37     130856789      0.00181511      0.00206373
+      38     131056789      0.00181687      0.00207199
+      39     131256789       0.0018137      0.00206391
+      40     131456789      0.00181947      0.00206228
+      41     131656789      0.00181217      0.00207181
+      42     131856789      0.00180872      0.00206413
+      43     132056789      0.00181262      0.00205915
+      44     132256789      0.00181698      0.00206632
+      45     132456789      0.00181326      0.00206264
+      46     132656789      0.00181184      0.00205831
+      47     132856789      0.00181592      0.00206047
+      48     133056789      0.00181371      0.00206419
+      49     133256789      0.00181036      0.00205605
+      50     133456789      0.00181378      0.00205455
+
+CCVT_BOX:
+  Normal end of execution.
+
+14 February 2020 11:32:27 AM

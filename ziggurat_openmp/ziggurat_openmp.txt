@@ -1,0 +1,364 @@
+24 August 2018 09:02:14 AM
+
+ZIGGURAT_OPENMP:
+  C++ version
+
+  Number of processors = 8
+  Number of threads =    1
+
+TEST01
+  SHR3_SEEDED computes random integers.
+  Since the output is completely determined
+  by the input value of SEED, we can run in
+  parallel as long as we make an array of seeds.
+
+  The number of threads is 1
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential      Parallel    Difference
+
+         0   -1863796367   -1863796367             0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:     0.0726696       0.0697477
+      RATE:       137.609         143.374
+
+TEST02
+  R4_UNI computes uniformly random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED, we can run in
+  parallel as long as we make an array of seeds.
+
+  The number of threads is 1
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0       0.0660511       0.0660511               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:'
+
+              Sequential      Parallel
+
+      TIME:      0.314918        0.319064
+      RATE:       31.7543         31.3417
+
+TEST03
+  R4_NOR computes normal random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED and the tables, we can run in
+  parallel as long as we make an array of seeds and share the tables.
+
+  The number of threads is 1
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0       -0.326194       -0.326194               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:      0.172585        0.174627
+      RATE:       57.9424         57.2649
+
+TEST04
+  R4_EXP computes exponential random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED and the tables, we can run in
+  parallel as long as we make an array of seeds and share the tables.
+
+  The number of threads is 1
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0        0.113969        0.113969               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:      0.910353        0.911671
+      RATE:       10.9847         10.9689
+
+ZIGGURAT_OPENMP:
+  Normal end of execution.
+
+24 August 2018 09:02:17 AM
+24 August 2018 09:02:17 AM
+
+ZIGGURAT_OPENMP:
+  C++ version
+
+  Number of processors = 8
+  Number of threads =    2
+
+TEST01
+  SHR3_SEEDED computes random integers.
+  Since the output is completely determined
+  by the input value of SEED, we can run in
+  parallel as long as we make an array of seeds.
+
+  The number of threads is 2
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential      Parallel    Difference
+
+         0    1249912034    1249912034             0
+         1     503020437     503020437             0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:     0.0697457       0.0362262
+      RATE:       143.378         276.043
+
+TEST02
+  R4_UNI computes uniformly random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED, we can run in
+  parallel as long as we make an array of seeds.
+
+  The number of threads is 2
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0        0.791018        0.791018               0
+         1        0.617119        0.617119               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:'
+
+              Sequential      Parallel
+
+      TIME:      0.307857        0.167143
+      RATE:       32.4826         59.8289
+
+TEST03
+  R4_NOR computes normal random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED and the tables, we can run in
+  parallel as long as we make an array of seeds and share the tables.
+
+  The number of threads is 2
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0         0.97773         0.97773               0
+         1        -1.07051        -1.07051               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:      0.169407       0.0903381
+      RATE:       59.0295         110.695
+
+TEST04
+  R4_EXP computes exponential random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED and the tables, we can run in
+  parallel as long as we make an array of seeds and share the tables.
+
+  The number of threads is 2
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0        0.332266        0.332266               0
+         1        0.605476        0.605476               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:      0.901303        0.523457
+      RATE:       11.0951         19.1038
+
+ZIGGURAT_OPENMP:
+  Normal end of execution.
+
+24 August 2018 09:02:19 AM
+24 August 2018 09:02:19 AM
+
+ZIGGURAT_OPENMP:
+  C++ version
+
+  Number of processors = 8
+  Number of threads =    4
+
+TEST01
+  SHR3_SEEDED computes random integers.
+  Since the output is completely determined
+  by the input value of SEED, we can run in
+  parallel as long as we make an array of seeds.
+
+  The number of threads is 4
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential      Parallel    Difference
+
+         0   -1669655539   -1669655539             0
+         1     108105747     108105747             0
+         2   -1587791136   -1587791136             0
+         3    1909075432    1909075432             0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:     0.0698619        0.034868
+      RATE:        143.14         286.796
+
+TEST02
+  R4_UNI computes uniformly random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED, we can run in
+  parallel as long as we make an array of seeds.
+
+  The number of threads is 4
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0        0.111253        0.111253               0
+         1         0.52517         0.52517               0
+         2        0.130314        0.130314               0
+         3        0.944491        0.944491               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:'
+
+              Sequential      Parallel
+
+      TIME:      0.308563        0.104901
+      RATE:       32.4083         95.3278
+
+TEST03
+  R4_NOR computes normal random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED and the tables, we can run in
+  parallel as long as we make an array of seeds and share the tables.
+
+  The number of threads is 4
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0       -0.828252       -0.828252               0
+         1        0.314686        0.314686               0
+         2       -0.989801       -0.989801               0
+         3        -1.48772        -1.48772               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:      0.171316       0.0748028
+      RATE:       58.3718         133.685
+
+TEST04
+  R4_EXP computes exponential random single precision real values.
+  Since the output is completely determined
+  by the input value of SEED and the tables, we can run in
+  parallel as long as we make an array of seeds and share the tables.
+
+  The number of threads is 4
+
+  Correctness check:
+
+  Computing values sequentially should reach the
+  same result as doing it in parallel:
+
+    THREAD    Sequential        Parallel      Difference
+
+         0        0.427391        0.427391               0
+         1        0.162032        0.162032               0
+         2        0.125027        0.125027               0
+         3        0.264089        0.264089               0
+
+  Efficiency check:
+
+  Computing values in parallel should be faster:
+
+              Sequential      Parallel
+
+      TIME:      0.900929        0.323658
+      RATE:       11.0996         30.8968
+
+ZIGGURAT_OPENMP:
+  Normal end of execution.
+
+24 August 2018 09:02:21 AM

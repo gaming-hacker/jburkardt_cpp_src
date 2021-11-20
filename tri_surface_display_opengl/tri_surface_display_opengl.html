@@ -1,0 +1,256 @@
+<html>
+
+  <head>
+    <title>
+      TRI_SURFACE_DISPLAY_OPENGL - Display a 3D Triangulated Surface in MATLAB
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRI_SURFACE_DISPLAY_OPENGL <br> Display a 3D Triangulated Surface in MATLAB
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRI_SURFACE_DISPLAY_OPENGL</b>,
+      a C++ program which
+      gets the names of the node and element
+      files defining a 3D triangulated surface or "TRI_SURFACE",
+      reads the information from the files, and displays the surface on the screen.
+    </p>
+
+    <p>
+      The surface is presented in rotation about the X axis.  By clicking
+      the mouse button, the axis of rotation will be advanced from X to Y
+      to Z and back to X.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>tri_surface_display</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common filename prefix, so that:
+      <ul>
+        <li>
+          <i>prefix</i><b>_nodes.txt</b> contains the node coordinates;
+        </li>
+        <li>
+          <i>prefix</i><b>_elements.txt</b> contains indices of nodes that form the elements;
+        </li>
+      </ul>
+      reads the information
+      and displays an image of the surface on the screen.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRI_SURFACE_DISPLAY_OPENGL</b> is available in
+      <a href = "../../cpp_src/tri_surface_display_opengl/tri_surface_display_opengl.html">a C++ version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/fern_opengl/fern_opengl.html">
+      FERN_OPENGL</a>,
+      a C++ program which
+      uses OpenGL to display the Barnsley fractal fern.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/opengl_test/opengl_test.html">
+      opengl_test</a>,
+      C++ codes which
+      illustrate the use of the OpenGL graphics library;
+    </p>
+
+    <p>
+      <a href = "../../m_src/polygonal_surface_display/polygonal_surface_display.html">
+      POLYGONAL_SURFACE_DISPLAY</a>,
+      a MATLAB program which
+      displays a surface in 3D described as a set of polygons.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/polygonal_surface_display_opengl/polygonal_surface_display_opengl.html">
+      POLYGONAL_SURFACE_DISPLAY_OPENGL</a>,
+      a C++ program which
+      displays a surface in 3D described as a set of polygons, using OpenGL.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/screenshot_opengl/screenshot_opengl.html">
+      SCREENSHOT_OPENGL</a>,
+      a C++ program which
+      shows how a program using the OpenGL graphics library can save a
+      screenshot of the graphics being displayed.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/sphere_xyz_display_opengl/sphere_xyz_display_opengl.html">
+      SPHERE_XYZ_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads XYZ information defining points in 3D,
+      and displays a unit sphere and the points, using OpenGL.
+    </p>
+
+    <p>
+      <a href = "../../f_src/tet_mesh_boundary/tet_mesh_boundary.html">
+      TET_MESH_BOUNDARY</a>,
+      a FORTRAN90 program which
+      returns the nodes and faces of the boundary of a tetrahedral mesh,
+      which themselves form a 3D triangular mesh or "TRI_SURFACE".
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_display_opengl/tet_mesh_display_opengl.html">
+      TET_MESH_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads files defining a tet mesh and displays an image
+      using Open GL.
+    </p>
+
+    <p>
+      <a href = "../../data/tri_surface/tri_surface.html">
+      TRI_SURFACE</a>,
+      a data directory which
+      contains examples of TRI_SURFACE files,
+      a 3D surface described by a collection of triangles.
+    </p>
+
+    <p>
+      <a href = "../../m_src/tri_surface_display/tri_surface_display.html">
+      TRI_SURFACE_DISPLAY</a>,
+      a MATLAB program which
+      displays the 3D graphics information
+      in a TRI_SURFACE file;
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_display_opengl/triangulation_display_opengl.html">
+      TRIANGULATION_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads files defining a triangulation and displays an image
+      using Open GL.
+    </p>
+
+    <p>
+      <a href = "../../m_src/triangulation_order1_display/triangulation_order1_display.html">
+      TRIANGULATION_ORDER1_DISPLAY</a>,
+      a MATLAB program which
+      reads files defining a piecewise constant triangulation of data, and displays
+      a corresponding 3D surface.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/xy_display_opengl/xy_display_opengl.html">
+      XY_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads an XY file of 2D point coordinates, and displays
+      an image of those points using OpenGL.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/xyl_display_opengl/xyl_display_opengl.html">
+      XYL_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads XYL information defining points and lines in 2D, and displays
+      an image using OpenGL.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/xyz_display_opengl/xyz_display_opengl.html">
+      XYZ_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads an XYZ file of 3D point coordinates, and displays
+      an image of those points using OpenGL.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Edward Angel,<br>
+          Interactive Computer Graphics,
+          a Top-Down Approach with OpenGL,<br>
+          Addison-Wesley, 2000,<br>
+          ISBN: 0-201-38597-X,<br>
+          LC: T385.A514.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "tri_surface_display_opengl.cpp">tri_surface_display_opengl.cpp</a>, the source code.
+        </li>
+        <li>
+          <a href = "tri_surface_display_opengl.sh">tri_surface_display_opengl.sh</a>, compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SPHERE</b> is a sphere, tiled with an 8 by 8 array of
+      logically triangular patches.
+      <ul>
+        <li>
+          <a href = "sphere_nodes.txt">
+          sphere_nodes.txt</a>, the node file;
+        </li>
+        <li>
+          <a href = "sphere_elements.txt">
+          sphere_elements.txt</a>, the face file;
+        </li>
+        <li>
+          <a href = "sphere.png">
+          sphere.png</a>,
+          a PNG image of
+          the shape as displayed by TRI_SURFACE_DISPLAY.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 03 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,58 @@
+06 May 2020 08:07:48 PM
+
+TRIANGULATION_SVG
+  C++ version:
+  Make an SVG plot of triangulated data.
+
+  This program expects two files:
+  * prefix_nodes.txt,    node coordinates,
+  * prefix_elements.txt, indices of nodes forming elements,
+  and creates:
+  * prefix.svg, an SVG image of the triangulation.
+
+  Read the header of "lake_nodes.txt".
+
+  Spatial dimension DIM_NUM = 2
+  Number of nodes NODE_NUM  = 621
+
+  Read the data in "lake_nodes.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:       1             2       
+  Col
+
+    1         316.43       404.476
+    2        291.049       400.709
+    3        265.165       409.779
+    4        241.468       402.403
+    5        216.551       396.521
+
+ Read the header of "lake_elements.txt".
+
+  Element order ELEMENT_ORDER = 3
+  Number of elements ELEMENT_NUM  = 973
+
+  Read the data in "lake_elements.txt".
+
+  5 by 5 portion of data read from file:
+
+  Row:      1       2       3  
+  Col
+
+    1     619     618      39  
+    2     620     619      39  
+    3     125     126       7  
+    4     125     132     126  
+    5     143     135     150  
+
+MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+
+  Graphics data written to file "lake.svg"
+
+TRIANGULATION_SVG:
+  Normal end of execution.
+
+06 May 2020 08:07:48 PM

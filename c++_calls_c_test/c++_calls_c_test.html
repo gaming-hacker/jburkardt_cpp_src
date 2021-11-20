@@ -1,0 +1,166 @@
+<html>
+
+  <head>
+    <title>
+     c++_calls_c_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      c++_calls_c_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>c++_calls_c_test</b>
+      C++ programs which
+      illustrates how a C++ program can call a C function.
+    </p>
+
+    <p>
+      For this example, the KRONROD package is used.  Note that the KRONROD
+      library is available in C++ and in C, so this example is not
+      created out of necessity (the C++ main program could have simply called
+      the C++ version of KRONROD).  Instead, it is intended as an example of
+      how to do this when you have to (you don't have a C++ version of the
+      routines you want to use.)
+    </p>
+
+    <p>
+      When calling a C function from a C++ function, there are
+      some simple things that may be enough to guarantee success.
+      <ul>
+        <li>
+          the C++ code should declare interfaces to the C functions
+          using the "extern C" qualifier, as in
+          <pre>
+extern "C" 
+{
+  void kronrod ( int n, double eps, double x[], double w1[], double w2[] );
+  void timestamp ( );
+}
+          </pre>
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>c++_calls_c_test</b> is available in
+      <a href = "../../cpp_src/c++_calls_c_test/c++_calls_c_test.html">a C++ version</a> and
+      <a href = "../../f_src/f90_calls_c_test/f90_calls_c_test.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/matlab_calls_c_test/matlab_calls_c_test.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_f77_test/c++_calls_f77_test.html">
+      c++_calls_f77_test</a>,
+      C++ programs which
+      call a FORTRAN77 subroutine.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_f90_test/c++_calls_f90_test.html">
+      c++_calls_f90_test</a>,
+      C++ programs which
+      call a FORTRAN90 subroutine.
+    </p>
+
+    <p>
+      <a href = "../../c_src/kronrod/kronrod.html">
+      KRONROD</a>,
+      a C library which
+      can compute a Gauss and Gauss-Kronrod pair of quadrature rules
+      of arbitrary order,
+      by Robert Piessens, Maria Branders.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/kronrod/kronrod.html">
+      KRONROD</a>,
+      a C++ library which
+      can compute a Gauss and Gauss-Kronrod pair of quadrature rules
+      of arbitrary order,
+      by Robert Piessens, Maria Branders.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/mixed/mixed.html">
+      MIXED</a>,
+      C++ programs which
+      call a function written in another programming language.
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "c++_calls_c_test.sh">kronrod_test.sh</a>,
+          runs all the tests;
+        </li>
+      </ul>
+    </p>
+
+
+    <p>
+      <ul>
+        <li>
+          <a href = "kronrod_test.cpp">kronrod_test.cpp</a>;
+        </li>
+        <li>
+          <a href = "kronrod_test.sh">kronrod_test.sh</a>,
+          runs all the tests.
+        </li>
+        <li>
+          <a href = "kronrod_test.txt">kronrod_test.txt</a>,
+          the output file.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        </li>
+        <li>
+          <a href = "kronrod.c">kronrod.c</a>, the source code;
+        </li>
+        <li>
+          <a href = "kronrod.h">kronrod.h</a>, the include file;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 February 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

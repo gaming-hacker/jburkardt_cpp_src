@@ -1,0 +1,18 @@
+28 July 2020 09:41:00 AM
+
+GRID_SURFACE:
+  C++ version:
+  Use DISLIN to plot Z(X,Y) data as a surface.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 28.07.2020  Time    : 09:41:00  Pageformat: USAP  <<
+ <<  Vectors : 3663        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: grid_surface.png                                  <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+GRID_SURFACE:
+  Normal end of execution.
+
+28 July 2020 09:41:00 AM

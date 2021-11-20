@@ -1,0 +1,46 @@
+01 April 2020 01:20:58 PM
+
+prime_test
+  C++ version
+  Test the prime library.
+
+TEST01
+  Call PRIME_NUMBER to count the primes from 1 to N.
+
+         N        Pi          Time
+
+         1         0           1e-06
+         2         1           1e-06
+         4         2           1e-06
+         8         4           1e-06
+        16         6           1e-06
+        32        11           2e-06
+        64        18           3e-06
+       128        31           9e-06
+       256        54           3e-05
+       512        97         9.2e-05
+      1024       172        0.000314
+      2048       309        0.001114
+      4096       564        0.004059
+      8192      1028        0.013252
+     16384      1900        0.043108
+     32768      3512        0.157468
+     65536      6542        0.582636
+    131072     12251         2.19226
+
+TEST01
+  Call PRIME_NUMBER to count the primes from 1 to N.
+
+         N        Pi          Time
+
+         5         3           1e-06
+        50        15           2e-06
+       500        95         6.8e-05
+      5000       669        0.004522
+     50000      5133        0.349596
+    500000     41538          28.831
+
+prime_test
+  Normal end of execution.
+
+01 April 2020 01:21:30 PM

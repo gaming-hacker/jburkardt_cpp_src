@@ -1,0 +1,174 @@
+<html>
+
+  <head>
+    <title>
+      triangulation_mask_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      triangulation_mask_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>triangulation_mask_test</b>,
+      a C++ code which 
+      calls triangulation_mask(), which
+      reads the nodes and triangles that define a triangulation, 
+      calls a user routine which determines whether each triangle is to
+      be preserved or discarded ("masked") from the triangulation,
+      and writes out new node and triangle files that define the
+      masked triangulation.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_mask/triangulation_mask.html">
+      triangulation_mask</a>,
+      a C++ code which
+      reads a triangulation and calls
+      a user-supplied routine to consider each triangle for deletion;
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_mask_test.sh">triangulation_mask_test.sh</a>,
+          runs all the tests.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P15</b> is a triangulation created by calling
+      DISTMESH,
+      then removing duplicate points by calling TABLE_MERGE,
+      then creating a Delaunay triangulation by calling
+      TABLE_DELAUNAY,
+      Unfortunately, this results in many triangles that lie outside
+      the region of interest.
+      <ul>
+        <li>
+          <a href = "p15_nodes.txt">p15_nodes.txt</a>,
+          a set of nodes.
+        </li>
+        <li>
+          <a href = "p15_nodes.png">p15_nodes.png</a>,
+          a PNG image of the nodes.
+        </li>
+        <li>
+          <a href = "p15_elements.txt">p15_elements.txt</a>,
+          a set of order 3 triangles.
+        </li>
+        <li>
+          <a href = "p15_elements.png">p15_elements.png</a>,
+          a PNG image of the
+          original data.
+        </li>
+        <li>
+          <a href = "p15_mask.cpp">p15_mask.cpp</a>,
+          a routine which masks the triangles by dropping those whose
+          centroids lie outside the region.
+        </li>
+        <li>
+          <a href = "p15_mask.txt">p15_mask.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "p15_mask_nodes.txt">p15_mask_nodes.txt</a>,
+          the nodes after masking.
+        </li>
+        <li>
+          <a href = "p15_mask_elements.txt">p15_mask_elements.txt</a>,
+          the elements after masking.
+        </li>
+        <li>
+          <a href = "p15_mask_elements.png">p15_mask_elements.png</a>,
+          PNG image of the elements after masking.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>SMALL</b> is a triangulation of the 25 lattice points on
+      the [0,4]x[0,4] square.  Our masking operation should cut out
+      a lower left triangular corner and a section from the upper right.
+      <ul>
+        <li>
+          <a href = "small_nodes.txt">small_nodes.txt</a>,
+          a set of nodes.
+        </li>
+        <li>
+          <a href = "small_nodes.png">small_nodes.png</a>,
+          an image of the original nodes.
+        </li>
+        <li>
+          <a href = "small_elements.txt">small_elements.txt</a>,
+          a set of order 3 triangles.
+        </li>
+        <li>
+          <a href = "small_elements.png">small_elements.png</a>,
+          a PNG image of the original elements.
+        </li>
+        <li>
+          <a href = "small_mask.cpp">small_mask.cpp</a>,
+          a routine which masks the triangles by dropping those whose
+          centroids lie outside the region.
+        </li>
+        <li>
+          <a href = "small_mask.txt">small_mask.txt</a>,
+          the output file.
+        </li>
+        <li>
+          <a href = "small_mask_nodes.txt">small_mask_nodes.txt</a>,
+          the nodes after masking.
+        </li>
+        <li>
+          <a href = "small_mask_nodes.png">small_mask_nodes.png</a>,
+          an image of the nodes after masking.
+        </li>
+        <li>
+          <a href = "small_mask_elements.txt">small_mask_elements.txt</a>,
+          the elements after masking.
+        </li>
+        <li>
+          <a href = "small_mask_elements.png">small_mask_elements.png</a>,
+          a PNG image of the elements after masking.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

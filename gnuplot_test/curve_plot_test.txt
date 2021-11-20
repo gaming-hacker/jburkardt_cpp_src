@@ -1,0 +1,6 @@
+
+CURVE_PLOT_TEST:
+  Demonstrate how CURVE_PLOT can be used.
+
+  Plot data written to the file "curve_plot_data.txt".
+  Command data written to "curve_plot_commands.txt".

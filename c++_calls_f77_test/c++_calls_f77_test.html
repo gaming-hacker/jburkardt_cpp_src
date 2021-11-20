@@ -1,0 +1,209 @@
+<html>
+
+  <head>
+    <title>
+      c++_calls_f77_test
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      c++_calls_f77_test
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>c++_calls_f77_test</b>,
+      C++ programs which
+      illustrates how a C++ main program can call a FORTRAN77 subroutine.
+    </p>
+
+    <p>
+      For this example, the KRONROD package is used.  Note that the KRONROD
+      library is available in C++ and in FORTRAN77, so this example is not
+      created out of necessity (the C++ main program could have simply called
+      the C++ version of KRONROD).  Instead, it is intended as an example of
+      how to do this when you have to (you don't have a C++ version of the
+      routines you want to use.)
+    </p>
+
+    <p>
+      When calling a FORTRAN77 routine from a C++ function, there are
+      some simple things that may be enough to guarantee success.
+      <ul>
+        <li>
+          a FORTRAN77 subroutine is like a C++ void function, and should
+          be declared this way in the C++ code.  The qualifier <b>extern</b>
+          should also be used.
+        </li>
+        <li>
+          a FORTRAN77 subroutine or function expects all its arguments
+          to be passed by reference.  This generally means simply that
+          the C++ function must pass scalar variables by reference, not value.
+        </li>
+        <li>
+          typically, when the FORTRAN77 compiler compiles the FORTRAN77
+          code, the names of functions and subroutines are stored with
+          an appended underscore.  In order for these names to be found
+          by the C++ code, it is necessary that the C++ code declare and
+          invoke the FORTRAN functions and subroutines with the underscore
+          explicitly appended to the name.
+        </li>
+        <li>
+          in many cases, a FORTRAN compiler is simply a "front end" to a
+          corresponding C++ compiler, as in the case of the GNU compilers
+          gfortran and g++, or the Intel compilers ifort and icpp.  This means
+          that, as long as the corresponding compilers are used to compile
+          the FORTRAN77 and C++ codes, it is probably possible to use either
+          compiler to link and load the object codes; however, the load
+          command may need to specify explicitly certain libraries associated
+          with one of the languages.  For instance, if loading using the
+          gcc command, it is necessary to include "-l gfortran" so that
+          the FORTRAN I/O libraries, among others, are included in the build.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>c++_calls_f77_test</b> is available in
+      <a href = "../../c_src/c_calls_f77_test/c_calls_f77_test.html">a C version</a> and
+      <a href = "../../cpp_src/c++_calls_f77_test/c++_calls_f77_test.html">a C++ version</a> and
+      <a href = "../../m_src/matlab_calls_f77_test/matlab_calls_f77_test.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../c_src/c_calls_f77_test/c_calls_f77_test.html">
+      c_calls_f77_test</a>,
+      C programs which
+      illustrate a C program calling a FORTRAN77 subroutine.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_c_test/c++_calls_c_test.html">
+      c++_calls_c_test</a>,
+      C++ programs which
+      call a C function.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/c++_calls_f90_test/c++_calls_f90_test.html">
+      c++_calls_f90_test</a>,
+      C++ programs which
+      illustrate how a C++ main program can call a FORTRAN90 subroutine.
+    </p>
+
+    <p>
+      <a href = "../../f77_src/f77_calls_c++_test/f77_calls_c++_test.html">
+      f77_calls_c++_test</a>,
+      FORTRAN77 programs which
+      illustrate how a FORTRAN77 program can call a C++ function.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/kronrod/kronrod.html">
+      KRONROD</a>,
+      a C++ library which
+      can compute a Gauss and Gauss-Kronrod pair of quadrature rules
+      of arbitrary order,
+      by Robert Piessens, Maria Branders.
+    </p>
+
+    <p>
+      <a href = "../../f77_src/kronrod/kronrod.html">
+      KRONROD</a>,
+      a FORTRAN77 library which
+      can compute a Gauss and Gauss-Kronrod pair of quadrature rules
+      of arbitrary order,
+      by Robert Piessens, Maria Branders.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/mixed/mixed.html">
+      MIXED</a>
+      C++ programs which
+      call a function written in another programming language.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          Calling FORTRAN Subroutines from Fortran, C and C++</a>,<br>
+          Fritz Keinert,<br>
+          Mathematics Department,<br>
+          Iowa State University.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "c++_calls_f77_test.sh">c++_calls_f77_test.sh</a>,
+          runs all the tests;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "kronrod_test.cpp">kronrod_test.cpp</a>;
+        </li>
+        <li>
+          <a href = "kronrod_test.sh">kronrod_test.sh</a>,
+          runs all the tests;
+        </li>
+        <li>
+          <a href = "kronrod_test.txt">kronrod_test.txt</a>,
+          the output file;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "kronrod.f">kronrod.f</a>;
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 13 February 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

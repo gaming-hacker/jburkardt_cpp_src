@@ -1,0 +1,86 @@
+
+26 April 2020 04:59:16 PM
+
+TET_MESH_L2Q
+  C++ version
+  Read a "linear" tet mesh and
+  write out a "quadratic" one.
+
+  Read a node file of NODE_NUM1 nodes in 3 dimensions.
+  Read an associated tet mesh of TETRA_NUM
+  tetrahedrons, using 4 nodes per tetrahedron.
+
+  Create new nodes which are midpoints of sides,
+  generate new node and tet mesh data for
+  quadratic 10-node tetrahedrons, and write them out.
+
+  Compiled on Apr 26 2020 at 16:54:42.
+
+  Read the header of "mesh_nodes.txt".
+
+  Spatial dimension = 3
+  Number of nodes   = 8
+
+  Read the data in "mesh_nodes.txt".
+
+  First 5 nodes:
+
+  Row:       1             2             3       
+  Col
+    1              0             0             0
+    2              0             0             1
+    3              0             1             0
+    4              0             1             1
+    5              1             0             0
+
+  Read the header of "mesh_elements.txt".
+
+  Tetrahedron order = 4
+  Number of tetras  = 6
+
+  Read the data in "mesh_elements.txt".
+
+  First 5 tetrahedrons:
+
+  Row:      1       2       3       4  
+  Col
+
+    1       4       3       5       1  
+    2       4       2       5       1  
+    3       4       7       3       5  
+    4       4       7       8       5  
+    5       4       6       2       5  
+
+TET_MESH_BASE_ZERO:
+  The element indexing appears to be 1-based!
+  This will be converted to 0-based.
+  Number of quadratic nodes = 27
+
+  First 5 quadratic nodes:
+
+  Row:       1             2             3       
+  Col
+    1              0             0             0
+    2              0             0             1
+    3              0             1             0
+    4              0             1             1
+    5              1             0             0
+
+  First 5 quadratic tetras
+
+  Row:      1       2       3       4       5       6       7       8       9      10  
+  Col
+
+    1       3       2       4       0      15      18      10      16       9      11  
+    2       3       1       4       0      12      18      10      13       8      11  
+    3       3       6       2       4      20      15      18      17      23      16  
+    4       3       6       7       4      20      21      18      26      23      24  
+    5       3       5       1       4      19      12      18      14      22      13  
+
+  Wrote the file "mesh_l2q_nodes.txt".
+  Wrote the file "mesh_l2q_elements.txt".
+
+TET_MESH_L2Q:
+  Normal end of execution.
+
+26 April 2020 04:59:16 PM

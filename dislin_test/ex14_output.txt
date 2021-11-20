@@ -1,0 +1,26 @@
+23 January 2020 10:21:12 AM
+
+EX14:
+  C++ version:
+  Using TeX for mathematical formulas.
+ <<<< Warning 193: Startpoint (  150/ 2200) out of page in messag!
+ <<<< Warning 193: Endpoint (  821/ 2239) out of page in height!
+ <<<< Warning 193: Startpoint ( 1200/ 2200) out of page in messag!
+ <<<< Warning 193: Endpoint ( 1945/ 2239) out of page in height!
+ <<<< Warning 193: Startpoint (  150/ 2500) out of page in messag!
+ <<<< Warning 193: Endpoint ( 1013/ 2539) out of page in height!
+ <<<< Warning 193: Startpoint ( 1200/ 2500) out of page in messag!
+ <<<< Warning 193: Endpoint ( 1551/ 2539) out of page in height!
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 23.01.2020  Time    : 10:21:12  Pageformat: USAL  <<
+ <<  Vectors : 3505        Warnings: 8         Fileformat:  PNG  <<
+ <<  Metafile: ex14.png                                          <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+EX14:
+  Normal end of execution.
+
+23 January 2020 10:21:12 AM

@@ -1,0 +1,9 @@
+
+mandelbrot_ppm
+  C++ version
+  Image of Mandelbrot set as an ASCII PPM file.
+
+  Graphics saved as 'mandelbrot.ppm'
+
+mandelbrot_ppm
+  Normal end of execution.

@@ -1,0 +1,20 @@
+02 March 2014 07:46:04 PM
+
+QUICKPLOT_CURVE:
+  C++ version:
+  Demonstrate the DISLIN 'quickplot' command QPLSUR
+  to plot a surface Z(X,Y) stored as a matrix.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 10.4.1                <<
+ <<  Date    : 02.03.2014  Time    : 19:46:04  Pageformat: USAL  <<
+ <<  Vectors : 13610       Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: quickplot_surface.png                             <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+ <<<< Warning   3: Incorrect level in disfin!   (   0)
+
+QUICKPLOT_SURFACE:
+  Normal end of execution.
+
+02 March 2014 07:46:04 PM

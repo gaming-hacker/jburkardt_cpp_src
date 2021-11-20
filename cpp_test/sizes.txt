@@ -1,0 +1,25 @@
+05 February 2020 10:19:31 AM
+
+SIZES
+  C++ version
+  Return the size of various data types.
+
+  Compiled on Feb  5 2020 at 10:19:30
+
+         char 1 bytes.
+
+    short int 2 bytes.
+          int 4 bytes.
+     long int 8 bytes.
+long long int 8 bytes.
+
+        float 4 bytes.
+       double 8 bytes.
+  long double 16 bytes.
+
+         bool 1 bytes.
+
+SIZES
+  Normal end of execution.
+
+05 February 2020 10:19:31 AM

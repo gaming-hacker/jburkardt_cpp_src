@@ -1,0 +1,51 @@
+31 May 2021 02:23:19 PM
+
+zero_test():
+  C++ version
+  zero() seeks a root of a function F(X)
+  in an interval [A,B].
+
+  f_01(x) = sin ( x ) - x / 2
+
+           A                 Z             B
+         F(A)              F(Z)          F(B)
+               1         1.89549               2
+        0.341471               0      -0.0907026
+  Number of calls to F = 8
+
+  f_02(x) = 2 * x - exp ( - x )
+
+           A                 Z             B
+         F(A)              F(Z)          F(B)
+               0        0.351734               1
+              -1               0         1.63212
+  Number of calls to F = 7
+
+  f_03(x) = x * exp ( - x )
+
+           A                 Z             B
+         F(A)              F(Z)          F(B)
+              -1     2.67518e-24             0.5
+        -2.71828     2.67518e-24        0.303265
+  Number of calls to F = 12
+
+  f_04(x) = exp ( x ) - 1 / ( 100 * x * x )
+
+           A                 Z             B
+         F(A)              F(Z)          F(B)
+          0.0001       0.0953446              20
+         -999999    -2.22045e-16     4.85165e+08
+  Number of calls to F = 16
+
+  f_05(x) = (x+3) * (x-1) * (x-1)
+
+           A                 Z             B
+         F(A)              F(Z)          F(B)
+              -5              -3               2
+             -72               0               5
+  Number of calls to F = 14
+
+zero_test():
+  Normal end of execution.
+
+31 May 2021 02:23:19 PM

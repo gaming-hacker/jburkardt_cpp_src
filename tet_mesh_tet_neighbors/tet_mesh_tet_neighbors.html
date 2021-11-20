@@ -1,0 +1,230 @@
+<html>
+
+  <head>
+    <title>
+      TET_MESH_TET_NEIGHBORS - Tet Mesh Neighbors
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TET_MESH_TET_NEIGHBORS <br>
+      Interactive Program for <br>
+      Tet Mesh Neighbors
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TET_MESH_TET_NEIGHBORS</b>,
+      a C++ code which
+      reads information defining
+      a tet mesh of points in 3D, and determines, for each face of
+      each tetrahedron, the index of the neighboring tetrahedron that
+      shares that face.
+    </p>
+
+    <p>
+      The tet mesh is defined by a <i>node file</i> containing
+      the coordinates of nodes, and a <i>tetra file</i> containing
+      sets of 4 or 10 node indices.  For this calculation, though,
+      only the tetra file is needed.
+    </p>
+
+    <p>
+      If a tetrahedron is on the boundary, then one or more of its
+      faces will not be shared by any tetrahedron.  Such cases will
+      be indicated by specifying the corresponding neighbor value as -1.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>tet_mesh_tet_neighbors</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common file prefix:
+      <ul>
+        <li>
+          <i>prefix</i><b>_nodes.txt</b>,    the node coordinates (not needed by this program);
+        </li>
+        <li>
+          <i>prefix</i><b>_elements.txt</b>,    the element definitions.
+        </li>
+        <li>
+          <i>prefix</i><b>_element_neighbors.txt</b>,    the element neighbors.
+        </li>
+      </ul>
+    </p>
+
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TET_MESH_TET_NEIGHBORS</b> is available in
+      <a href = "../../cpp_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">a C++ version</a> and
+      <a href = "../../f_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/tet_mesh_tet_neighbors/tet_mesh_tet_neighbors.html">a MATLAB version</a>.
+    </p>
+
+    <h3 align = "center">
+      Related Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/neighbors_to_metis_graph/neighbors_to_metis_graph.html">
+      NEIGHBORS_TO_METIS_GRAPH</a>,
+      a C++ program which
+      reads a tet mesh neighbor file created by <b>TET_MESH_TET_NEIGHBORS</b>
+      and writes a modified version of the same data suitable for input
+      to the mesh partitioning program METIS.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh/tet_mesh.html">
+      TET_MESH</a>,
+      a C++ library which
+      is useful for work with tet meshes.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_boundary/tet_mesh_boundary.html">
+      TET_MESH_BOUNDARY</a>,
+      a C++ program which
+      returns the nodes and faces of the boundary of a tetrahedral mesh,
+      which themselves form a 3D triangular mesh or "TRI_SURFACE".
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_display_opengl/tet_mesh_display_opengl.html">
+      TET_MESH_DISPLAY_OPENGL</a>,
+      a C++ program which
+      reads a tet mesh and displays the
+      nodes and edges using OpenGL.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_l2q/tet_mesh_l2q.html">
+      TET_MESH_L2Q</a>,
+      a C++ program which
+      converts a linear to quadratic tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_q2l/tet_mesh_q2l.html">
+      TET_MESH_Q2L</a>,
+      a C++ program which
+      can convert a quadratic (10-node)
+      tet mesh to a linear (4-node)
+      tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a C++ program which
+      can compute the quality of a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_rcm/tet_mesh_rcm.html">
+      TET_MESH_RCM</a>,
+      a C++ program which
+      takes a tet mesh and
+      relabels the nodes to reduce the bandwidth of the
+      corresponding adjacency matrix.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_refine/tet_mesh_refine.html">
+      TET_MESH_REFINE</a>,
+      a C++ program which
+      can refine a tet mesh.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_tet_neighbors_test/tet_mesh_tet_neighbors_test.html">
+      tet_mesh_tet_neighbors_test</a>
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_volumes/tet_mesh_volumes.html">
+      TET_MESH_VOLUMES</a>,
+      a C++ program which
+      computes the volume of each tetrahedron in a tet mesh;
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Herbert Edelsbrunner,<br>
+          Geometry and Topology for Mesh Generation,<br>
+          Cambridge, 2001,<br>
+          ISBN: 0-521-79309-2,<br>
+          LC: QA377.E36.
+        </li>
+        <li>
+          Barry Joe,<br>
+          GEOMPACK - a software package for the generation of meshes
+          using geometric algorithms,<br>
+          Advances in Engineering Software,<br>
+          Volume 13, 1991, pages 325-331.
+        </li>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, June 2004, pages 329-345.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source code
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "tet_mesh_tet_neighbors.cpp">tet_mesh_tet_neighbors.cpp</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "tet_mesh_tet_neighbors.sh">tet_mesh_tet_neighbors.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 29 April 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

@@ -1,0 +1,56 @@
+22 January 2020 08:20:55 AM
+
+stochastic_diffusion_test
+  C++ version
+  Test stochastic_diffusion.
+
+diffusivity_1d_pwc_test
+  Test diffusivity_1d_pwc.
+
+  Created graphics data file 'diffusivity_1d_pwc_data.txt'
+  Created graphics command file 'diffusivity_1d_pwc_commands.txt'
+
+diffusivity_1d_xk_test
+  Plot the stochastic diffusivity function
+  defined by diffusivity_1d_xk.
+
+  Created graphics data file 'diffusivity_1d_xk_data.txt'
+  Created graphics command file 'diffusivity_1d_xk_commands.txt'
+
+diffusivity_2d_bnt_contour
+  Display contour or surface plots of the stochastic
+  diffusivity function defined by diffusivity_2d_bnt.
+
+  The first plot uses uniform random values for OMEGA.
+  The second uses Gaussian (normal) random values.
+
+  Created graphics data file 'diffusivity_2d_bnt_data.txt'.
+  Created graphics command file 'diffusivity_2d_bnt_commands.txt'
+
+diffusivity_2d_elman_contour
+  Display contour or surface plots of the stochastic
+  diffusivity function defined by diffusivity_2d_elman.
+
+  Created graphics data file 'diffusivity_2d_elman_data.txt'
+  Created graphics command file 'diffusivity_2d_elman_commands.txt'
+
+diffusivity_2d_ntw_contour
+  Display contour or surface plots of the stochastic
+  diffusivity function defined by diffusivity_2d_ntw.
+
+  Created graphics data file 'diffusivity_2d_ntw_data.txt'
+  Created graphics command file 'diffusivity_2d_ntw_commands.txt'.
+
+diffusivity_2d_pwc_contour
+  Display contour or surface plots of the stochastic
+  diffusivity function defined by diffusivity_2d_pwc.
+
+  Underlying grid is 4 elements wide (X) and 5 high (Y)
+
+  Created graphics data file 'diffusivity_2d_pwc_data.txt'
+  Created graphics command file 'diffusivity_2d_pwc_commands.txt'
+
+stochastic_diffusion_test
+  Normal end of execution.
+
+22 January 2020 08:20:55 AM

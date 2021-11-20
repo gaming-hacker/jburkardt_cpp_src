@@ -1,0 +1,26 @@
+09 April 2020 10:24:04 AM
+
+WEEKDAY_TEST:
+  C++ version
+  Test the WEEKDAY library.
+
+JED_TO_WEEKDAY_TEST
+  JED_TO_WEEKDAY determines the weekday
+  corresponding to a JED:
+
+             JED  W     W
+                  True  Computed
+
+
+YMD_TO_WEEKDAY_COMMON_TEST
+  YMD_TO_WEEKDAY_COMMON returns the day of the week
+  for dates in the Common calendar.
+
+  YMD                   Weekday    Weekday
+                        Tabulated  Computed
+
+
+WEEKDAY_TEST:
+  Noraml end of execution.
+
+09 April 2020 10:24:04 AM

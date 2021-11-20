@@ -1,0 +1,18 @@
+28 July 2020 09:41:01 AM
+
+LYNX_PLOT:
+  C++ version:
+  Use DISLIN routines to plot (X,Y) data as a curve.
+
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+ <<                END OF DISLIN / VERSION 11.2.1                <<
+ <<  Date    : 28.07.2020  Time    : 09:41:01  Pageformat: USAL  <<
+ <<  Vectors : 2511        Warnings: 0         Fileformat:  PNG  <<
+ <<  Metafile: lynx_plot.png                                     <<
+ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+LYNX_PLOT:
+  Normal end of execution.
+
+28 July 2020 09:41:01 AM

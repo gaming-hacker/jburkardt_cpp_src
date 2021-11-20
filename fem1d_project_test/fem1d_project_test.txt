@@ -1,0 +1,30 @@
+03 March 2020 12:17:45 PM
+
+FEM1D_PROJECT
+  C++ version.
+
+  Read files defining a sampling of a function of 1 argument.
+  Read files defining a finite element mesh.
+  Project the sample data onto the mesh, and
+  write a file of FEM coefficient values.
+
+Enter the sample file prefix:
+
+Enter the FEM file prefix:
+
+  Sample node spatial dimension is 1
+  Sample node number is            11
+  The SAMPLE value dimension is    3
+  the SAMPLE value number is        11
+
+  The FEM node dimension is        1
+  The FEM node number is           6
+  The FEM element order is         2
+  The FEM element number is        5
+
+  Projected FEM values written to "fem_powers_values.txt"
+
+FEM1D_PROJECT
+  Normal end of execution.
+
+03 March 2020 12:17:45 PM

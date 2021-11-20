@@ -1,0 +1,220 @@
+
+COMPUTE_PI
+  C++/OpenMP version
+
+  Estimate the value of PI by summing a series.
+
+  Number of processors available = 8
+  Number of threads =              1
+
+R8_TEST:
+  Estimate the value of PI,
+  using double arithmetic.
+
+  N = number of terms computed and added;
+
+  MODE = SEQ for sequential code;
+  MODE = OMP for Open MP enabled code;
+  (performance depends on whether Open MP is used,
+  and how many processes are available)
+
+  ESTIMATE = the computed estimate of PI;
+
+  ERROR = ( the computed estimate - PI );
+
+  TIME = elapsed wall clock time;
+
+  Note that you can''t increase N forever, because:
+  A) ROUNDOFF starts to be a problem, and
+  B) maximum integer size is a problem.
+
+             N Mode    Estimate        Error           Time
+
+               1  SEQ             3.2       0.0584073     1.91001e-07
+               1  OMP             3.2       0.0584073       6.221e-06
+              10  SEQ         3.14243     0.000833331        1.97e-07
+              10  OMP         3.14243     0.000833331       1.761e-06
+             100  SEQ          3.1416     8.33333e-06       1.516e-06
+             100  OMP          3.1416     8.33333e-06       2.874e-06
+            1000  SEQ         3.14159     8.33333e-08      1.4513e-05
+            1000  OMP         3.14159     8.33333e-08      1.5914e-05
+           10000  SEQ         3.14159     8.33341e-10     0.000144839
+           10000  OMP         3.14159     8.33341e-10     0.000146342
+          100000  SEQ         3.14159     8.36842e-12      0.00145661
+          100000  OMP         3.14159     8.36842e-12      0.00144958
+         1000000  SEQ         3.14159     2.84217e-14       0.0139179
+         1000000  OMP         3.14159     2.84217e-14       0.0126546
+        10000000  SEQ         3.14159     6.21725e-14        0.115224
+        10000000  OMP         3.14159     6.21725e-14        0.114876
+       100000000  SEQ         3.14159     6.33271e-13          1.1953
+       100000000  OMP         3.14159     6.33271e-13         1.17645
+      1000000000  SEQ         3.14159     1.77636e-13          11.293
+      1000000000  OMP         3.14159     1.77636e-13         11.1865
+
+COMPUTE_PI
+  Normal end of execution.
+
+COMPUTE_PI
+  C++/OpenMP version
+
+  Estimate the value of PI by summing a series.
+
+  Number of processors available = 8
+  Number of threads =              2
+
+R8_TEST:
+  Estimate the value of PI,
+  using double arithmetic.
+
+  N = number of terms computed and added;
+
+  MODE = SEQ for sequential code;
+  MODE = OMP for Open MP enabled code;
+  (performance depends on whether Open MP is used,
+  and how many processes are available)
+
+  ESTIMATE = the computed estimate of PI;
+
+  ERROR = ( the computed estimate - PI );
+
+  TIME = elapsed wall clock time;
+
+  Note that you can''t increase N forever, because:
+  A) ROUNDOFF starts to be a problem, and
+  B) maximum integer size is a problem.
+
+             N Mode    Estimate        Error           Time
+
+               1  SEQ             3.2       0.0584073        1.26e-07
+               1  OMP             3.2       0.0584073      6.1924e-05
+              10  SEQ         3.14243     0.000833331         1.8e-07
+              10  OMP         3.14243     0.000833331       2.309e-06
+             100  SEQ          3.1416     8.33333e-06       1.228e-06
+             100  OMP          3.1416     8.33333e-06       2.482e-06
+            1000  SEQ         3.14159     8.33333e-08      2.5002e-05
+            1000  OMP         3.14159     8.33333e-08       7.782e-06
+           10000  SEQ         3.14159     8.33341e-10     0.000118516
+           10000  OMP         3.14159     8.33336e-10      6.1054e-05
+          100000  SEQ         3.14159     8.36842e-12      0.00124898
+          100000  OMP         3.14159     8.35332e-12     0.000594315
+         1000000  SEQ         3.14159     2.84217e-14        0.012516
+         1000000  OMP         3.14159     1.06137e-13      0.00598355
+        10000000  SEQ         3.14159     6.21725e-14         0.11394
+        10000000  OMP         3.14159     1.29674e-13       0.0599255
+       100000000  SEQ         3.14159     6.33271e-13         1.12326
+       100000000  OMP         3.14159     1.16351e-13        0.599238
+      1000000000  SEQ         3.14159     1.77636e-13         11.2017
+      1000000000  OMP         3.14159     1.07914e-13         5.99348
+
+COMPUTE_PI
+  Normal end of execution.
+
+COMPUTE_PI
+  C++/OpenMP version
+
+  Estimate the value of PI by summing a series.
+
+  Number of processors available = 8
+  Number of threads =              4
+
+R8_TEST:
+  Estimate the value of PI,
+  using double arithmetic.
+
+  N = number of terms computed and added;
+
+  MODE = SEQ for sequential code;
+  MODE = OMP for Open MP enabled code;
+  (performance depends on whether Open MP is used,
+  and how many processes are available)
+
+  ESTIMATE = the computed estimate of PI;
+
+  ERROR = ( the computed estimate - PI );
+
+  TIME = elapsed wall clock time;
+
+  Note that you can''t increase N forever, because:
+  A) ROUNDOFF starts to be a problem, and
+  B) maximum integer size is a problem.
+
+             N Mode    Estimate        Error           Time
+
+               1  SEQ             3.2       0.0584073     1.20999e-07
+               1  OMP             3.2       0.0584073     0.000139622
+              10  SEQ         3.14243     0.000833331     1.72999e-07
+              10  OMP         3.14243     0.000833331       2.672e-06
+             100  SEQ          3.1416     8.33333e-06       1.307e-06
+             100  OMP          3.1416     8.33333e-06        2.46e-06
+            1000  SEQ         3.14159     8.33333e-08      2.6528e-05
+            1000  OMP         3.14159     8.33333e-08        5.31e-06
+           10000  SEQ         3.14159     8.33341e-10      0.00012616
+           10000  OMP         3.14159     8.33331e-10      3.3597e-05
+          100000  SEQ         3.14159     8.36842e-12      0.00126113
+          100000  OMP         3.14159     8.33333e-12     0.000317342
+         1000000  SEQ         3.14159     2.84217e-14       0.0126426
+         1000000  OMP         3.14159     8.26006e-14      0.00315921
+        10000000  SEQ         3.14159     6.21725e-14        0.115069
+        10000000  OMP         3.14159     1.23457e-13       0.0316356
+       100000000  SEQ         3.14159     6.33271e-13         1.12343
+       100000000  OMP         3.14159     1.10578e-13        0.315566
+      1000000000  SEQ         3.14159     1.77636e-13         11.2029
+      1000000000  OMP         3.14159     2.75335e-14         3.15458
+
+COMPUTE_PI
+  Normal end of execution.
+
+COMPUTE_PI
+  C++/OpenMP version
+
+  Estimate the value of PI by summing a series.
+
+  Number of processors available = 8
+  Number of threads =              8
+
+R8_TEST:
+  Estimate the value of PI,
+  using double arithmetic.
+
+  N = number of terms computed and added;
+
+  MODE = SEQ for sequential code;
+  MODE = OMP for Open MP enabled code;
+  (performance depends on whether Open MP is used,
+  and how many processes are available)
+
+  ESTIMATE = the computed estimate of PI;
+
+  ERROR = ( the computed estimate - PI );
+
+  TIME = elapsed wall clock time;
+
+  Note that you can''t increase N forever, because:
+  A) ROUNDOFF starts to be a problem, and
+  B) maximum integer size is a problem.
+
+             N Mode    Estimate        Error           Time
+
+               1  SEQ             3.2       0.0584073       1.585e-06
+               1  OMP             3.2       0.0584073      0.00828631
+              10  SEQ         3.14243     0.000833331        1.77e-07
+              10  OMP         3.14243     0.000833331       3.232e-06
+             100  SEQ          3.1416     8.33333e-06       1.339e-06
+             100  OMP          3.1416     8.33333e-06       2.536e-06
+            1000  SEQ         3.14159     8.33333e-08      1.2998e-05
+            1000  OMP         3.14159     8.33333e-08       4.499e-06
+           10000  SEQ         3.14159     8.33341e-10     0.000129379
+           10000  OMP         3.14159     8.33333e-10      1.8979e-05
+          100000  SEQ         3.14159     8.36842e-12      0.00129362
+          100000  OMP         3.14159     8.33156e-12     0.000860612
+         1000000  SEQ         3.14159     2.84217e-14       0.0129764
+         1000000  OMP         3.14159     7.77156e-14      0.00268701
+        10000000  SEQ         3.14159     6.21725e-14        0.115145
+        10000000  OMP         3.14159     1.02141e-14       0.0163189
+       100000000  SEQ         3.14159     6.33271e-13         1.12324
+       100000000  OMP         3.14159     2.22045e-14        0.161796
+      1000000000  SEQ         3.14159     1.77636e-13         11.2022
+      1000000000  OMP         3.14159     2.44249e-14         1.61925
+
+COMPUTE_PI
+  Normal end of execution.

@@ -1,0 +1,217 @@
+<html>
+
+  <head>
+    <title>
+      TRIANGULATION_QUALITY - Triangulation Quality Measures
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055">
+
+    <h1 align = "center">
+      TRIANGULATION_QUALITY <br>
+      Triangulation Quality Measures
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TRIANGULATION_QUALITY</b>,
+      a C++ code which
+      computes and prints quality measures for a given triangulation of a set of points in 2D.
+    </p>
+
+    <p>
+      The triangulation is defined by a <i>node file</i> containing
+      the coordinates of nodes, and a <i>triangle file</i> containing
+      sets of 3 or 6 node indices.
+    </p>
+
+    <p>
+      The quality measures computed include:
+      <ul>
+        <li>
+          <b>Alpha</b>, the minimum angle divided by the maximum possible
+          minimum angle.
+        </li>
+        <li>
+          <b>Area</b>, the ratio of the minimum area to the maximum area;
+        </li>
+        <li>
+          <b>Q</b>, the triangle shape uniformity measure, twice the
+          radius of the inscribed circle divided by the radius of the
+          circumscribed circle;
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      Each quality measure is defined as the minimum of its value
+      over all the triangles; the maximum and best possible value is
+      1, and the minimum and worst possible value is 0.
+    </p>
+
+    <h3 align = "center">
+      Usage:
+    </h3>
+
+    <p>
+      <blockquote>
+        <b>triangulation_quality</b> <i>prefix</i>
+      </blockquote>
+      where <i>prefix</i> is the common filename prefix:
+      <ul>
+        <li>
+          <i>prefix</i><b>_nodes.txt</b>,    the node coordinates;
+        </li>
+        <li>
+          <i>prefix</i><b>_elements.txt</b>,    the triangulation.
+        </li>
+      </ul>
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Languages:
+    </h3>
+
+    <p>
+      <b>TRIANGULATION_QUALITY</b> is available in
+      <a href = "../../cpp_src/triangulation_quality/triangulation_quality.html">a C++ version</a> and
+      <a href = "../../f_src/triangulation_quality/triangulation_quality.html">a FORTRAN90 version</a> and
+      <a href = "../../m_src/triangulation_quality/triangulation_quality.html">a MATLAB version.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../cpp_src/tet_mesh_quality/tet_mesh_quality.html">
+      TET_MESH_QUALITY</a>,
+      a C++ program which
+      computes quality measures of a tetrahedral mesh.
+    </p>
+
+    <p>
+      <a href = "../../c_src/triangle/triangle.html">
+      TRIANGLE</a>
+      is a C program which
+      computes a triangulation of a geometric region.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation/triangulation.html">
+      TRIANGULATION</a>
+      a C++ library which
+      carries out various operations on order 3 ("linear") or order 6
+      ("quadratic") triangulations.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_node_to_element/triangulation_node_to_element.html">
+      TRIANGULATION_NODE_TO_ELEMENT</a>,
+      a C++ program which 
+      reads files describing a set of nodes, their triangulation, and the
+      value of one or more quantities at each node, and outputs a file
+      that averages the quantities for each element.  This operation 
+      in effect creates an "order1" finite element model of the data.
+    </p>
+
+    <p>
+      <a href = "../../data/triangulation_order3/triangulation_order3.html">
+      TRIANGULATION_ORDER3</a>
+      is a directory which
+      contains a description and
+      examples of order 3 triangulations.
+    </p>
+
+    <p>
+      <a href = "../../data/triangulation_order6/triangulation_order6.html">
+      TRIANGULATION_ORDER6</a>
+      is a directory which
+      contains a description and
+      examples of order 6 triangulations.
+    </p>
+
+    <p>
+      <a href = "../../cpp_src/triangulation_quality_test/triangulation_quality_test.html">
+      triangulation_quality_test</a>
+    </p>
+
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Marc deBerg, Marc Krevald, Mark Overmars,
+          Otfried Schwarzkopf,<br>
+          Computational Geometry,<br>
+          Springer, 2000,<br>
+          ISBN: 3-540-65620-0.
+        </li>
+        <li>
+          David Field,<br>
+          Qualitative Measures for Initial Meshes,<br>
+          International Journal of Numerical Methods in Engineering,<br>
+          Volume 47, 2000, pages 887-906.
+        </li>
+        <li>
+          Joseph ORourke,<br>
+          Computational Geometry,<br>
+          Second Edition,<br>
+          Cambridge, 1998,<br>
+          ISBN: 0521649765,<br>
+          LC: QA448.D38.
+        </li>
+        <li>
+          Per-Olof Persson, Gilbert Strang,<br>
+          A Simple Mesh Generator in MATLAB,<br>
+          SIAM Review,<br>
+          Volume 46, Number 2, pages 329-345, June 2004.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Source Code:
+    </h3>
+
+    <p>
+      <ul>
+        <li>
+          <a href = "triangulation_quality.cpp">triangulation_quality.cpp</a>,
+          the source code.
+        </li>
+        <li>
+          <a href = "triangulation_quality.sh">triangulation_quality.sh</a>,
+          compiles the source code.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 06 May 2020.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+  <!-- Initial HTML skeleton created by HTMLINDEX. -->
+
+</html>

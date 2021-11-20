@@ -1,0 +1,19 @@
+
+P:1 - setting up data to send to process 0.
+
+P:3 - MPI has no work for me!
+06 September 2018 03:23:25 PM
+
+BONES:
+  C++ version
+  An MPI example program.
+
+P:2 - MPI has no work for me!
+  The number of processes available is 4
+P:0 Got 100 elements.
+P:0 value[5] = 5
+
+BONES:
+  Normal end of execution.
+
+06 September 2018 03:23:25 PM

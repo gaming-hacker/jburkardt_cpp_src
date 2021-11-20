@@ -1,0 +1,14 @@
+22 January 2020 08:20:38 AM
+
+ANALEMMA
+  C++ version
+  Compute and plot the analemma, equation of time, and declination.
+  This program is based on a C program by Brian Tung.
+
+  Created data file "analemma_data.txt".
+  Created command file "analemma_commands.txt".
+
+ANALEMMA
+  Normal end of execution.
+
+22 January 2020 08:20:38 AM

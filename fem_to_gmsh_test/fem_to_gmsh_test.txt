@@ -1,0 +1,64 @@
+
+04 March 2020 08:06:51 AM
+
+FEM_TO_GMSH
+  C++ version:
+  Convert a 1D, 2D or 3D mesh from FEM to GMSH format.
+
+  Read "prefix"_nodes.txt, node coordinates.
+  Read "prefix"_elements.txt, element node connectivity.
+
+  Create "prefix".msh, a corresponding Gmsh mesh file.
+
+FEM_TO_GMSH:
+  Please enter the filename prefix.
+
+  Read the header of "cheby9_nodes.txt".
+
+  Spatial dimension = 1
+  Number of nodes  = 9
+
+  Read the data in "cheby9_nodes.txt".
+
+  Portion of node coordinate data:
+
+  Row:       1       
+  Col
+
+    1:             -1
+    2:       -0.92388
+    3:      -0.707107
+    4:      -0.382683
+    5:              0
+
+  Read the header of "cheby9_elements.txt".
+
+  Element order = 2
+  Number of elements  = 8
+
+  Read the data in "cheby9_elements.txt".
+
+  Initial portion of element data:
+
+  Row:      1       2  
+  Col
+
+    1:      1       2  
+    2:      2       3  
+    3:      3       4  
+    4:      4       5  
+    5:      5       6  
+    6:      6       7  
+    7:      7       8  
+    8:      8       9  
+
+MESH_BASE_ONE:
+  The element indexing appears to be 1-based!
+  No conversion is necessary.
+
+  Created the GMSH file "cheby9.msh".
+
+FEM_TO_GMSH:
+  Normal end of execution.
+
+04 March 2020 08:06:51 AM

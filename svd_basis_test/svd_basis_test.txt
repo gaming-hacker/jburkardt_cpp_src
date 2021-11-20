@@ -1,0 +1,235 @@
+20 April 2020 03:32:28 PM
+
+SVD_BASIS:
+  C++ version
+
+  Compiled on Apr 20 2020 at 15:28:29.
+
+  Given a PDE for which:
+    C is the number of components of the solution
+      at any single point,
+    P is the number of points where a solution is given,
+    N is the number of solution vectors,
+    L is the number of modes to be extracted.
+
+  Then we let M = C*P be the abstract spatial dimension.
+
+  Set up A, the M by N matrix of solution vectors,
+
+  Get A = U * S * V', the singular value decomposition.
+
+  The first L columns of U are our modes.
+
+
+  Compiled on Apr 20 2020 at 15:28:29.
+
+  How many basis vectors (L) are to be extracted?
+
+  L = 4
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+1:  "data01.txt"
+
+  According to the first base file,
+  The number of solution components C =   3
+  The number of solution points P =       4
+  The "size" of each solution M = (C*P) = 12
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+2:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+3:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+4:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+5:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+6:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+7:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+8:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+9:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+10:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+11:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+12:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+13:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+14:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+15:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+16:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+17:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+18:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+19:  "N"
+
+  You specify a consecutive sequence of file names
+  by giving the first "base" file name.
+
+  If there are no more sequences to enter,
+  just hit RETURN.
+
+  Enter a new base file name, or $ if done:
+
+20:  "N"
+
+  No more base file names can be entered.

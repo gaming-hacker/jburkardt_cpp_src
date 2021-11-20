@@ -1,0 +1,12 @@
+22 January 2020 08:20:44 AM
+
+MARIO_FILL
+  C++ version
+  Create a GNUPLOT input file that will draw a
+  picture of Mario, using colored squares.
+  Created command file 'mario_commands.txt'
+
+MARIO_FILL:
+  Normal end of execution.
+
+22 January 2020 08:20:44 AM
